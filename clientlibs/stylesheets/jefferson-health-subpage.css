@@ -72,6 +72,7 @@
   width: 400px;
   font-size: 18px;
   margin: 0 20px 0 0;
+  padding: 0 0 0 10px;
 }
 .jh-locations__search button {
   height: 30px;
@@ -106,6 +107,9 @@
 .jh-locations-list__item {
   float: left;
   margin: 10px 10px;
+}
+.jh-locations__pagination {
+  text-align: center;
 }
 
 /* Location Card */

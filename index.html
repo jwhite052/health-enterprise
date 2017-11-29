@@ -169,7 +169,10 @@
             <div class="jh-locations__inner">
 
               <div class="jh-locations__search">
-                <input type="text" class="search" placeholder="Enter a location name" />
+                <input type="text" class="search" placeholder="Enter a location name or address" />
+                <button id="filter-all">
+                  all
+                </button>
                 <button id="filter-hospital">
                   hospital
                 </button>
@@ -241,7 +244,7 @@
                   var bodyEl = $('<div>', {
                     class: 'jh-location-card__body'
                   });
-                  bodyEl.append($('<p class="jh-location-card__address">' + obj[i].address + '</p>'));
+                  bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '</p>'));
                   if (phone) {
                     phone = phone.replace(/: /gi, ': <br>');
                     bodyEl.append($('<p class="jh-location-card__phone">' + phone + '</p>'));
@@ -308,7 +311,9 @@
               //   locationsListUI.append(newListItem);
               // }
               </script>
-              <!-- <ul class="pagination"></ul> -->
+              <div class="jh-locations__pagination">
+                <ul class="pagination"></ul>
+              </div>
             </div>
           </div>
 
@@ -319,9 +324,6 @@
     <footer class="jh-footer-container">
       <div class="jh-footer">
         <div class="jh-footer__inner">
-
-
-
         </div>
       </div>
     </footer>
@@ -330,12 +332,16 @@
     var locationsList = new List('locations-list', {
       valueNames: [
         'name',
+        'address',
         { attr: 'data-category', name: 'category' }
       ],
-      // page: 8,
-      // pagination: true
+      page: 8,
+      pagination: true
     });
 
+    $('#filter-all').on('click', function() {
+      locationsList.filter(); // clears filters
+    });
     $('#filter-hospital').on('click', function() {
       filterCategory('hospital');
     });
@@ -358,7 +364,7 @@
     //ocationsList.filter(); // Remove all filters
 
     function initLocations() {
-      filterCategory('hospital');
+      // filterCategory('hospital');
       // $('#filter-hospitals').addClass('is-active');
     }
 
