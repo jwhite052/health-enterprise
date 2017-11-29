@@ -1,0 +1,249 @@
+/* Header */
+[class^="jh-header"] {
+  box-sizing: border-box;
+}
+.jh-header-container {
+  background-color: #f2f4f8;
+}
+.jh-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-header__inner {
+  padding: 20px;
+}
+
+/* Navbar Section */
+.jh-navbar-container {
+  background-color: #fff;
+}
+.jh-navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-navbar__inner {
+  padding: 20px;
+}
+
+/* Main Section */
+.jh-main-container {
+  background-color: #fff;
+}
+.jh-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-main__inner {
+  padding: 0px;
+}
+
+/* Map Section */
+.jh-map-container {
+  background-color: #fff;
+}
+.jh-map {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-map__inner {
+  padding: 20px;
+}
+.jh-map-component {
+  width: 100%;
+  height: 400px;
+  background-color: #ccc;
+}
+
+/* Locations */
+.jh-locations {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-locations__inner {
+  padding: 20px;
+}
+
+/* Locations Search */
+.jh-locations__search {
+  margin: 20px 0;
+}
+.jh-locations__search input {
+  height: 40px;
+  width: 400px;
+  font-size: 18px;
+  margin: 0 20px 0 0;
+}
+.jh-locations__search button {
+  height: 30px;
+  padding: 0 20px;
+  margin: 0;
+  background-color: #ccc;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+.jh-locations__search button:hover {
+  background-color: #eee;
+}
+.jh-locations__search button.asc {
+  background-color: #569bca;
+}
+.jh-locations__search button.is-active {
+  background-color: #569bca;
+}
+
+/* Locations List */
+.jh-locations-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.jh-locations-list::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-locations-list__item {
+  float: left;
+  margin: 10px 10px;
+}
+
+/* Location Card */
+[class^="jh-location-card"] {
+  box-sizing: border-box;
+}
+.jh-location-card {
+  width: 270px;
+  height: 400px;
+  background-color: #eee;
+}
+.jh-location-card__inner {
+  padding: 20px;
+}
+.jh-location-card__title  {
+  margin: 20px 0;
+  min-height: 50px;
+}
+.jh-location-card__title h4 {
+  margin: 0;
+  line-height: 1.4em;
+}
+.jh-location-card__category {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .1em;
+  font-weight: bold;
+  text-align: center;
+  color: #999;
+}
+.jh-location-card__address {
+  font-size: 16px;
+  font-weight: bold;
+}
+.jh-location-card__phone span {
+  display: block;
+}
+
+/* Bootstrap */
+.jh-locations .pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.jh-locations .pagination > li {
+  display: inline;
+}
+.jh-locations .pagination > li > a,
+.jh-locations .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #569bca;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+.jh-locations .pagination > li:first-child > a,
+.jh-locations .pagination > li:first-child > span {
+  margin-left: 0;
+  border-radius: 0;
+  /*border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;*/
+}
+.jh-locations .pagination > li:last-child > a,
+.jh-locations .pagination > li:last-child > span {
+  border-radius: 0;
+  /*border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;*/
+}
+.jh-locations .pagination > li > a:hover,
+.jh-locations .pagination > li > span:hover,
+.jh-locations .pagination > li > a:focus,
+.jh-locations .pagination > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eeeeee;
+  border-color: #ddd;
+}
+.jh-locations .pagination > .active > a,
+.jh-locations .pagination > .active > span,
+.jh-locations .pagination > .active > a:hover,
+.jh-locations .pagination > .active > span:hover,
+.jh-locations .pagination > .active > a:focus,
+.jh-locations .pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  background-color: #569bca;
+  border-color: #569bca;
+  cursor: default;
+}
+.jh-locations .pagination > .disabled > span,
+.jh-locations .pagination > .disabled > span:hover,
+.jh-locations .pagination > .disabled > span:focus,
+.jh-locations .pagination > .disabled > a,
+.jh-locations .pagination > .disabled > a:hover,
+.jh-locations .pagination > .disabled > a:focus {
+  color: #777777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+.jh-locations .pagination-lg > li > a,
+.jh-locations .pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.jh-locations .pagination-lg > li:first-child > a,
+.jh-locations .pagination-lg > li:first-child > span {
+  border-radius: 0;
+  /*border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;*/
+}
+.jh-locations .pagination-lg > li:last-child > a,
+.jh-locations .pagination-lg > li:last-child > span {
+  border-radius: 0;
+  /*border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;*/
+}
+.jh-locations .pagination-sm > li > a,
+.jh-locations .pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.jh-locations .pagination-sm > li:first-child > a,
+.jh-locations .pagination-sm > li:first-child > span {
+  border-radius: 0;
+  /*border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;*/
+}
+.jh-locations .pagination-sm > li:last-child > a,
+.jh-locations .pagination-sm > li:last-child > span {
+  border-radius: 0;
+  /*border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;*/
+}
