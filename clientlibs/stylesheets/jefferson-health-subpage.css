@@ -12,7 +12,7 @@
 .jh-header__inner {
   padding: 20px;
 }
-/* Templates */
+/* Header - Templates */
 .page-template-index .jh-header-container {
   position: relative;
   background-color: #f2f4f8;
@@ -383,7 +383,7 @@
   display: block;
 }
 
-/* Bootstrap */
+/* Bootstrap - Pagination */
 .jh-locations .pagination {
   display: inline-block;
   padding-left: 0;
