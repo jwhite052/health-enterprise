@@ -47,12 +47,14 @@ html, body {
     padding-right: 0px;
   }
   .locations__sidebar {
+    margin: 0;
     background-color: blue;
     width: 100%;
   }
 }
 .locations-menu {
-  height: 500px;
+  margin-top: 30px;
+  height: 550px;
   background-color: #f2f4f8;
 }
 .locations-menu__tab {
@@ -110,7 +112,7 @@ html, body {
 }
 .locations-menu__content.is-expanded {
   /*display: block;*/
-  max-height: 400px;
+  max-height: 450px;
 }
 .locations-menu__content.is-collapsed {
   max-height: 0px;
@@ -130,7 +132,7 @@ html, body {
   border-color: #f8ad40;
 }
 .locations-menu__content {
-  height: 400px;
+  height: 450px;
   padding: 0;
   border: 1px solid #999;
   overflow: hidden;
@@ -154,7 +156,7 @@ html, body {
 }
 .locations-menu__list-wrapper {
   overflow-y: scroll;
-  height: 275px;
+  height: 325px;
 }
 .locations-menu__list {
   list-style-type: none;
@@ -175,6 +177,11 @@ html, body {
 .locations-menu__list li a {
   color: #569bca;
   text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .locations-menu {
+    margin-top: 0;
+  }
 }
 /* Locations Map */
 .locations__map {
