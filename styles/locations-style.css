@@ -29,6 +29,11 @@ html, body {
   width: calc(100% - 300px);
   padding: 0 30px 0 0;
 }
+@media only screen and (max-width: 480px) {
+  .locations__main {
+    margin: 0;
+  }
+}
 .locations__main::after {
   content: '';
   display: table;
@@ -43,12 +48,11 @@ html, body {
 @media only screen and (max-width: 992px) {
   .locations__main {
     width: 100%;
-    margin-bottom: 30px;
+    margin-: 30px;
     padding-right: 0px;
   }
   .locations__sidebar {
     margin: 0;
-    background-color: blue;
     width: 100%;
   }
 }
@@ -56,6 +60,12 @@ html, body {
   margin-top: 30px;
   height: 550px;
   background-color: #f2f4f8;
+}
+@media only screen and (max-width: 480px) {
+  .locations-menu {
+    margin-top: 0;
+    height: 300px;
+  }
 }
 .locations-menu__tab {
   height: 50px;
@@ -139,12 +149,22 @@ html, body {
   background-color: #fff;
   transition: ease-out 0.4s;
 }
+@media only screen and (max-width: 480px) {
+  .locations-menu__content {
+    height: 150px;
+  }
+}
 .locations-menu__info {
   position: relative;
   height: 125px;
   background-color: #f2f4f8;
   padding: 15px;
   font-size: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .locations-menu__info {
+    display: none;
+  }
 }
 .locations-menu__list-heading {
   position: absolute;
@@ -158,30 +178,57 @@ html, body {
   overflow-y: scroll;
   height: 325px;
 }
+@media only screen and (max-width: 480px) {
+  .locations-menu__list-wrapper {
+    height: 150px;
+  }
+}
 .locations-menu__list {
   list-style-type: none;
   margin: 0;
   padding: 20px;
 }
 .locations-menu__list li {
+  position: relative;
   font-size: 16px;
   font-weight: bold;
   color: #569bca;
-  margin: 0 0 1.3em 0;
-  padding: 0 0 1em 0;
+  margin: 0;
+  padding: 1em 0 1em 0;
   border-bottom: 1px solid #f2f4f8;
+  overflow: hidden;
 }
 .locations-menu__list li:last-of-type {
   margin: 0;
+  border: 0;
 }
 .locations-menu__list li a {
   color: #569bca;
   text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu {
-    margin-top: 0;
+  .locations-menu__list {
+    padding: 0 15px;
   }
+}
+.link-options {
+  position: absolute;
+  top: 0;
+  right: calc(-100%);
+  background-color: rgba(240,240,240,0.8);
+  width: 100%;
+  height: 100%;
+  transition: ease-in .2s;
+}
+.link-options.is-visible {
+  right: 0;
+  display: block;
+}
+.link-options a {
+  display: block;
+  height: 100%;
+  width: 100px;
+  background-color: blue;
 }
 /* Locations Map */
 .locations__map {
@@ -194,7 +241,7 @@ html, body {
 }
 @media only screen and (max-width: 480px) {
   .locations__map{
-    height: 350px;
+    height: 250px;
   }
 }
 /* Locations Info Window */
@@ -225,8 +272,8 @@ html, body {
     width: 225px;
     left: 0px;
     top: 0px;
-    height: 350px;
-    width: calc(100% - 50px);
+    height: 250px;
+    width: 100%;
   }
 }
 .locations-info-window__title-bar {
@@ -332,7 +379,7 @@ html, body {
 @media only screen and (max-width: 480px) {
   .locations-info-window {
     font-size: 13px;
-    height: 250px;
+    height: 150px;
   }
   .locations-info-window__title {
     font-size: 16px;
@@ -418,6 +465,11 @@ html, body {
   padding: 15px 0;
   /*background-color: rgba(200,200,200,.7);*/
   width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .locations__search {
+    display: none;
+  }
 }
 .locations__search::after {
   content: '';
@@ -535,6 +587,6 @@ html, body {
 }
 @media only screen and (max-width: 640px) {
   .locations__search-options {
-    text-align: center;
+    text-align: right;
   }
 }

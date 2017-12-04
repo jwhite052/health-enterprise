@@ -52,7 +52,7 @@
 }
 /* Move to page props */
 .page-template-index .jh-header-container::after {
-  background-position: right 80px top -10px;
+  background-position: right 0px top -10px;
   background-size: auto;
 }
 /* End move to page props */
