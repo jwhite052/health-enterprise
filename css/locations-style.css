@@ -11,66 +11,66 @@ html, body {
   padding: 0;
   font-family: Lato, sans-serif;
 }
-.locations-section {
+.jh-locations-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
-.locations-section::after {
+.jh-locations-section::after {
   content: '';
   clear: both;
   display: table;
 }
-.locations-section *:not([class="locations__map"]) {
+.jh-locations-section *:not([class="locations__map"]) {
   box-sizing: border-box;
 }
-.locations__main {
+.jh-locations__main {
   float: left;
   width: calc(100% - 300px);
   padding: 0 30px 0 0;
 }
 @media only screen and (max-width: 480px) {
-  .locations__main {
+  .jh-locations__main {
     margin: 0;
   }
 }
-.locations__main::after {
+.jh-locations__main::after {
   content: '';
   display: table;
   clear: both;
 }
-.locations__sidebar {
+.jh-locations__sidebar {
   margin: 40px 0 0 0;
   padding: 0;
   float: left;
   width: calc(300px);
 }
 @media only screen and (max-width: 992px) {
-  .locations__main {
+  .jh-locations__main {
     width: 100%;
     margin-: 30px;
     padding-right: 0px;
   }
-  .locations__sidebar {
+  .jh-locations__sidebar {
     margin: 0;
     width: 100%;
   }
 }
-.locations-menu {
+.jh-locations-menu {
   margin-top: 30px;
   height: 550px;
   background-color: #f2f4f8;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu {
+  .jh-locations-menu {
     margin-top: 0;
     height: 300px;
   }
 }
-.locations-menu__tab {
+.jh-locations-menu__tab {
   height: 50px;
 }
-.locations-menu__tab > h3 {
+.jh-locations-menu__tab > h3 {
   position: relative;
   line-height: 49px;
   font-size: 16px;
@@ -84,7 +84,7 @@ html, body {
   cursor: pointer;
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
-.locations-menu__tab > h3::before {
+.jh-locations-menu__tab > h3::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -98,7 +98,7 @@ html, body {
   border: 6px solid #569bca;
   padding: 0;
 }
-.locations-menu__tab > h3::after {
+.jh-locations-menu__tab > h3::after {
   content: '';
   position: absolute;
   top: 45%;
@@ -112,36 +112,36 @@ html, body {
   border-width: 0 3px 3px 0;
   display: inline-block;
 }
-.locations-menu__tab > h3:hover {
+.jh-locations-menu__tab > h3:hover {
   background-color: #000222;
   color: #569bca;
 }
-.locations-menu__tab.is-expanded > h3 {
+.jh-locations-menu__tab.is-expanded > h3 {
   line-height: 50px;
   border: 0;
 }
-.locations-menu__content.is-expanded {
+.jh-locations-menu__content.is-expanded {
   /*display: block;*/
   max-height: 450px;
 }
-.locations-menu__content.is-collapsed {
+.jh-locations-menu__content.is-collapsed {
   max-height: 0px;
   border-width: 0 1px;
   /*display: none;*/
 }
-.locations-menu__tab.is-expanded > h3::after {
+.jh-locations-menu__tab.is-expanded > h3::after {
   opacity: 0.2;
 }
-.locations-menu__panel.hospitals-menu .locations-menu__tab > h3::before {
+.jh-locations-menu__panel.hospitals-menu .jh-locations-menu__tab > h3::before {
   border-color: #4a7ab8;
 }
-.locations-menu__panel.outpatient-menu .locations-menu__tab > h3::before {
+.jh-locations-menu__panel.outpatient-menu .jh-locations-menu__tab > h3::before {
   border-color: #ab2d8b;
 }
-.locations-menu__panel.urgentcare-menu .locations-menu__tab > h3::before {
+.jh-locations-menu__panel.urgentcare-menu .jh-locations-menu__tab > h3::before {
   border-color: #f8ad40;
 }
-.locations-menu__content {
+.jh-locations-menu__content {
   height: 450px;
   padding: 0;
   border: 1px solid #999;
@@ -150,11 +150,11 @@ html, body {
   transition: ease-out 0.4s;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu__content {
+  .jh-locations-menu__content {
     height: 150px;
   }
 }
-.locations-menu__info {
+.jh-locations-menu__info {
   position: relative;
   height: 125px;
   background-color: #f2f4f8;
@@ -162,11 +162,11 @@ html, body {
   font-size: 15px;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu__info {
+  .jh-locations-menu__info {
     display: none;
   }
 }
-.locations-menu__list-heading {
+.jh-locations-menu__list-heading {
   position: absolute;
   left: 15px;
   bottom: 10px;
@@ -174,21 +174,21 @@ html, body {
   text-transform: uppercase;
   color: #999;
 }
-.locations-menu__list-wrapper {
+.jh-locations-menu__list-wrapper {
   overflow-y: scroll;
   height: 325px;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu__list-wrapper {
+  .jh-locations-menu__list-wrapper {
     height: 150px;
   }
 }
-.locations-menu__list {
+.jh-locations-menu__list {
   list-style-type: none;
   margin: 0;
-  padding: 20px;
+  padding: 0 20px;
 }
-.locations-menu__list li {
+.jh-locations-menu__list li {
   position: relative;
   font-size: 16px;
   font-weight: bold;
@@ -198,16 +198,16 @@ html, body {
   border-bottom: 1px solid #f2f4f8;
   overflow: hidden;
 }
-.locations-menu__list li:last-of-type {
+.jh-locations-menu__list li:last-of-type {
   margin: 0;
   border: 0;
 }
-.locations-menu__list li a {
+.jh-locations-menu__list li a {
   color: #569bca;
   text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
-  .locations-menu__list {
+  .jh-locations-menu__list {
     padding: 0 15px;
   }
 }
@@ -231,7 +231,7 @@ html, body {
   background-color: blue;
 }
 /* Locations Map */
-.locations__map {
+.jh-locations__map {
   position: relative;
   width: 100%;
   height: 400px;
@@ -240,7 +240,7 @@ html, body {
   z-index: 0;
 }
 @media only screen and (max-width: 480px) {
-  .locations__map{
+  .jh-locations__map{
     height: 250px;
   }
 }
@@ -248,7 +248,7 @@ html, body {
 [class^="locations-info-window"] {
   box-sizing: border-box;
 }
-.locations-info-window__wrapper {
+.jh-locations-info-window__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -259,16 +259,16 @@ html, body {
   transition: ease-in .4s;
   overflow: hidden;
 }
-.locations-info-window__wrapper * {
+.jh-locations-info-window__wrapper * {
   box-sizing: border-box;
 }
-.locations-info-window__wrapper.is-visible {
+.jh-locations-info-window__wrapper.is-visible {
 }
-.locations-info-window__wrapper.is-hidden {
+.jh-locations-info-window__wrapper.is-hidden {
   left: -400px;
 }
 @media only screen and (max-width: 480px) {
-  .locations-info-window__wrapper {
+  .jh-locations-info-window__wrapper {
     width: 225px;
     left: 0px;
     top: 0px;
@@ -276,7 +276,7 @@ html, body {
     width: 100%;
   }
 }
-.locations-info-window__title-bar {
+.jh-locations-info-window__title-bar {
   position: relative;
   background-color: #666;
   height: 35px;
@@ -289,16 +289,16 @@ html, body {
   letter-spacing: .1em;
   text-align: center;
 }
-.locations-info-window__wrapper--hospitals .locations-info-window__title-bar {
+.jh-locations-info-window__wrapper--hospitals .jh-locations-info-window__title-bar {
   background-color: #4a7ab8;
 }
-.locations-info-window__wrapper--outpatient .locations-info-window__title-bar {
+.jh-locations-info-window__wrapper--outpatient .jh-locations-info-window__title-bar {
   background-color: #ab2d8b;
 }
-.locations-info-window__wrapper--urgentcare .locations-info-window__title-bar {
+.jh-locations-info-window__wrapper--urgentcare .jh-locations-info-window__title-bar {
   background-color: #f8ad40;
 }
-.locations-info-window__close {
+.jh-locations-info-window__close {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -309,11 +309,11 @@ html, body {
   height: 22px;
   opacity: 0.7;
 }
-.locations-info-window__close:hover {
+.jh-locations-info-window__close:hover {
   opacity: 1;
 }
-.locations-info-window__close:before,
-.locations-info-window__close:after {
+.jh-locations-info-window__close:before,
+.jh-locations-info-window__close:after {
   position: absolute;
   left: 11px;
   content: ' ';
@@ -321,13 +321,13 @@ html, body {
   width: 2px;
   background-color: #fff;
 }
-.locations-info-window__close:before {
+.jh-locations-info-window__close:before {
   transform: rotate(45deg);
 }
-.locations-info-window__close:after {
+.jh-locations-info-window__close:after {
   transform: rotate(-45deg);
 }
-.locations-info-window {
+.jh-locations-info-window {
   /*background-color: #fff;
   padding: 20px;
   box-shadow: 10px 5px 5px black !important;*/
@@ -336,20 +336,20 @@ html, body {
   overflow-y: scroll;
   height: 300px;
 }
-.locations-info-window__title {
+.jh-locations-info-window__title {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 15px 0;
   padding: 0;
   color: #152456;
 }
-.locations-info-window__address {
+.jh-locations-info-window__address {
   font-size: 16px;
 }
-.locations-info-window__locationlink {
+.jh-locations-info-window__locationlink {
 
 }
-.locations-info-window__locationlink a {
+.jh-locations-info-window__locationlink a {
   box-sizing: border-box;
   text-decoration: none;
   color: #569bca;
@@ -361,50 +361,50 @@ html, body {
   font-weight: bold;
   padding: 5px 2px;
 }
-.locations-info-window__locationlink a:hover {
+.jh-locations-info-window__locationlink a:hover {
   background-color: #569bca;
   color: #fff;
 }
-.locations-info-window__directionslink {
+.jh-locations-info-window__directionslink {
   font-weight: bold;
   color: #569bca;
   text-decoration: none;
   font-size: .8em;
   text-transform: uppercase;
 }
-.locations-info-window__bottom {
+.jh-locations-info-window__bottom {
   height: 65px;
   padding: 15px;
 }
 @media only screen and (max-width: 480px) {
-  .locations-info-window {
+  .jh-locations-info-window {
     font-size: 13px;
     height: 150px;
   }
-  .locations-info-window__title {
+  .jh-locations-info-window__title {
     font-size: 16px;
     font-weight: bold;
   }
-  .locations-info-window__address {
+  .jh-locations-info-window__address {
     font-size: 14px;
   }
-  .locations-info-window__locationlink a {
+  .jh-locations-info-window__locationlink a {
     font-size: 12px;
   }
 }
 /* Locations Header */
-.locations__header {
+.jh-locations__header {
   padding-bottom: 50px;
 }
-.locations__header::after {
+.jh-locations__header::after {
   content: '';
   display: table;
   clear: both;
 }
-.locations__title {
+.jh-locations__title {
 
 }
-.locations__title > h2 {
+.jh-locations__title > h2 {
   font-size: 40px;
   font-weight: normal;
   margin: 15px 0 20px 0;
@@ -412,36 +412,36 @@ html, body {
   color: #569bca;
   line-height: 1.0em;
 }
-.locations__intro {
+.jh-locations__intro {
   padding-top: 10px;
 }
-.locations__intro p {
+.jh-locations__intro p {
   font-size: 16px;
   line-height: 1.5em;
   margin: 0;
   padding: 0;
 }
 @media only screen and (max-width: 640px) {
-  .locations__header {
+  .jh-locations__header {
     padding-bottom: 20px;
   }
-  .locations__title {
+  .jh-locations__title {
     width: 100%;
     margin-bottom: 20px;
   }
-  .locations__title > h2 {
+  .jh-locations__title > h2 {
     font-size: 36px;
   }
-  .locations__intro {
+  .jh-locations__intro {
     width: 100%;
   }
 }
-.locations__search-options {
+.jh-locations__search-options {
   text-align: right;
   margin: 0 0 10px 0;
   color: #ccc;
 }
-.locations__search-options a {
+.jh-locations__search-options a {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -457,7 +457,7 @@ html, body {
 }
 
 /* Locations Map Filters */
-.locations__search {
+.jh-locations__search {
   /*position: absolute;*/
   /*top: 0;*/
   /*left: 0;*/
@@ -467,17 +467,17 @@ html, body {
   width: 100%;
 }
 @media only screen and (max-width: 480px) {
-  .locations__search {
+  .jh-locations__search {
     display: none;
   }
 }
-.locations__search::after {
+.jh-locations__search::after {
   content: '';
   display: table;
   clear: both;
 }
-.search-locations input,
-.search-locations select {
+.jh-search-locations input,
+.jh-search-locations select {
   position: relative;
   font-size: 18px;
   margin: 0;
@@ -491,30 +491,30 @@ html, body {
   color: #333;
   height: 40px;
 }
-.search-locations select {
+.jh-search-locations select {
   padding-right: 25px;
 }
-.search-locations__input-wrapper {
+.jh-search-locations__input-wrapper {
   float: left;
   position: relative;
   margin: 10px 10px 0 0;
 }
-.search-locations__select-wrapper {
+.jh-search-locations__select-wrapper {
   float: left;
   position: relative;
   margin: 10px 10px 0 0;
 }
-.search-locations__distance-wrapper {
+.jh-search-locations__distance-wrapper {
   float: left;
   position: relative;
   margin: 10px 10px 0 0;
 }
-.search-locations__submit-wrapper {
+.jh-search-locations__submit-wrapper {
   float: left;
   position: relative;
   margin: 35px 10px 0 0;
 }
-.search-locations__submit {
+.jh-search-locations__submit {
   height: 50px;
   width: 50px;
   -webkit-appearance: none;
@@ -523,19 +523,19 @@ html, body {
   background-color: #f2f4f8;
   border-radius: 0;
 }
-.search-locations__address {
+.jh-search-locations__address {
   width: 350px;
 }
-.search-locations__distance {
+.jh-search-locations__distance {
 
 }
-.search-locations__region {
+.jh-search-locations__region {
   margin: 0 20px 0 0;
 }
-.search-locations__type {
+.jh-search-locations__type {
 
 }
-.search-locations label {
+.jh-search-locations label {
   display: block;
   font-size: 12px;
   color: #999;
@@ -559,24 +559,24 @@ html, body {
   border-top: 5px solid #000;
 }
 @media only screen and (max-width: 640px) {
-  .search-locations input,
-  .search-locations select {
+  .jh-search-locations input,
+  .jh-search-locations select {
     height: 30px;
     width: 100%;
   }
-  .search-locations [class*="-wrapper"] {
+  .jh-search-locations [class*="-wrapper"] {
     width: 100%;
   }
-  .search-locations label {
+  .jh-search-locations label {
     margin: 0;
   }
 }
-.locations__search-options {
+.jh-locations__search-options {
   text-align: right;
   margin: 0 0 10px 0;
   color: #ccc;
 }
-.locations__search-options a {
+.jh-locations__search-options a {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -586,7 +586,7 @@ html, body {
   margin: 0 10px;
 }
 @media only screen and (max-width: 640px) {
-  .locations__search-options {
+  .jh-locations__search-options {
     text-align: right;
   }
 }

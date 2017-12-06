@@ -12,6 +12,7 @@
     <link href="/css/global-ribbon.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
+    <link href="/css/locations-map-component.css" rel="stylesheet" />
   </head>
   <body class="jefferson-health jh-page-template-subpage">
     <nav id="global-navigation" class="navbar navbar-default">
@@ -124,7 +125,7 @@
               <div class="jh-banner__inner">
 
                 <div class="jh-title">
-                  <h1>Locations</h1>
+                  <h1>Hospital Locations</h1>
                 </div>
 
               </div>
@@ -153,7 +154,9 @@
         <div class="jh-map__inner">
 
           <!-- Parsys goes here -->
-          <div class="jh-map-component"></div>
+          <div class="jh-locations__map">
+            <div id="map"></div>
+          </div>
 
         </div>
       </div>
@@ -207,5 +210,8 @@
 
     <script src="/js/list.min.js"></script>
     <script src="/js/jefferson-health-subpage.js"></script>
+    <script src="/js/locations-map-component.js"></script>
+    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initLocationsApp&libraries=places" async defer></script>
   </body>
 </html>

@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+}
+
+/*
+* Header
+*/
+
+[class^="jh-header"] {
+  box-sizing: border-box;
+}
+.jh-header-container {
+  background-color: #f2f4f8;
+}
+.jh-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-header__inner {
+  padding: 20px;
+}
+
+/* Navbar Section */
+.jh-navbar-container {
+  background-color: #fff;
+}
+.jh-navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-navbar__inner {
+  padding: 20px;
+}
+
+/* Main Section */
+.jh-main-container {
+  background-color: #fff;
+}
+.jh-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-main__inner {
+  padding: 0px;
+}

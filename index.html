@@ -10,12 +10,11 @@
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="clientlibs/stylesheets/global-ribbon.css" rel="stylesheet" />
-    <link href="clientlibs/stylesheets/jefferson-health.css" rel="stylesheet" />
-    <link href="clientlibs/stylesheets/jefferson-health-subpage.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="/styles/locations-style.css" />
+    <link href="/css/global-ribbon.css" rel="stylesheet" />
+    <link href="/css/jefferson-health-template.css" rel="stylesheet" />
+    <link href="/css/jefferson-health-landing-page.css" rel="stylesheet" />
   </head>
-  <body class="jefferson-health jefferson-health--index page-template-index">
+  <body class="jefferson-health jh-page-template-landing-page">
 
     <nav id="global-navigation" class="navbar navbar-default">
     <div class="container">
@@ -27,7 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="http://www.jeffersonhealth.org"><img src="/etc/designs/jefferson-health/images/jefferson-health-logo.png" alt="Jefferson Health"></a>
+          <a class="navbar-brand" href="http://www.jeffersonhealth.org"><img src="/images/jefferson-health-logo.png" alt="Jefferson Health"></a>
         <div class="brand-skcc">
             Home of Sidney Kimmel Medical College
         </div>
@@ -310,33 +309,126 @@ background-color: transparent !important;
       </div>
     </header>
 
-    <!-- <section class="jh-map-container">
-      <div class="jh-map">
-        <div class="jh-map__inner">
+    <!-- Stats Section -->
+    <section class="jh-stats-container">
+      <div class="jh-stats">
+        <div class="jh-stats__inner">
+
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/hospital-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  13
+                </div>
+                <div class="jh-stats-box__title">
+                  Hospital Locations
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/urgentcare-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  7
+                </div>
+                <div class="jh-stats-box__title">
+                  Urgent Care Centers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/nci-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  1
+                </div>
+                <div class="jh-stats-box__title">
+                  NCI-Designated Cancer Center
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/rehab-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  15
+                </div>
+                <div class="jh-stats-box__title">
+                  Rehab Specialty Services
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/outpatient-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  17
+                </div>
+                <div class="jh-stats-box__title">
+                  Outpatient Centers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jh-stats-box-container">
+            <div class="jh-stats-box">
+              <div class="jh-stats-box__inner">
+                <div class="jh-stats-box__icon">
+                  <img src="/images/landing-page/imaging-icon.png" />
+                </div>
+                <div class="jh-stats-box__number">
+                  22
+                </div>
+                <div class="jh-stats-box__title">
+                  Testing & Imaging Centers
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <div class="locations-section">
-      <div class="locations__main">
-        <div class="locations__title">
+    <!-- Locations Section -->
+    <section class="jh-locations-section">
+      <div class="jh-locations__main">
+        <div class="jh-locations__title">
           <h2>Our Care Network</h2>
         </div>
-        <div class="locations__intro">
+        <div class="jh-locations__intro">
           <p>Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the directory and map to find the best location for you including detailed driving directions and further information about services available at each of our offices.</p>
         </div>
         <!-- Locations Filter Options -->
-        <div class="locations__search">
-          <div class="search-locations">
-            <div class="search-locations__input-wrapper">
+        <div class="jh-locations__search">
+          <div class="jh-search-locations">
+            <div class="jh-search-locations__input-wrapper">
               <label for="autocomplete">Location</label>
-              <input id="autocomplete" class="search-locations__address" type="text" placeholder="Enter location name or address" />
+              <input id="autocomplete" class="jh-search-locations__address" type="text" placeholder="Enter location name or address" />
             </div>
-            <div class="search-locations__distance-wrapper" style="display: none;">
-              <label for="searchLocationsDistance">Within</label>
+            <div class="jh-search-locations__distance-wrapper" style="display: none;">
+              <label for="jh-searchLocationsDistance">Within</label>
               <div class="dropdown-arrow-wrapper">
-                <select id="searchLocationsDistance" class="search-locations__distance">
+                <select id="jh-searchLocationsDistance" class="jh-search-locations__distance">
                   <option value="default">--</option>
                   <option value="1">1mi</option>
                   <option value="5">5mi</option>
@@ -345,10 +437,10 @@ background-color: transparent !important;
                 </select>
               </div>
             </div>
-            <div class="search-locations__select-wrapper">
-              <label for="searchLocationsRegion">Region</label>
+            <div class="jh-search-locations__select-wrapper">
+              <label for="jh-searchLocationsRegion">Region</label>
               <div class="dropdown-arrow-wrapper">
-                <select id="searchLocationsRegion" class="search-locations__region">
+                <select id="jh-searchLocationsRegion" class="jh-search-locations__region">
                   <option value="default">All</option>
                   <option value="philadelphia">Philadelphia</option>
                   <option value="montgomery">Montgomery County</option>
@@ -357,10 +449,10 @@ background-color: transparent !important;
                 </select>
               </div>
             </div>
-            <div class="search-locations__select-wrapper">
-              <label for="searchLocationsType">Type</label>
+            <div class="jh-search-locations__select-wrapper">
+              <label for="jh-searchLocationsType">Type</label>
               <div class="dropdown-arrow-wrapper">
-                <select id="searchLocationsType" class="search-locations__type">
+                <select id="jh-searchLocationsType" class="jh-search-locations__type">
                   <option value="default">All</option>
                   <option value="hospital">Hospitals</option>
                   <option value="outpatient">Outpatient</option>
@@ -370,79 +462,74 @@ background-color: transparent !important;
             </div>
           </div>
         </div>
-        <div class="locations__search-options">
-          <a class="locations__search-reset" href="#">Reset Map</a>
+        <div class="jh-locations__search-options">
+          <a class="jh-locations__search-reset" href="#">Reset Map</a>
         </div>
-        <div class="locations__map">
+        <div class="jh-locations__map">
           <div id="map"></div>
-          <div class="locations-info-window__wrapper locations-info-window__wrapper--default is-hidden">
-            <div class="locations-info-window__title-bar">
-              <div class="locations-info-window__title-bar-name"></div>
-              <div class="locations-info-window__close"></div>
+          <div class="jh-locations-info-window__wrapper locations-info-window__wrapper--default is-hidden">
+            <div class="jh-locations-info-window__title-bar">
+              <div class="jh-locations-info-window__title-bar-name"></div>
+              <div class="jh-locations-info-window__close"></div>
             </div>
-            <div class="locations-info-window"></div>
-            <div class="locations-info-window__bottom"></div>
+            <div class="jh-locations-info-window"></div>
+            <div class="jh-locations-info-window__bottom"></div>
           </div>
         </div>
       </div>
-      <div class="locations__sidebar">
-        <div class="locations-menu">
-          <div class="locations-menu__panel hospitals-menu is-expanded" aria-expanded="false">
-            <div class="locations-menu__tab is-expanded">
+      <div class="jh-locations__sidebar">
+        <div class="jh-locations-menu">
+          <div class="jh-locations-menu__panel hospitals-menu is-expanded" aria-expanded="false">
+            <div class="jh-locations-menu__tab is-expanded">
               <h3>Hospitals</h3>
             </div>
-            <div class="locations-menu__content is-expanded" aria-hidden="false">
-              <div class="locations-menu__info">
+            <div class="jh-locations-menu__content is-expanded" aria-hidden="false">
+              <div class="jh-locations-menu__info">
                 When hospitalization is needed, Jefferson Health provides the best inpatient care.
-                <div class="locations-menu__list-heading">
+                <div class="jh-locations-menu__list-heading">
                   Select below to view Location Details
                 </div>
               </div>
-              <div class="locations-menu__list-wrapper">
-                <ul class="locations-menu__list"></ul>
+              <div class="jh-locations-menu__list-wrapper">
+                <ul class="jh-locations-menu__list"></ul>
               </div>
             </div>
           </div>
-          <div class="locations-menu__panel outpatient-menu">
-            <div class="locations-menu__tab is-collapsed">
+          <div class="jh-locations-menu__panel outpatient-menu">
+            <div class="jh-locations-menu__tab is-collapsed">
               <h3>Outpatient</h3>
             </div>
-            <div class="locations-menu__content is-collapsed" aria-hidden="true">
-              <div class="locations-menu__info">
+            <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
+              <div class="jh-locations-menu__info">
                 When hospitalization is needed, Jefferson Health provides the best inpatient care.
-                <div class="locations-menu__list-heading">
+                <div class="jh-locations-menu__list-heading">
                   Select below to view Location Details
                 </div>
               </div>
-              <div class="locations-menu__list-wrapper">
-                <ul class="locations-menu__list"></ul>
+              <div class="jh-locations-menu__list-wrapper">
+                <ul class="jh-locations-menu__list"></ul>
               </div>
             </div>
           </div>
-          <div class="locations-menu__panel urgentcare-menu">
-            <div class="locations-menu__tab is-collapsed">
+          <div class="jh-locations-menu__panel urgentcare-menu">
+            <div class="jh-locations-menu__tab is-collapsed">
               <h3>Urgent Care</h3>
             </div>
-            <div class="locations-menu__content is-collapsed" aria-hidden="true">
-              <div class="locations-menu__info">
+            <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
+              <div class="jh-locations-menu__info">
                 When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
-                <div class="locations-menu__list-heading">
+                <div class="jh-locations-menu__list-heading">
                   Select below to view Location Details
                 </div>
               </div>
-              <div class="locations-menu__list-wrapper">
-                <ul class="locations-menu__list"></ul>
+              <div class="jh-locations-menu__list-wrapper">
+                <ul class="jh-locations-menu__list"></ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <script src="/scripts/locations-data.js"></script>
-    <script src="/scripts/locations-map.js"></script>
-    <!-- Jefferson API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    </section><!-- /.jh-locations-section -->
 
     <section class="jh-main-container">
       <div class="jh-main">
@@ -459,35 +546,9 @@ background-color: transparent !important;
       </div>
     </footer>
 
-    <script>
-
-    var ui = {
-      tabs: document.querySelectorAll('.jh-search-tabs-box__tabs li'),
-      panels: document.querySelectorAll('.jh-search-tabs-box__panel')
-    };
-
-    // set first tab active
-    ui.tabs[0].classList.add('is-active');
-    ui.panels[0].classList.add('is-active');
-
-    for (var i = 0; i < ui.tabs.length; i++) {
-      ui.tabs[i].addEventListener('click', function(){
-        if (!this.classList.contains('is-active')) {
-          for (var j = 0; j < ui.tabs.length; j++) {
-            ui.tabs[j].classList.remove('is-active');
-          }
-          this.classList.add('is-active');
-          for (var j = 0; j < ui.panels.length; j++) {
-            if (ui.panels[j].id === this.getAttribute('data-toggle')) {
-              ui.panels[j].classList.add('is-active');
-            } else {
-              ui.panels[j].classList.remove('is-active');
-            }
-          }
-        }
-      });
-    }
-
-    </script>
+    <script src="/js/locations-map.js"></script>
+    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <script src="/js/jefferson-health-landing-page.js"></script>
   </body>
 </html>

@@ -1,0 +1,931 @@
+/* Template Styles */
+/* Header */
+.jh-page-template-landing-page .jh-header-container {
+  position: relative;
+  background-color: #f2f4f8;
+  min-height: 620px;
+  background: rgb(240,249,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 88%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 88%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#cbebff',GradientType=0 ); /* IE6-9 */
+}
+.jh-page-template-landing-page .jh-header-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  z-index: 0;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  z-index: 1;
+}
+.jh-page-template-landing-page .jh-header-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/where-you-are-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  z-index: 0;
+}
+/* Move to page props */
+.jh-page-template-landing-page .jh-header-container::after {
+  background-position: right 0px top -10px;
+  background-size: auto;
+}
+/* End move to page props */
+.jh-page-template-landing-page .jh-header-content {
+  position: relative;
+  z-index: 1;
+}
+.jh-page-template-landing-page .jh-header-content__title {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0 35px 0;
+  max-width: 500px;
+  color: #152456;
+  line-height: 1.1em;
+}
+.jh-page-template-landing-page .jh-header-content__title span {
+  font-weight: 300;
+}
+.jh-page-template-landing-page .jh-header-content__text {
+  font-size: 18px;
+  margin: 20px 0;
+  max-width: 500px;
+  color: #152456;
+}
+.jh-page-template-landing-page .jh-header-content__locations {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 700px;
+}
+.jh-page-template-landing-page .jh-header-content__locations::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-page-template-landing-page .jh-header-content__locations li {
+  position: relative;
+  float: left;
+  margin: 0 0 0 8px;
+  padding-left: 15px;
+  /*border-right: 2px solid #ccc;*/
+  text-transform: uppercase;
+  color: #569bca;
+  text-shadow: 1px 1px 1px #fff
+}
+.jh-page-template-landing-page .jh-header-content__locations li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background-color: #ccc;
+}
+.jh-page-template-landing-page .jh-header-content__locations li:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
+}
+.jh-page-template-landing-page .jh-header-content__locations li:first-of-type::after {
+  display: none;
+}
+.jh-page-template-landing-page .jh-header-content__tagline {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 40px 0;
+  color: #152456;
+}
+/* Move to page props */
+@media (min-width: 1400px) {
+  .jh-page-template-landing-page .jh-header-container::after {
+    background-position: right 100px top -10px;
+  }
+}
+@media (min-width: 1800px) {
+  .jh-page-template-landing-page .jh-header-container::after {
+    background-position: right 200px top -10px;
+  }
+}
+/* End move to page props */
+@media (max-width : 1200px) {
+
+}
+@media (max-width : 992px) {
+
+}
+@media (max-width : 768px) {
+  .jh-page-template-landing-page .jh-header-container::before {
+    background: rgba(255,255,255,.9);
+    width: 100%;
+  }
+  .jh-page-template-landing-page .jh-header-container::after {
+    background-position: right 100px top -150px;
+  }
+}
+@media (max-width : 480px) {
+  .jh-page-template-landing-page .jh-header-content__locations li {
+    text-align: center;
+  }
+}
+
+/* Search Box */
+.jh-page-template-landing-page .jh-search-tabs-box {
+  font-family: Lato, arial, sans-serif;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+}
+.jh-page-template-landing-page .jh-search-tabs-box * {
+  box-sizing: border-box;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__tabs::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__tabs li {
+  float: left;
+  display: block;
+  padding: 0 20px;
+  background-color: #fff;
+  margin: 0 10px 0 0;
+  height: 45px;
+  margin-top: 5px;
+  line-height: 45px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-bottom: 0px;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__tabs li:hover {
+  color: #569bca;
+  line-height: 50px;
+  margin-top: 0px;
+  height: 50px;
+  transition: ease .2s;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__tabs li.is-active {
+  height: 50px;
+  margin-top: 0;
+  background-color: #569bca;
+  color: #fff;
+  line-height: 50px;
+  font-size: 17px;
+  border: 0;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel {
+  background-color: #569bca;
+  padding: 20px;
+  display: none;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel.is-active {
+  display: block;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel .jh-search-input {
+  width: calc(100% - 50px);
+  height: 50px;
+  font-size: 18px;
+  padding: 0 0 0 10px;
+  border: 0;
+  float: left;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel button[type="submit"] {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  border-radius: 0;
+  background-color: #152456;
+  color: #569bca;
+  background-image: url('../../images/search-icon-blue.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.jh-page-template-landing-page .jh-search-tabs-box__panel button[type="submit"]:hover {
+  background-image: url('../../images/search-icon-white.png');
+}
+@media (max-width : 480px) {
+  .jh-page-template-landing-page .jh-search-tabs-box__tabs li {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+  .jh-page-template-landing-page .jh-search-tabs-box__tabs li.is-active {
+    font-size: 14px;
+  }
+}
+
+/* Stats Section */
+.jh-page-template-landing-page .jh-stats-container {
+  background-color: #fff;
+  margin: 0;
+}
+.jh-page-template-landing-page .jh-stats {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.jh-page-template-landing-page .jh-stats__inner {
+  padding: 20px 0 30px 0;
+  border-bottom: 1px solid #f2f4f8;
+}
+.jh-page-template-landing-page .jh-stats__inner::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Stats Box */
+.jh-page-template-landing-page [class^="jh-stats-box"] * {
+  box-sizing: border-box;
+}
+.jh-page-template-landing-page .jh-stats-box-container {
+  position: relative;
+  width: 16.66%;
+  float: left;
+  padding: 10px;
+  z-index: 0;
+}
+.jh-page-template-landing-page .jh-stats-box-container::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 60%;
+  min-height: 150px;
+  background: -moz-linear-gradient(top, rgba(242,244,248,1) 0%, rgba(242,244,248,1) 30%, rgba(242,244,248,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(242,244,248,1) 0%,rgba(242,244,248,1) 30%,rgba(242,244,248,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(242,244,248,1) 0%,rgba(242,244,248,1) 30%,rgba(242,244,248,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4f8', endColorstr='#00f2f4f8',GradientType=0 ); /* IE6-9 */
+  z-index: 0;
+}
+@media (max-width : 992px) {
+  .jh-page-template-landing-page .jh-stats-box-container {
+    width: 33.3%;
+    margin-top: 30px;
+  }
+}
+@media (max-width : 480px) {
+  .jh-page-template-landing-page .jh-stats-box-container {
+    width: 50%;
+  }
+}
+.jh-page-template-landing-page .jh-stats-box {
+  position: relative;
+  z-index: 1;
+  min-height: 150px;
+}
+.jh-page-template-landing-page .jh-stats-box__inner {
+  padding: 10px;
+}
+.jh-page-template-landing-page .jh-stats-box__icon {
+  text-align: center;
+}
+.jh-page-template-landing-page .jh-stats-box__icon img {
+  width: 50px;
+}
+.jh-page-template-landing-page .jh-stats-box__number {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #152456;
+}
+.jh-page-template-landing-page .jh-stats-box__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #569bca;
+}
+
+/*
+* Locations Section
+*/
+#map {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+}
+.jh-locations-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.jh-locations-section::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.jh-locations-section *:not([class="locations__map"]) {
+  box-sizing: border-box;
+}
+.jh-locations__main {
+  float: left;
+  width: calc(100% - 300px);
+  padding: 0 30px 0 0;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations__main {
+    margin: 0;
+  }
+}
+.jh-locations__main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-locations__sidebar {
+  margin: 40px 0 0 0;
+  padding: 0;
+  float: left;
+  width: calc(300px);
+}
+@media only screen and (max-width: 992px) {
+  .jh-locations__main {
+    width: 100%;
+    margin-: 30px;
+    padding-right: 0px;
+  }
+  .jh-locations__sidebar {
+    margin: 0;
+    width: 100%;
+  }
+}
+.jh-locations-menu {
+  margin-top: 30px;
+  height: 550px;
+  background-color: #f2f4f8;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu {
+    margin-top: 0;
+    height: 300px;
+  }
+}
+.jh-locations-menu__tab {
+  height: 50px;
+}
+.jh-locations-menu__tab > h3 {
+  position: relative;
+  line-height: 49px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  background-color: #152456;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 50px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.jh-locations-menu__tab > h3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: 6px solid #569bca;
+  padding: 0;
+}
+.jh-locations-menu__tab > h3::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  transform: translateY(-50%) rotate(45deg);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: solid #569bca;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+.jh-locations-menu__tab > h3:hover {
+  background-color: #000222;
+  color: #569bca;
+}
+.jh-locations-menu__tab.is-expanded > h3 {
+  line-height: 50px;
+  border: 0;
+}
+.jh-locations-menu__content.is-expanded {
+  /*display: block;*/
+  max-height: 450px;
+}
+.jh-locations-menu__content.is-collapsed {
+  max-height: 0px;
+  border-width: 0 1px;
+  /*display: none;*/
+}
+.jh-locations-menu__tab.is-expanded > h3::after {
+  opacity: 0.2;
+}
+.jh-locations-menu__panel.hospitals-menu .jh-locations-menu__tab > h3::before {
+  border-color: #4a7ab8;
+}
+.jh-locations-menu__panel.outpatient-menu .jh-locations-menu__tab > h3::before {
+  border-color: #ab2d8b;
+}
+.jh-locations-menu__panel.urgentcare-menu .jh-locations-menu__tab > h3::before {
+  border-color: #f8ad40;
+}
+.jh-locations-menu__content {
+  height: 450px;
+  padding: 0;
+  border: 1px solid #999;
+  overflow: hidden;
+  background-color: #fff;
+  transition: ease-out 0.4s;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__content {
+    height: 150px;
+  }
+}
+.jh-locations-menu__info {
+  position: relative;
+  height: 125px;
+  background-color: #f2f4f8;
+  padding: 15px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__info {
+    display: none;
+  }
+}
+.jh-locations-menu__list-heading {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+}
+.jh-locations-menu__list-wrapper {
+  overflow-y: scroll;
+  height: 325px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__list-wrapper {
+    height: 150px;
+  }
+}
+.jh-locations-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.jh-locations-menu__list li {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #569bca;
+  margin: 0;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #f2f4f8;
+  overflow: hidden;
+}
+.jh-locations-menu__list li:last-of-type {
+  margin: 0;
+  border: 0;
+}
+.jh-locations-menu__list li a {
+  color: #569bca;
+  text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__list {
+    padding: 0 15px;
+  }
+}
+.link-options {
+  position: absolute;
+  top: 0;
+  right: calc(-100%);
+  background-color: rgba(240,240,240,0.8);
+  width: 100%;
+  height: 100%;
+  transition: ease-in .2s;
+}
+.link-options.is-visible {
+  right: 0;
+  display: block;
+}
+.link-options a {
+  display: block;
+  height: 100%;
+  width: 100px;
+  background-color: blue;
+}
+/* Locations Map */
+.jh-locations__map {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 1px solid #f2f4f8;
+  overflow: hidden;
+  z-index: 0;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations__map{
+    height: 250px;
+  }
+}
+/* Locations Info Window */
+[class^="locations-info-window"] {
+  box-sizing: border-box;
+}
+.jh-locations-info-window__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 400px;
+  background-color: rgba(253,253,255,0.9);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: ease-in .4s;
+  overflow: hidden;
+}
+.jh-locations-info-window__wrapper * {
+  box-sizing: border-box;
+}
+.jh-locations-info-window__wrapper.is-visible {
+}
+.jh-locations-info-window__wrapper.is-hidden {
+  left: -400px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-info-window__wrapper {
+    width: 225px;
+    left: 0px;
+    top: 0px;
+    height: 250px;
+    width: 100%;
+  }
+}
+.jh-locations-info-window__title-bar {
+  position: relative;
+  background-color: #666;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+}
+.jh-locations-info-window__wrapper--hospitals .jh-locations-info-window__title-bar {
+  background-color: #4a7ab8;
+}
+.jh-locations-info-window__wrapper--outpatient .jh-locations-info-window__title-bar {
+  background-color: #ab2d8b;
+}
+.jh-locations-info-window__wrapper--urgentcare .jh-locations-info-window__title-bar {
+  background-color: #f8ad40;
+}
+.jh-locations-info-window__close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+.jh-locations-info-window__close:hover {
+  opacity: 1;
+}
+.jh-locations-info-window__close:before,
+.jh-locations-info-window__close:after {
+  position: absolute;
+  left: 11px;
+  content: ' ';
+  height: 23px;
+  width: 2px;
+  background-color: #fff;
+}
+.jh-locations-info-window__close:before {
+  transform: rotate(45deg);
+}
+.jh-locations-info-window__close:after {
+  transform: rotate(-45deg);
+}
+.jh-locations-info-window {
+  /*background-color: #fff;
+  padding: 20px;
+  box-shadow: 10px 5px 5px black !important;*/
+  font-size: 14px;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 300px;
+}
+.jh-locations-info-window__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #152456;
+}
+.jh-locations-info-window__address {
+  font-size: 16px;
+}
+.jh-locations-info-window__locationlink {
+
+}
+.jh-locations-info-window__locationlink a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #569bca;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  border: 2px solid #569bca;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 2px;
+}
+.jh-locations-info-window__locationlink a:hover {
+  background-color: #569bca;
+  color: #fff;
+}
+.jh-locations-info-window__directionslink {
+  font-weight: bold;
+  color: #569bca;
+  text-decoration: none;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.jh-locations-info-window__bottom {
+  height: 65px;
+  padding: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-info-window {
+    font-size: 13px;
+    height: 150px;
+  }
+  .jh-locations-info-window__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .jh-locations-info-window__address {
+    font-size: 14px;
+  }
+  .jh-locations-info-window__locationlink a {
+    font-size: 12px;
+  }
+}
+/* Locations Header */
+.jh-locations__header {
+  padding-bottom: 50px;
+}
+.jh-locations__header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-locations__title {
+
+}
+.jh-locations__title > h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 15px 0 20px 0;
+  padding: 0;
+  color: #569bca;
+  line-height: 1.0em;
+}
+.jh-locations__intro {
+  padding-top: 10px;
+}
+.jh-locations__intro p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 640px) {
+  .jh-locations__header {
+    padding-bottom: 20px;
+  }
+  .jh-locations__title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .jh-locations__title > h2 {
+    font-size: 36px;
+  }
+  .jh-locations__intro {
+    width: 100%;
+  }
+}
+.jh-locations__search-options {
+  text-align: right;
+  margin: 0 0 10px 0;
+  color: #ccc;
+}
+.jh-locations__search-options a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #569bca;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px;
+}
+.gm-style .gm-style-iw {
+   width: 280px !important;
+   min-height: 120px !important;
+   overflow-y: scroll !important;
+}
+
+/* Locations Map Filters */
+.jh-locations__search {
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  z-index: 1;
+  padding: 15px 0;
+  /*background-color: rgba(200,200,200,.7);*/
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations__search {
+    display: none;
+  }
+}
+.jh-locations__search::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jh-search-locations input,
+.jh-search-locations select {
+  position: relative;
+  font-size: 18px;
+  margin: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  background-color: #fff;
+  color: #333;
+  height: 40px;
+}
+.jh-search-locations select {
+  padding-right: 25px;
+}
+.jh-search-locations__input-wrapper {
+  float: left;
+  position: relative;
+  margin: 10px 10px 0 0;
+}
+.jh-search-locations__select-wrapper {
+  float: left;
+  position: relative;
+  margin: 10px 10px 0 0;
+}
+.jh-search-locations__distance-wrapper {
+  float: left;
+  position: relative;
+  margin: 10px 10px 0 0;
+}
+.jh-search-locations__submit-wrapper {
+  float: left;
+  position: relative;
+  margin: 35px 10px 0 0;
+}
+.jh-search-locations__submit {
+  height: 50px;
+  width: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f2f4f8;
+  border-radius: 0;
+}
+.jh-search-locations__address {
+  width: 350px;
+}
+.jh-search-locations__distance {
+
+}
+.jh-search-locations__region {
+  margin: 0 20px 0 0;
+}
+.jh-search-locations__type {
+
+}
+.jh-search-locations label {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 5px 5px;
+}
+.dropdown-arrow-wrapper {
+  position: relative;
+}
+.dropdown-arrow-wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+}
+@media only screen and (max-width: 640px) {
+  .jh-search-locations input,
+  .jh-search-locations select {
+    height: 30px;
+    width: 100%;
+  }
+  .jh-search-locations [class*="-wrapper"] {
+    width: 100%;
+  }
+  .jh-search-locations label {
+    margin: 0;
+  }
+}
+.jh-locations__search-options {
+  text-align: right;
+  margin: 0 0 10px 0;
+  color: #ccc;
+}
+.jh-locations__search-options a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #569bca;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 640px) {
+  .jh-locations__search-options {
+    text-align: right;
+  }
+}
+
+/* Map Section */
+.jh-map-container {
+  background-color: #fff;
+}
+.jh-map {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-map__inner {
+  padding: 20px;
+}
+.jh-map-component {
+  width: 100%;
+  height: 400px;
+  background-color: #ccc;
+}
