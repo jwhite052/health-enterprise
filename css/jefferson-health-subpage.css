@@ -9,17 +9,17 @@
 }
 
 /* Locations Search */
-.jh-page-template-subpage .jh-locations__search {
+.jh-page-template-subpage .jh-locations-list__search {
   margin: 20px 0;
 }
-.jh-page-template-subpage .jh-locations__search input {
+.jh-page-template-subpage .jh-locations-list__search input {
   height: 40px;
   width: 400px;
   font-size: 18px;
   margin: 0 20px 0 0;
   padding: 0 0 0 10px;
 }
-.jh-page-template-subpage .jh-locations__search button {
+.jh-page-template-subpage .jh-locations-list__search button {
   height: 30px;
   padding: 0 20px;
   margin: 0;
@@ -28,13 +28,13 @@
   border-radius: 0;
   color: #fff;
 }
-.jh-page-template-subpage .jh-locations__search button:hover {
+.jh-page-template-subpage .jh-locations-list__search button:hover {
   background-color: #eee;
 }
-.jh-page-template-subpage .jh-locations__search button.asc {
+.jh-page-template-subpage .jh-locations-list__search button.asc {
   background-color: #569bca;
 }
-.jh-page-template-subpage .jh-locations__search button.is-active {
+.jh-page-template-subpage .jh-locations-list__search button.is-active {
   background-color: #569bca;
 }
 

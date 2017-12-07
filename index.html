@@ -13,6 +13,7 @@
     <link href="/css/global-ribbon.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-landing-page.css" rel="stylesheet" />
+    <link href="/css/locations-map-component.css" rel="stylesheet" />
   </head>
   <body class="jefferson-health jh-page-template-landing-page">
 
@@ -546,9 +547,15 @@ background-color: transparent !important;
       </div>
     </footer>
 
-    <script src="/js/locations-map.js"></script>
+    <script src="/js/locations-map-component.js"></script>
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <script>
+    // Google Maps API callback
+    function initMap() {
+      initLocationsMap();
+    }
+    </script>
     <script src="/js/jefferson-health-landing-page.js"></script>
   </body>
 </html>
