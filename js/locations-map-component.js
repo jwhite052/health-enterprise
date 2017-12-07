@@ -8,7 +8,7 @@ function initLocationsApp() {
 
   var map = initMap(document.getElementById('map'));
   var data = initData();
-  var markers = initMarkers(map, data.hospitals);
+  var markers = initMarkers(map, data);
   var infoWindow = new MapInfoWindow();
 
   // add info window element to view
@@ -21,10 +21,10 @@ function initLocationsApp() {
 
   initMarkerClickHandler(map, markers, infoWindow);
 
-  var locationsMenu = new LocationsAccordionMenu(data.hospitals);
+  // locations menu
+  var locationsMenu = new LocationsAccordionMenu(data);
   // attach listener to each menu tab, bind handler to locations menu object
   locationsMenu.ui.tab.hospitals.addEventListener('click', function(e) {
-    console.log(this);
     this.expandMenu(e);
   }.bind(locationsMenu));
 
@@ -86,37 +86,38 @@ function initLocationsApp() {
   * Initialize Markers
   */
   function initMarkers(map, data) {
-    var list = data;
-
     // array to store map markers
     var markers = [];
     var currentSelectedMarker;
 
-    for (var i = 0; i < list.length; i++) {
-      // determine marker icon
-      var markericon;
-      if (list[i].type === 'hospital') {
-        markericon = '/images/blue-marker-icon.png';
-      } else if (list[i].type === 'outpatient') {
-        markericon = '/images/purple-marker-icon.png';
-      } else if (list[i].type === 'urgent') {
-        markericon = '/images/orange-marker-icon.png';
-      } else {
-        markericon = '/images/blue-marker-icon.png';
+    for (var key in data) {
+      var list = data[key];
+      for (var i = 0; i < list.length; i++) {
+        // determine marker icon
+        var markericon;
+        if (list[i].type === 'hospital') {
+          markericon = '/images/blue-marker-icon.png';
+        } else if (list[i].type === 'outpatient') {
+          markericon = '/images/purple-marker-icon.png';
+        } else if (list[i].type === 'urgent') {
+          markericon = '/images/orange-marker-icon.png';
+        } else {
+          markericon = '/images/blue-marker-icon.png';
+        }
+
+        var marker = new google.maps.Marker({
+          position: {lat: list[i].position.lat, lng: list[i].position.lng},
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: markericon,
+          // custom properties
+          location: list[i]
+        });
+        // add marker reference to location list data
+        list[i].marker = marker;
+
+        markers.push(marker);
       }
-
-      var marker = new google.maps.Marker({
-        position: {lat: list[i].position.lat, lng: list[i].position.lng},
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: markericon,
-        // custom properties
-        location: list[i]
-      });
-      // add marker reference to location list data
-      list[i].marker = marker;
-
-      markers.push(marker);
     }
 
     return markers;
@@ -199,7 +200,6 @@ function initLocationsApp() {
     for (var i = 0; i < markers.length; i++) {
       markers[i].addListener('click', clickHandler);
     }
-
     function clickHandler() {
       // marker
       this.setAnimation(google.maps.Animation.BOUNCE);
@@ -237,7 +237,10 @@ function initLocationsApp() {
         'urgentcare': document.querySelectorAll('.urgentcare-menu .jh-locations-menu__list')[0]
       }
     };
-    var populateList = function(element, data) {
+    populateList(this.ui.menu['hospitals'], data.hospitals);
+    populateList(this.ui.menu['outpatient'], data.outpatient);
+    populateList(this.ui.menu['urgentcare'], data.urgentcare);
+    function populateList(element, data) {
       for (var i = 0; i < data.length; i++) {
         var li = document.createElement('LI');
         var link = document.createElement('A');
@@ -245,11 +248,12 @@ function initLocationsApp() {
         link.innerHTML = data[i].name;
         li.appendChild(link);
         element.appendChild(li);
+        li.addEventListener('click', clickHandler.bind(data[i]));
+        function clickHandler(e) {
+          e.preventDefault();
+          google.maps.event.trigger(this.marker, 'click');
+        }
       }
-    };
-    populateList(this.ui.menu['hospitals'], data);
-    this.test = function() {
-      console.log('test!');
     };
   }
   LocationsAccordionMenu.prototype.toggleMenu = function(element) {

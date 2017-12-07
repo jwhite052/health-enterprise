@@ -209,10 +209,82 @@
                     Select below to view Location Details
                   </div>
                 </div>
+                <div class="jh-locations-menu__scroll-up">
+                  SCROLL UP
+                </div>
+                <div class="jh-locations-menu__scroll-down">
+                  SCROLL DOWN
+                </div>
                 <div class="jh-locations-menu__list-wrapper">
                   <ul class="jh-locations-menu__list"></ul>
                 </div>
+
+                <style>
+                .jh-locations-menu__list-wrapper {
+                  position: relative;
+                }
+                /*.jh-locations-menu__list-wrapper::-webkit-scrollbar {
+                  width: 0px;
+                  background: transparent; /* make scrollbar transparent */
+                }*/
+                .jh-locations-menu__list-wrapper::-webkit-scrollbar-track
+                {
+                	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                	background-color: #F5F5F5;
+                }
+
+                .jh-locations-menu__list-wrapper::-webkit-scrollbar
+                {
+                	width: 6px;
+                	background-color: #F5F5F5;
+                }
+
+                .jh-locations-menu__list-wrapper::-webkit-scrollbar-thumb
+                {
+                	background-color: #000000;
+                }
+                .jh-locations-menu__scroll-up {
+                  background-color: #569bca;
+                  text-align: center;
+                }
+                .jh-locations-menu__scroll-down {
+                  background-color: #569bca;
+                  text-align: center;
+                }
+                </style>
               </div>
+              <script>
+              var scrollDownEl = document.getElementsByClassName('jh-locations-menu__scroll-down')[0];
+              scrollDownEl.addEventListener('mousedown', scrollDown);
+              scrollDownEl.addEventListener('mouseenter', scrollDown);
+              var scrollUpEl = document.getElementsByClassName('jh-locations-menu__scroll-up')[0];
+              scrollUpEl.addEventListener('mousedown', scrollUp);
+              scrollUpEl.addEventListener('mouseenter', scrollUp);
+              function scrollDown(e) {
+                var infoWindow = document.querySelectorAll('.hospitals-menu .jh-locations-menu__list-wrapper')[0];
+                var timer = setInterval(function() {
+                  infoWindow.scrollTop += 1;
+                }, 5);
+                e.target.addEventListener('mouseup', function() {
+                  clearInterval(timer);
+                });
+                e.target.addEventListener('mouseleave', function() {
+                  clearInterval(timer);
+                });
+              }
+              function scrollUp(e) {
+                var infoWindow = document.querySelectorAll('.hospitals-menu .jh-locations-menu__list-wrapper')[0];
+                var timer = setInterval(function() {
+                  infoWindow.scrollTop -= 1;
+                }, 5);
+                e.target.addEventListener('mouseup', function() {
+                  clearInterval(timer);
+                });
+                e.target.addEventListener('mouseleave', function() {
+                  clearInterval(timer);
+                });
+              }
+              </script>
             </div>
             <div class="jh-locations-menu__panel outpatient-menu">
               <div class="jh-locations-menu__tab is-collapsed">
