@@ -231,3 +231,161 @@
   height: 400px;
   background-color: #ccc;
 }
+/*
+* Locations Menu
+*/
+.jh-locations-menu {
+  margin-top: 30px;
+  height: 550px;
+  background-color: #f2f4f8;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu {
+    margin-top: 0;
+    height: 300px;
+  }
+}
+.jh-locations-menu__tab {
+  height: 50px;
+}
+.jh-locations-menu__tab > h3 {
+  position: relative;
+  line-height: 49px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  background-color: #152456;
+  color: #fff;
+  margin: 0;
+  padding: 0 0 0 50px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.jh-locations-menu__tab > h3::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border: 6px solid #569bca;
+  padding: 0;
+}
+.jh-locations-menu__tab > h3::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  transform: translateY(-50%) rotate(45deg);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: solid #569bca;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+}
+.jh-locations-menu__tab > h3:hover {
+  background-color: #000222;
+  color: #569bca;
+}
+.jh-locations-menu__tab.is-expanded > h3 {
+  line-height: 50px;
+  border: 0;
+}
+.jh-locations-menu__content.is-expanded {
+  /*display: block;*/
+  max-height: 450px;
+}
+.jh-locations-menu__content.is-collapsed {
+  max-height: 0px;
+  border-width: 0 1px;
+  /*display: none;*/
+}
+.jh-locations-menu__tab.is-expanded > h3::after {
+  opacity: 0.2;
+}
+.jh-locations-menu__panel.hospitals-menu .jh-locations-menu__tab > h3::before {
+  border-color: #4a7ab8;
+}
+.jh-locations-menu__panel.outpatient-menu .jh-locations-menu__tab > h3::before {
+  border-color: #ab2d8b;
+}
+.jh-locations-menu__panel.urgentcare-menu .jh-locations-menu__tab > h3::before {
+  border-color: #f8ad40;
+}
+.jh-locations-menu__content {
+  height: 450px;
+  padding: 0;
+  border: 1px solid #999;
+  overflow: hidden;
+  background-color: #fff;
+  transition: ease-out 0.4s;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__content {
+    height: 150px;
+  }
+}
+.jh-locations-menu__info {
+  position: relative;
+  height: 125px;
+  background-color: #f2f4f8;
+  padding: 15px;
+  font-size: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__info {
+    display: none;
+  }
+}
+.jh-locations-menu__list-heading {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+}
+.jh-locations-menu__list-wrapper {
+  overflow-y: scroll;
+  height: 325px;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__list-wrapper {
+    height: 150px;
+  }
+}
+.jh-locations-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.jh-locations-menu__list li {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #569bca;
+  margin: 0;
+  padding: 1em 0 1em 0;
+  border-bottom: 1px solid #f2f4f8;
+  overflow: hidden;
+}
+.jh-locations-menu__list li:last-of-type {
+  margin: 0;
+  border: 0;
+}
+.jh-locations-menu__list li a {
+  color: #569bca;
+  text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  .jh-locations-menu__list {
+    padding: 0 15px;
+  }
+}

@@ -378,6 +378,9 @@
     width: 100%;
   }
 }
+/*
+* Menu
+*/
 .jh-locations-menu {
   margin-top: 30px;
   height: 550px;
@@ -533,6 +536,9 @@
     padding: 0 15px;
   }
 }
+/*
+* Map Options
+*/
 .link-options {
   position: absolute;
   top: 0;
