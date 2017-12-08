@@ -32,7 +32,7 @@ function initLocationsMap() {
   }
 
   /*
-  * Return Locations Data
+  * Locations Data
   */
   function LocationsData() {
     this.data = (function() {
