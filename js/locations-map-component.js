@@ -223,11 +223,6 @@ function initLocationsMap() {
   };
 
   /*
-  * Marker Click Handler
-  */
-
-
-  /*
   * Locations List Menu
   */
   function LocationsAccordionMenu(data, element) {
@@ -309,11 +304,10 @@ function initLocationsMap() {
   };
 
 
-  /*
-  * Locations Map Filters
+  /**
+   * Locations Map Filters
   */
-
-  function MapMarkerFilters(map, markers) {
+  function MapMarkerFilters(/** @param {Object} */ map, /** @param {Object} */ markers) {
     var currentMarkers = markers;
 
     var mapFilterFieldsUI = {
