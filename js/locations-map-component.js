@@ -8,20 +8,20 @@ function initLocationsMap() {
   /*
   * Initialize Map
   */
-  function LocationMap(mapElement) {
+  function LocationsMap(mapElement) {
     this.element = mapElement;
     this.map = {};
 
     // initial map settings
-    var mapDefaults = {
+    this.defaultMapSettings = {
       center: { lat: 40.0556365, lng: -75.1 },
       zoom: 9
     };
 
     // initalize map
     this.map = new google.maps.Map(this.element, {
-      center: mapDefaults.center,
-      zoom: mapDefaults.zoom,
+      center: this.defaultMapSettings.center,
+      zoom: this.defaultMapSettings.zoom,
       minZoom: 9,
       maxZoom: 16,
       mapTypeControl: false,
@@ -34,8 +34,11 @@ function initLocationsMap() {
   /*
   * Locations Data
   */
-  function LocationsData() {
-    this.data = (function() {
+  function LocationsData(/** @param {String} */ locations) {
+    this.data = {};
+
+    var locationsStr = locations.toLowerCase();
+    var jsonObj = (function() {
       var json = null;
       $.ajax({
         'async': false,
@@ -48,6 +51,12 @@ function initLocationsMap() {
       });
       return json;
     })();
+    for (var key in jsonObj) {
+      console.log("locationsStr.indexOf(key): ", locationsStr.indexOf(key));
+      if (locationsStr.indexOf(key) !== -1) {
+        this.data[key] = jsonObj[key];
+      }
+    }
   }
 
   /*
@@ -63,15 +72,16 @@ function initLocationsMap() {
       var list = data[key];
       for (var i = 0; i < list.length; i++) {
         // determine marker icon
-        var markericon;
+        var markericons = ['/images/blue-marker-icon.png', '/images/purple-marker-icon.png', '/images/orange-marker-icon.png', '/images/darkblue-marker-icon.png'];
+        var markericon = '';
         if (list[i].type === 'hospital') {
-          markericon = '/images/blue-marker-icon.png';
+          markericon = markericons[0];
         } else if (list[i].type === 'outpatient') {
-          markericon = '/images/purple-marker-icon.png';
+          markericon = markericons[1];
         } else if (list[i].type === 'urgent') {
-          markericon = '/images/orange-marker-icon.png';
+          markericon = markericons[2];
         } else {
-          markericon = '/images/blue-marker-icon.png';
+          markericon = markericons[0];
         }
 
         var marker = new google.maps.Marker({
@@ -84,6 +94,13 @@ function initLocationsMap() {
         });
         // add marker reference to location list data
         list[i].marker = marker;
+
+        marker.addListener('mouseover', function() {
+          this.setIcon(markericons[3]);
+        });
+        marker.addListener('mouseout', function() {
+          this.setIcon(markericon);
+        });
 
         this.markers.push(marker);
       }
@@ -136,10 +153,10 @@ function initLocationsMap() {
       // }
 
       // map
-      this.map.setOptions({
-        center: { lat: this.getPosition().lat(), lng: this.getPosition().lng() },
-        zoom: currentZoom
-      });
+      // this.map.setOptions({
+      //   center: { lat: this.getPosition().lat(), lng: this.getPosition().lng() },
+      //   zoom: currentZoom
+      // });
 
       this.currentMarker = this;
     }
@@ -307,9 +324,9 @@ function initLocationsMap() {
   /**
    * Locations Map Filters
   */
-  function MapMarkerFilters(/** @param {Object} */ map, /** @param {Object} */ markers) {
+  function MapMarkerFilters(/** @param {LocationsMap} */ locationsMap, /** @param {Object} */ markers) {
     var currentMarkers = markers;
-
+    var map = locationsMap.map;
     var mapFilterFieldsUI = {
       'address': document.getElementsByClassName('jh-search-locations__address')[0],
       'distance': document.getElementsByClassName('jh-search-locations__distance')[0],
@@ -374,7 +391,7 @@ function initLocationsMap() {
         currentSearchCircle.setMap(null);
         currentSearchMarker.setMap(null);
       }
-      map.setOptions({center: mapDefaults.center, zoom: mapDefaults.zoom });
+      map.setOptions({center: locationsMap.defaultMapSettings.center, zoom: locationsMap.defaultMapSettings.zoom });
       clearMarkers();
       setMapOnAll(map);
 
@@ -468,8 +485,8 @@ function initLocationsMap() {
   var mapComponentElement = document.getElementsByClassName('jh-locations__map')[0];
 
   // UI components
-  var locationsMap = new LocationMap(document.getElementById('map'));
-  var locationsData = new LocationsData();
+  var locationsMap = new LocationsMap(document.getElementById('map'));
+  var locationsData = new LocationsData(mapComponentElement.getAttribute('data-source'));
   var mapInfoWindow = new MapInfoWindow(mapComponentElement);
   var mapMarkers = new MapMarkers(locationsMap.map, locationsData.data);
   mapMarkers.setClickHandler(mapInfoWindow);
@@ -483,6 +500,6 @@ function initLocationsMap() {
   var mapMarkerFilters = {};
   var mapMarkerFiltersElement = document.getElementsByClassName('jh-locations__search')[0];
   if (mapMarkerFiltersElement) {
-    mapMarkerFilters = new MapMarkerFilters(locationsMap.map, mapMarkers.markers);
+    mapMarkerFilters = new MapMarkerFilters(locationsMap, mapMarkers.markers);
   }
 } // end initLocationsApp
