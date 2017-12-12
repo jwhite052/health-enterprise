@@ -3,29 +3,37 @@
 */
 
 (function() {
-  var json = (function() {
+  var data = {};
+
+  var locationsStr = document.getElementById('locations-list').getAttribute('data-source').toLowerCase();
+  console.log("locationsStr", locationsStr);
+  var responseObj = (function() {
     var json = null;
     $.ajax({
       'async': false,
       'global': false,
       'url': "/locationsdata.json",
       'dataType': "json",
-      'success': function (data) {
-        json = data;
+      'success': function (res) {
+        json = res;
       }
     });
     return json;
   })();
 
-  var jsonObj = json;
+  for (var keyStr in responseObj) {
+    if (locationsStr.indexOf(keyStr) !== -1) {
+      data[keyStr] = responseObj[keyStr];
+    }
+  }
 
+  var jsonObj = data;
   var locationsListUI = $('.jh-locations-list');
 
   for (var key in jsonObj) {
     var obj = jsonObj[key];
-    console.log(obj);
+
     for (var i = 0; i < obj.length; i++) {
-      console.log(obj[i].phone);
       var category = obj[i].type;
       var categoryStr;
       if (category === 'hospital') {
@@ -44,7 +52,7 @@
       });
       bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '</p>'));
       if (phone) {
-        phone = phone.replace(/: /gi, ': <br>');
+        // phone = phone.replace(/: /gi, ': <br>');
         bodyEl.append($('<p class="jh-location-card__phone">' + phone + '</p>'));
       }
       if (hours) {
@@ -89,22 +97,22 @@
       'address',
       { attr: 'data-category', name: 'category' }
     ],
-    page: 8,
-    pagination: true
+    // page: 5,
+    // pagination: true
   });
 
-  $('#filter-all').on('click', function() {
-    locationsList.filter(); // clears filters
-  });
-  $('#filter-hospital').on('click', function() {
-    filterCategory('hospital');
-  });
-  $('#filter-urgentcare').on('click', function() {
-    filterCategory('urgent');
-  });
-  $('#filter-outpatient').on('click', function() {
-    filterCategory('outpatient');
-  });
+  // $('#filter-all').on('click', function() {
+  //   locationsList.filter(); // clears filters
+  // });
+  // $('#filter-hospital').on('click', function() {
+  //   filterCategory('hospital');
+  // });
+  // $('#filter-urgentcare').on('click', function() {
+  //   filterCategory('urgent');
+  // });
+  // $('#filter-outpatient').on('click', function() {
+  //   filterCategory('outpatient');
+  // });
 
   function filterCategory(category) {
     locationsList.filter(function(item) {

@@ -95,12 +95,12 @@ function initLocationsMap() {
         // add marker reference to location list data
         list[i].marker = marker;
 
-        marker.addListener('mouseover', function() {
-          this.setIcon(markericons[3]);
-        });
-        marker.addListener('mouseout', function() {
-          this.setIcon(markericon);
-        });
+        // marker.addListener('mouseover', function() {
+        //   this.setIcon(markericons[3]);
+        // }.bind(marker));
+        // marker.addListener('mouseout', function() {
+        //   this.setIcon(markericon);
+        // }.bind(marker));
 
         this.markers.push(marker);
       }
@@ -401,6 +401,18 @@ function initLocationsMap() {
       mapFilterFieldsUI.distance.selectedIndex = 0;
       document.getElementsByClassName('jh-search-locations__distance-wrapper')[0].style.display = "none";
     });
+
+    // sets the map on all markers in the array
+    function setMapOnAll(map) {
+      for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+      }
+    }
+
+    // removes the markers from the map
+    function clearMarkers() {
+      setMapOnAll(null);
+    }
 
     var autocomplete;
 
