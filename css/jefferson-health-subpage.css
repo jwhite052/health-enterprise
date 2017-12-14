@@ -6,10 +6,23 @@
   background-color: #f2f4f8;
   background-size: cover;
   background-position: center center;
-  height: 200px;
+  height: 250px;
 }
-.jh-page-template-subpage--urgent-care {
-  background-image: url('/images/pexels-photo-127873-1920x1440.jpeg');
+.jh-page-template-subpage--urgent-care .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-639811460.jpg');
+  background-position: bottom center;
+}
+.jh-page-template-subpage--rehab .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-539349092.jpg');
+  background-position: bottom center;
+}
+.jh-page-template-subpage--hospitals .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-842459670.jpg');
+  background-position: center center;
+}
+.jh-page-template-subpage--physician-search .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-649541722.jpg');
+  background-position: bottom -220px center;
 }
 .jh-page-template-subpage .jh-header-container::before {
   content: '';
@@ -21,16 +34,28 @@
   background-color: rgba(0,0,40,.5);
   z-index: 0;
 }
+/*.jh-page-template-subpage .jh-header-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  z-index: 1;
+}*/
 .jh-page-template-subpage .jh-header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 .jh-page-template-subpage .jh-header {
-  padding-top: 50px;
+  padding-top: 90px;
 }
 /* Banner */
 .jh-page-template-subpage .jh-banner {
-  z-index: 1;
 }
 .jh-page-template-subpage .jh-title h1 {
   font-size: 40px;
@@ -40,7 +65,7 @@
 }
 /* Main Intro */
 .jh-page-template-subpage .jh-main-intro h3 {
-  font-size: 26px;
+  font-size: 21px;
   color: #569bca;
 }
 /* Locations */
@@ -54,7 +79,7 @@
 
 /* Locations Search */
 .jh-page-template-subpage .jh-locations-list__search {
-  margin: 20px 0;
+  padding: 20px;
 }
 .jh-page-template-subpage .jh-locations-list__search::after {
   content: '';
@@ -64,7 +89,6 @@
 .jh-page-template-subpage .jh-locations-list__search input {
   height: 40px;
   width: 100%;
-  max-width: 400px;
   font-size: 18px;
   margin: 0 20px 0 0;
   padding: 0 0 0 10px;
@@ -100,7 +124,8 @@
   clear: both;
 }
 .jh-page-template-subpage .jh-locations-list__item {
-  margin: 10px 0px;
+  /*margin: 10px 0px;*/
+  border-bottom: 1px solid #ccc;
 }
 .jh-page-template-subpage .jh-locations__pagination {
   text-align: center;
@@ -115,7 +140,7 @@
   background-color: #fff;
 }
 .jh-page-template-subpage .jh-location-card:hover {
-  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  /*box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
 }
 .jh-page-template-subpage .jh-location-card__inner {
   padding: 20px;
@@ -256,11 +281,11 @@
   width: 100%;
   background-color: gray;
 }
-.jh-locations__map {
+.jh-page-template-subpage  .jh-locations__map {
   position: relative;
   width: 100%;
-  height: 400px;
-  border: 1px solid #f2f4f8;
+  height: 600px;
+  /*border: 1px solid #f2f4f8;*/
   overflow: hidden;
   z-index: 0;
 }
@@ -478,12 +503,32 @@
 }
 .jh-callout-box__title {
   font-size: 21px;
-  font-style: italic;
   text-align: center;
   margin: 0 0 20px 0;
   color: #569bca;
 }
-
+.jh-page-template-subpage--rehab .jh-callout-box__list li {
+  font-size: 16px;
+}
+.jh-callout-box__list {
+  list-style-type: none;
+}
+.jh-callout-box__list li {
+  position: relative;
+  margin: .8em 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+.jh-callout-box__list li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 6px;
+  width: 6px;
+  background-color: #569bca;
+  top: 10px;
+  left: -20px;
+}
 .jh-main__inner::after {
   content: '';
   display: table;
@@ -491,9 +536,15 @@
 }
 .jh-main-container--locations {
   background-color: #f2f4f8 !important;
+  padding: 30px 0;
+  margin: 40px 0 0 0;
 }
 .jh-locations-list-window {
   overflow-y: scroll;
   width: 100%;
-  height: 400px;
+  height: 450px;
+  background-color: #fff;
+}
+.jh-locations-list__options {
+  padding: 10px 0;
 }

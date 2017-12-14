@@ -14,7 +14,7 @@
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/css/locations-map-component.css" rel="stylesheet" />
   </head>
-  <body class="jefferson-health jh-page-template-subpage">
+  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--hospitals">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -166,7 +166,7 @@
       <div class="jh-main">
         <div class="jh-main__inner">
 
-          <section class="jh-main-content col-width-70">
+          <section class="jh-main-content col-width-70 gutter-right">
             <div class="jh-main-content">
               <div class="jh-main-content__inner">
 
@@ -174,9 +174,8 @@
                 <section class="jh-main-intro">
                   <div class="jh-main-intro">
                     <div class="jh-main-intro">
-
                       <h3>
-                        In a world where health care is ever-changing, one constant you can depend on is exceptional care delivered by the nation’s best.
+                        Services close to home. Access to a broad physician network. And caregivers who care – about you.
                       </h3>
                       <p>
                         Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
@@ -185,24 +184,25 @@
                   </div>
                 </section>
 
-                <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Locations</h2>
-
-                <!-- Map -->
-                <div class="jh-map-container">
-                  <div class="jh-map">
-                    <div class="jh-map__inner">
-
-                      <!-- Parsys goes here -->
-                      <div class="jh-locations__map" data-source="hospitals">
-                        <div id="map"></div>
-                      </div>
-
+                <div class="jh-main-callout-box">
+                  <div class="jh-main-callout-box__inner">
+                    <div class="jh-main-callout-box__title">
+                      Know Before You Go
+                    </div>
+                    <div class="jh-main-callout-box__content" style="font-size: 18px; color: #000; line-height: 1.6em;">
+                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
                     </div>
                   </div>
                 </div>
 
+                <!-- <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
+
+ -->
+
+
+
                 <!-- Locations List -->
-                <div id="locations-list" class="jh-locations" data-source="hospitals">
+                <!-- <div id="locations-list" class="jh-locations" data-source="urgentcare">
                   <div class="jh-locations__inner">
 
                     <div class="jh-locations-list__search">
@@ -218,7 +218,7 @@
                       <ul class="pagination"></ul>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>
@@ -228,6 +228,59 @@
             <div class="jh-main-sidebar">
               <div class="jh-main-sidebar__inner">
 
+                <!-- <div class="jh-callout-box" style="background-color: #f2f4f8;">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title" style="font-style: normal; font-size: 26px; color: #152456; text-transform: uppercase;">
+                      Services
+                    </div>
+                    <div class="jh-callout-box__content">
+                      <ul class="jh-callout-box__list">
+                        <li>General illness</li>
+                        <li>Seasonal allergies</li>
+                        <li>Migraines</li>
+                        <li>Skin rashes</li>
+                        <li>Abscesses</li>
+                        <li>Sprains and fractures</li>
+                        <li>Physicals</li>
+                        <li>Vaccinations (where available)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+
+                <a href="https://appointments.jefferson.edu/" style="padding: 10px 15px; background-color: #013fa3; color: #fff; font-size: 16px; display: block; margin-bottom: 30px; text-align: center; letter-spacing: .1em; text-decoration: none; text-transform: uppercase;" target="_blank">Request an Appointment ></a>
+
+                <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8;">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title" style="text-align: left;">
+                      Need help?
+                    </div>
+                    <div class="jh-callout-box__content">
+                      <p>
+                        Our friendly, experienced JEFF NOW® representatives are here to help you find the right doctor or location and schedule appointments.
+                      </p>
+                      <p>
+                        To speak with a JEFF NOW® representative, please choose one of the following options:
+                      </p>
+                      <p style="font-size: 24px; font-weight: 300; text-align: center; margin: 10px 0 10px 0;">
+                        Call 1-800-533-3669
+                      </p>
+                      <p style="text-align: center; margin: 0;">
+                        OR
+                      </p>
+                      <p>
+                        <a href="https://appointments.jefferson.edu/call/" target="_blank" style="display: block; padding: 5px 10px; background-color: #fff; color: #013fa3; text-decoration: none; text-align: center; border: 2px solid #013fa3;">Click to Talk to a JEFF NOW® representative</a>
+                      </p>
+                      <p style="text-align: center;">
+                        Available From 8 a.m. to 6 p.m., Monday through Friday
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+
+
+
               </div>
             </div>
           </section>
@@ -236,10 +289,82 @@
       </div>
     </section>
 
+    <section class="jh-main-container jh-main-container--locations">
+      <div class="jh-main">
+        <div class="jh-main__inner">
 
+          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
+
+          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
+            Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
+          </p>
+          <div class="col-width-50">
+
+
+
+            <!-- Map -->
+            <div class="jh-map-container">
+              <div class="jh-map">
+                <div class="jh-map__inner">
+
+                  <!-- Parsys goes here -->
+                  <div class="jh-locations__map" data-source="hospitals">
+                    <div id="map"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="col-width-50" style="background-color: #152456; height: 600px;">
+
+            <!-- Locations List -->
+            <div id="locations-list" class="jh-locations" data-source="urgentcare">
+              <div class="jh-locations__inner">
+
+                <div class="jh-locations-list__search">
+                  <input type="text" class="search" placeholder="Filter by location name or address" />
+                  <div class="jh-locations-list__options">
+                    <button class="sort" data-sort="name" style="float: right;">
+                      A to Z
+                    </button>
+                  </div>
+                </div>
+
+                <div class="jh-locations-list-window">
+
+
+                <ul class="list jh-locations-list"></ul>
+                                </div>
+
+                <div class="jh-locations__pagination">
+                  <ul class="pagination"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="jh-callout-box" style="background-color: #fff;">
+              <div class="jh-callout-box__inner">
+                <div class="jh-callout-box__title">
+                  No Appointment Necessary
+                </div>
+                <div class="jh-callout-box__content">
+                  We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <style>
-    [class^='col-width-'] {
+    [class*='col-width-'] {
       box-sizing: border-box;
       float: left;
     }
@@ -250,6 +375,7 @@
     .col-width-60 { width: 60%; }
     .col-width-70 { width: 70%; }
     .col-width-80 { width: 80%; }
+    .gutter-right { padding-right: 80px; }
     </style>
 
     <section class="jh-main-container">

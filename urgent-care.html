@@ -14,7 +14,7 @@
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/css/locations-map-component.css" rel="stylesheet" />
   </head>
-  <body class="jefferson-health jh-page-template-subpage">
+  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--urgent-care">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -117,7 +117,7 @@
     	});
   	</script>
 
-    <header class="jh-header-container jh-page-template-subpage--urgent-care">
+    <header class="jh-header-container">
       <div class="jh-header">
           <div class="jh-header__inner">
 
@@ -181,7 +181,7 @@
                         You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
                       </p>
                       <p>
-                        We treat patients of all ages, from infants to seniors. No appointment necessary, walk-ins are welcome. On average, patients are treated and discharged within an hour.
+                        We're proud to say that the Jefferson at Washington Square urgent care and Smylie Times has been awarded the Certified Urgent Care Category 1 designation by the Urgent Care Association of America and are one of the select few facilities around the county that have met all of the UCAO's nationally-standardized criteria.
                       </p>
                     </div>
                   </div>
@@ -192,15 +192,15 @@
                     <div class="jh-main-callout-box__title">
                       Know Before You Go
                     </div>
-                    <div class="jh-main-callout-box__content">
+                    <div class="jh-main-callout-box__content" style="font-size: 18px; color: #152456; line-height: 1.6em;">
                       Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
                     </div>
                   </div>
                 </div>
 
-                <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
+                <!-- <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
 
-
+ -->
 
 
 
@@ -231,20 +231,29 @@
             <div class="jh-main-sidebar">
               <div class="jh-main-sidebar__inner">
 
-                <div class="jh-callout-box">
+                <div class="jh-callout-box" style="background-color: #f2f4f8;">
                   <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title">
-                      Know Before You Go
+                    <div class="jh-callout-box__title" style="font-style: normal; font-size: 26px; color: #152456; text-transform: uppercase;">
+                      Services
                     </div>
                     <div class="jh-callout-box__content">
-                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
+                      <ul class="jh-callout-box__list">
+                        <li>General illness</li>
+                        <li>Seasonal allergies</li>
+                        <li>Migraines</li>
+                        <li>Skin rashes</li>
+                        <li>Abscesses</li>
+                        <li>Sprains and fractures</li>
+                        <li>Physicals</li>
+                        <li>Vaccinations (where available)</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
 
-                <div class="jh-callout-box">
+                <div class="jh-callout-box" style="background-color: #d3d7e7;">
                   <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title">
+                    <div class="jh-callout-box__title" style="color: #152456;">
                       No Appointment Necessary
                     </div>
                     <div class="jh-callout-box__content">
@@ -265,15 +274,15 @@
       <div class="jh-main">
         <div class="jh-main__inner">
 
-          <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Locations</h2>
+          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
+
+          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
+            Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
+          </p>
+          <div class="col-width-50">
 
 
-          <div class="col-width-60 gutter-right">
 
-
-            <p>
-              Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
-            </p>
             <!-- Map -->
             <div class="jh-map-container">
               <div class="jh-map">
@@ -291,7 +300,7 @@
 
 
           </div>
-          <div class="col-width-40">
+          <div class="col-width-50" style="background-color: #152456; height: 600px;">
 
             <!-- Locations List -->
             <div id="locations-list" class="jh-locations" data-source="urgentcare">
@@ -299,9 +308,11 @@
 
                 <div class="jh-locations-list__search">
                   <input type="text" class="search" placeholder="Filter by location name or address" />
-                  <button class="sort" data-sort="name" style="float: right;">
-                    Sort by name
-                  </button>
+                  <div class="jh-locations-list__options">
+                    <button class="sort" data-sort="name" style="float: right;">
+                      A to Z
+                    </button>
+                  </div>
                 </div>
 
                 <div class="jh-locations-list-window">
@@ -345,7 +356,7 @@
     .col-width-60 { width: 60%; }
     .col-width-70 { width: 70%; }
     .col-width-80 { width: 80%; }
-    .gutter-right { padding-right: 50px; }
+    .gutter-right { padding-right: 80px; }
     </style>
 
     <section class="jh-main-container">

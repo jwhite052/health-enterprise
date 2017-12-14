@@ -14,7 +14,7 @@
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/css/locations-map-component.css" rel="stylesheet" />
   </head>
-  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--rehab">
+  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--physician-search">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -125,7 +125,7 @@
               <div class="jh-banner__inner">
 
                 <div class="jh-title">
-                  <h1>Rehab Services</h1>
+                  <h1>Physician Search</h1>
                 </div>
 
               </div>
@@ -141,7 +141,7 @@
 
           <div class="jh-breadcrumbs">
             <div class="jh-breadcrumbs__inner">
-              <a href="/">Jefferson Health</a> > Rehab Services
+              <a href="/">Jefferson Health</a> > Physician Search
             </div>
           </div>
 
@@ -161,6 +161,12 @@
   padding: 20px;
 }
 
+.jh-google-search input {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+}
 </style>
     <section class="jh-main-container">
       <div class="jh-main">
@@ -170,58 +176,9 @@
             <div class="jh-main-content">
               <div class="jh-main-content__inner">
 
-                <!-- Intro Copy -->
-                <section class="jh-main-intro">
-                  <div class="jh-main-intro">
-                    <div class="jh-main-intro">
-                      <h3>
-                        Our goals are to minimize your pain, promote wellness and help you regain function, so you can get back to your everyday life.
-                      </h3>
-                      <p>
-                        We are dedicated to improving the quality of life by providing a comprehensive, team-based approach to physical therapy, occupational therapy and speech language pathology  for adults and children  at many locations including JeffFit-Jefferson, Abington Jefferson Health and Aria Jefferson Health.
-                      </p>
-                      <p>
-                        Our staff includes therapists with specific expertise in various clinical specialties. The core values of our organization and clinical expertise demonstrate the staff’s firm commitment to providing the highest quality of care for every patient, every day.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-
-                <!-- <div class="jh-main-callout-box">
-                  <div class="jh-main-callout-box__inner">
-                    <div class="jh-main-callout-box__title">
-                      Know Before You Go
-                    </div>
-                    <div class="jh-main-callout-box__content" style="font-size: 18px; color: #152456; line-height: 1.6em;">
-                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
-                    </div>
-                  </div>
-                </div> -->
-
-                <!-- <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
-
- -->
-
-
-
-                <!-- Locations List -->
-                <!-- <div id="locations-list" class="jh-locations" data-source="urgentcare">
-                  <div class="jh-locations__inner">
-
-                    <div class="jh-locations-list__search">
-                      <input type="text" class="search" placeholder="Filter by location name or address" />
-                      <button class="sort" data-sort="name" style="float: right;">
-                        Sort by name
-                      </button>
-                    </div>
-
-                    <ul class="list jh-locations-list"></ul>
-
-                    <div class="jh-locations__pagination">
-                      <ul class="pagination"></ul>
-                    </div>
-                  </div>
-                </div> -->
+                <div class="jh-google-search">
+                  <input type="text" />
+                </div>
 
               </div>
             </div>
@@ -231,125 +188,20 @@
             <div class="jh-main-sidebar">
               <div class="jh-main-sidebar__inner">
 
-                <div class="jh-callout-box" style="background-color: #f2f4f8;">
-                  <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title" style="font-style: normal; font-size: 24px; color: #152456;">
-                      Conditions We Treat with Rehabilitation Therapy
-                    </div>
-                    <div class="jh-callout-box__content">
-                      <ul class="jh-callout-box__list">
-                        <li>Back and neck pain</li>
-                        <li>Orthopedic conditions</li>
-                        <li>Sports injuries</li>
-                        <li>Hand and upper extremity conditions</li>
-                        <li>Postoperative conditions</li>
-                        <li>Pain management</li>
-                        <li>Joint Replacement</li>
-                        <li>Neurologic disorders</li>
-                        <li>Work-related injuries</li>
-                        <li>Movement disorders</li>
-                        <li>Autism</li>
-                        <li>Developmental Delay</li>
-                        <li>Arthritis and rheumatic disease</li>
-                        <li>Memory and Cognitive impairments</li>
-                        <li>Speech and swallowing disorders</li>
-                        <li>Balance/vestibular disorders</li>
-                        <li>Concussions</li>
-                        <li>Amputations</li>
-                        <li>Stroke</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-<!--
                 <div class="jh-callout-box" style="background-color: #d3d7e7;">
                   <div class="jh-callout-box__inner">
                     <div class="jh-callout-box__title" style="color: #152456;">
-                      No Appointment Necessary
+                      Network Of Physicians
                     </div>
                     <div class="jh-callout-box__content">
-                      We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
+                      Looking for a doctor? Our online physician directory provides easy access to more than 1,100 doctors and health professionals with offices throughout Philadelphia, Pennsylvania, South Jersey and the Delaware Valley.
                     </div>
                   </div>
-                </div> -->
+                </div>
 
               </div>
             </div>
           </section>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="jh-main-container jh-main-container--locations">
-      <div class="jh-main">
-        <div class="jh-main__inner">
-
-          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
-
-          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
-            Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
-          </p>
-          <div class="col-width-50">
-
-
-
-            <!-- Map -->
-            <div class="jh-map-container">
-              <div class="jh-map">
-                <div class="jh-map__inner">
-
-                  <!-- Parsys goes here -->
-                  <div class="jh-locations__map" data-source="urgentcare">
-                    <div id="map"></div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-          <div class="col-width-50" style="background-color: #152456; height: 600px;">
-
-            <!-- Locations List -->
-            <div id="locations-list" class="jh-locations" data-source="urgentcare">
-              <div class="jh-locations__inner">
-
-                <div class="jh-locations-list__search">
-                  <input type="text" class="search" placeholder="Filter by location name or address" />
-                  <div class="jh-locations-list__options">
-                    <button class="sort" data-sort="name" style="float: right;">
-                      A to Z
-                    </button>
-                  </div>
-                </div>
-
-                <div class="jh-locations-list-window">
-
-
-                <ul class="list jh-locations-list"></ul>
-                                </div>
-
-                <div class="jh-locations__pagination">
-                  <ul class="pagination"></ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="jh-callout-box" style="background-color: #fff;">
-              <div class="jh-callout-box__inner">
-                <div class="jh-callout-box__title">
-                  No Appointment Necessary
-                </div>
-                <div class="jh-callout-box__content">
-                  We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
-                </div>
-              </div>
-            </div> -->
-
-          </div>
 
         </div>
       </div>
@@ -387,16 +239,16 @@
       </div>
     </footer>
 
-    <script src="/js/list.min.js"></script>
+    <!-- <script src="/js/list.min.js"></script>
     <script src="/js/locations-list-filter-component.js"></script>
-    <script src="/js/locations-map-component.js"></script>
+    <script src="/js/locations-map-component.js"></script> -->
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <script>
     // Google Maps API callback
     function initMap() {
       initLocationsMap();
     }
-    </script>
+    </script> -->
   </body>
 </html>
