@@ -117,7 +117,7 @@
     	});
   	</script>
 
-    <header class="jh-header-container">
+    <header class="jh-header-container jh-page-template-subpage--urgent-care">
       <div class="jh-header">
           <div class="jh-header__inner">
 
@@ -166,7 +166,7 @@
       <div class="jh-main">
         <div class="jh-main__inner">
 
-          <section class="jh-main-content col-width-70">
+          <section class="jh-main-content col-width-70 gutter-right">
             <div class="jh-main-content">
               <div class="jh-main-content__inner">
 
@@ -174,9 +174,8 @@
                 <section class="jh-main-intro">
                   <div class="jh-main-intro">
                     <div class="jh-main-intro">
-
                       <h3>
-                        When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option
+                        When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
                       </h3>
                       <p>
                         You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
@@ -188,28 +187,25 @@
                   </div>
                 </section>
 
-                <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
-
-                <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Locations</h2>
-                <p>
-                  Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
-                </p>
-                <!-- Map -->
-                <div class="jh-map-container">
-                  <div class="jh-map">
-                    <div class="jh-map__inner">
-
-                      <!-- Parsys goes here -->
-                      <div class="jh-locations__map" data-source="urgentcare">
-                        <div id="map"></div>
-                      </div>
-
+                <div class="jh-main-callout-box">
+                  <div class="jh-main-callout-box__inner">
+                    <div class="jh-main-callout-box__title">
+                      Know Before You Go
+                    </div>
+                    <div class="jh-main-callout-box__content">
+                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
                     </div>
                   </div>
                 </div>
 
+                <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
+
+
+
+
+
                 <!-- Locations List -->
-                <div id="locations-list" class="jh-locations" data-source="urgentcare">
+                <!-- <div id="locations-list" class="jh-locations" data-source="urgentcare">
                   <div class="jh-locations__inner">
 
                     <div class="jh-locations-list__search">
@@ -225,7 +221,7 @@
                       <ul class="pagination"></ul>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>
@@ -235,6 +231,28 @@
             <div class="jh-main-sidebar">
               <div class="jh-main-sidebar__inner">
 
+                <div class="jh-callout-box">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title">
+                      Know Before You Go
+                    </div>
+                    <div class="jh-callout-box__content">
+                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="jh-callout-box">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title">
+                      No Appointment Necessary
+                    </div>
+                    <div class="jh-callout-box__content">
+                      We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </section>
@@ -243,10 +261,80 @@
       </div>
     </section>
 
+    <section class="jh-main-container jh-main-container--locations">
+      <div class="jh-main">
+        <div class="jh-main__inner">
 
+          <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Locations</h2>
+
+
+          <div class="col-width-60 gutter-right">
+
+
+            <p>
+              Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
+            </p>
+            <!-- Map -->
+            <div class="jh-map-container">
+              <div class="jh-map">
+                <div class="jh-map__inner">
+
+                  <!-- Parsys goes here -->
+                  <div class="jh-locations__map" data-source="urgentcare">
+                    <div id="map"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="col-width-40">
+
+            <!-- Locations List -->
+            <div id="locations-list" class="jh-locations" data-source="urgentcare">
+              <div class="jh-locations__inner">
+
+                <div class="jh-locations-list__search">
+                  <input type="text" class="search" placeholder="Filter by location name or address" />
+                  <button class="sort" data-sort="name" style="float: right;">
+                    Sort by name
+                  </button>
+                </div>
+
+                <div class="jh-locations-list-window">
+
+
+                <ul class="list jh-locations-list"></ul>
+                                </div>
+
+                <div class="jh-locations__pagination">
+                  <ul class="pagination"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="jh-callout-box" style="background-color: #fff;">
+              <div class="jh-callout-box__inner">
+                <div class="jh-callout-box__title">
+                  No Appointment Necessary
+                </div>
+                <div class="jh-callout-box__content">
+                  We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <style>
-    [class^='col-width-'] {
+    [class*='col-width-'] {
       box-sizing: border-box;
       float: left;
     }
@@ -257,6 +345,7 @@
     .col-width-60 { width: 60%; }
     .col-width-70 { width: 70%; }
     .col-width-80 { width: 80%; }
+    .gutter-right { padding-right: 50px; }
     </style>
 
     <section class="jh-main-container">
