@@ -329,6 +329,11 @@ background-color: transparent !important;
                 </div>
               </div>
             </div>
+            <!-- <div class="jh-stats-box__overlay">
+              <a class="jh-stats-box__overlay-link" href="#">
+                View more
+              </a>
+            </div> -->
           </div>
           <div class="jh-stats-box-container">
             <div class="jh-stats-box">
@@ -410,126 +415,190 @@ background-color: transparent !important;
       </div>
     </section>
 
+<style>
+.ez-columns {
+  clear: both;
+}
+.ez-columns::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.ez-columns [class^='ez-col-'],
+.ez-columns [class*=' ez-col-'] {
+  float: left;
+}
+/* Responsive */
+.ez-columns .ez-col-res-0 { width: 0; }
+.ez-columns .ez-col-res-10 { width: 10%; }
+.ez-columns .ez-col-res-20 { width: 20%; }
+.ez-columns .ez-col-res-30 { width: 30%; }
+.ez-columns .ez-col-res-40 { width: 40%; }
+.ez-columns .ez-col-res-50 { width: 50%; }
+.ez-columns .ez-col-res-60 { width: 60%; }
+.ez-columns .ez-col-res-70 { width: 70%; }
+.ez-columns .ez-col-res-80 { width: 80%; }
+.ez-columns .ez-col-res-90 { width: 90%; }
+.ez-columns .ez-col-res-100 { width: 100%; }
+/* Fill */
+.ez-columns .ez-col-fill-200 { width: calc(100% - 200px); }
+.ez-columns .ez-col-fill-250 { width: calc(100% - 250px); }
+.ez-columns .ez-col-fill-300 { width: calc(100% - 300px); }
+.ez-columns .ez-col-fill-350 { width: calc(100% - 350px); }
+.ez-columns .ez-col-fill-400 { width: calc(100% - 400px); }
+/* Set */
+.ez-columns .ez-col-set-200 { width: calc(200px); }
+.ez-columns .ez-col-set-250 { width: calc(250px); }
+.ez-columns .ez-col-set-300 { width: calc(300px); }
+.ez-columns .ez-col-set-350 { width: calc(350px); }
+.ez-columns .ez-col-set-400 { width: calc(400px); }
+</style>
+
     <!-- Locations Section -->
     <section class="jh-locations-section">
       <div class="jh-locations__main">
-        <div class="jh-locations__title">
-          <h2>Our Care Network</h2>
-        </div>
-        <div class="jh-locations__intro">
-          <p>Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the directory and map to find the best location for you including detailed driving directions and further information about services available at each of our offices.</p>
-        </div>
-        <!-- Locations Filter Options -->
-        <div class="jh-locations__search">
-          <div class="jh-search-locations">
-            <div class="jh-search-locations__input-wrapper">
-              <label for="autocomplete">Location</label>
-              <input id="autocomplete" class="jh-search-locations__address" type="text" placeholder="Enter location name or address" />
+
+        <div class="ez-columns">
+          <div class="ez-col-set-200">
+            <div class="jh-locations__title">
+              <h2>Our Care Network</h2>
             </div>
-            <div class="jh-search-locations__distance-wrapper" style="display: none;">
-              <label for="jh-searchLocationsDistance">Within</label>
-              <div class="dropdown-arrow-wrapper">
-                <select id="jh-searchLocationsDistance" class="jh-search-locations__distance">
-                  <option value="default">--</option>
-                  <option value="1">1mi</option>
-                  <option value="5">5mi</option>
-                  <option value="10">10mi</option>
-                  <option value="25">25mi</option>
-                </select>
-              </div>
-            </div>
-            <div class="jh-search-locations__select-wrapper">
-              <label for="jh-searchLocationsRegion">Region</label>
-              <div class="dropdown-arrow-wrapper">
-                <select id="jh-searchLocationsRegion" class="jh-search-locations__region">
-                  <option value="default">All</option>
-                  <option value="philadelphia">Philadelphia</option>
-                  <option value="montgomery">Montgomery County</option>
-                  <option value="bucks">Bucks County</option>
-                  <option value="new jersey">New Jersey</option>
-                </select>
-              </div>
-            </div>
-            <div class="jh-search-locations__select-wrapper">
-              <label for="jh-searchLocationsType">Type</label>
-              <div class="dropdown-arrow-wrapper">
-                <select id="jh-searchLocationsType" class="jh-search-locations__type">
-                  <option value="default">All</option>
-                  <option value="hospital">Hospitals</option>
-                  <option value="outpatient">Outpatient</option>
-                  <option value="urgent">Urgent Care</option>
-                </select>
-              </div>
+          </div>
+          <div class="ez-col-fill-200">
+            <div class="jh-locations__intro">
+              <p>Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the directory and map to find the best location for you including detailed driving directions and further information about services available at each of our offices.</p>
             </div>
           </div>
         </div>
-        <div class="jh-locations__search-options">
-          <a class="jh-locations__search-reset" href="#">Reset Map</a>
-        </div>
-        <div class="jh-locations__map" data-source="hospitals, outpatient, urgentcare">
-          <div id="map"></div>
-          <div class="jh-locations-info-window__wrapper locations-info-window__wrapper--default is-hidden">
-            <div class="jh-locations-info-window__title-bar">
-              <div class="jh-locations-info-window__title-bar-name"></div>
-              <div class="jh-locations-info-window__close"></div>
-            </div>
-            <div class="jh-locations-info-window"></div>
-            <div class="jh-locations-info-window__bottom"></div>
-          </div>
-        </div>
-      </div>
-      <div class="jh-locations__sidebar">
-        <div class="jh-locations-menu">
-          <div class="jh-locations-menu__panel hospitals-menu is-expanded" aria-expanded="false">
-            <div class="jh-locations-menu__tab is-expanded">
-              <h3>Hospitals</h3>
-            </div>
-            <div class="jh-locations-menu__content is-expanded" aria-hidden="false">
-              <div class="jh-locations-menu__info">
-                When hospitalization is needed, Jefferson Health provides the best inpatient care.
-                <div class="jh-locations-menu__list-heading">
-                  Select below to view Location Details
+
+        <div class="ez-columns">
+          <div class="ez-col-res-100">
+
+            <!-- Locations Filter Options -->
+            <div class="jh-locations__search">
+              <div class="jh-search-locations">
+                <div class="jh-search-locations__input-wrapper">
+                  <label for="autocomplete">Location</label>
+                  <input id="autocomplete" class="jh-search-locations__address" type="text" placeholder="Enter location name or address" />
+                </div>
+                <div class="jh-search-locations__distance-wrapper" style="display: none;">
+                  <label for="jh-searchLocationsDistance">Within</label>
+                  <div class="dropdown-arrow-wrapper">
+                    <select id="jh-searchLocationsDistance" class="jh-search-locations__distance">
+                      <option value="default">--</option>
+                      <option value="1">1mi</option>
+                      <option value="5">5mi</option>
+                      <option value="10">10mi</option>
+                      <option value="25">25mi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="jh-search-locations__select-wrapper">
+                  <label for="jh-searchLocationsRegion">Region</label>
+                  <div class="dropdown-arrow-wrapper">
+                    <select id="jh-searchLocationsRegion" class="jh-search-locations__region">
+                      <option value="default">All</option>
+                      <option value="philadelphia">Philadelphia</option>
+                      <option value="montgomery">Montgomery County</option>
+                      <option value="bucks">Bucks County</option>
+                      <option value="new jersey">New Jersey</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="jh-search-locations__select-wrapper">
+                  <label for="jh-searchLocationsType">Type</label>
+                  <div class="dropdown-arrow-wrapper">
+                    <select id="jh-searchLocationsType" class="jh-search-locations__type">
+                      <option value="default">All</option>
+                      <option value="hospital">Hospitals</option>
+                      <option value="outpatient">Outpatient</option>
+                      <option value="urgent">Urgent Care</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-              <div class="jh-locations-menu__list-wrapper">
-                <ul class="jh-locations-menu__list"></ul>
-              </div>
             </div>
-          </div>
-          <div class="jh-locations-menu__panel outpatient-menu">
-            <div class="jh-locations-menu__tab is-collapsed">
-              <h3>Outpatient</h3>
-            </div>
-            <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
-              <div class="jh-locations-menu__info">
-                When hospitalization is needed, Jefferson Health provides the best inpatient care.
-                <div class="jh-locations-menu__list-heading">
-                  Select below to view Location Details
-                </div>
-              </div>
-              <div class="jh-locations-menu__list-wrapper">
-                <ul class="jh-locations-menu__list"></ul>
-              </div>
-            </div>
-          </div>
-          <div class="jh-locations-menu__panel urgentcare-menu">
-            <div class="jh-locations-menu__tab is-collapsed">
-              <h3>Urgent Care</h3>
-            </div>
-            <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
-              <div class="jh-locations-menu__info">
-                When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
-                <div class="jh-locations-menu__list-heading">
-                  Select below to view Location Details
-                </div>
-              </div>
-              <div class="jh-locations-menu__list-wrapper">
-                <ul class="jh-locations-menu__list"></ul>
-              </div>
-            </div>
+
           </div>
         </div>
-      </div>
+
+        <div class="ez-columns">
+          <div class="ez-col-fill-350">
+
+            <!-- Search Options -->
+            <div class="jh-locations__search-options">
+              <a class="jh-locations__search-reset" href="#">Reset Map</a>
+            </div>
+            <!-- Map -->
+            <div class="jh-locations__map" data-source="hospitals, outpatient, urgentcare">
+              <div id="map"></div>
+              <div class="jh-locations-info-window__wrapper locations-info-window__wrapper--default is-hidden">
+                <div class="jh-locations-info-window__title-bar">
+                  <div class="jh-locations-info-window__title-bar-name"></div>
+                  <div class="jh-locations-info-window__close"></div>
+                </div>
+                <div class="jh-locations-info-window"></div>
+                <div class="jh-locations-info-window__bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ez-col-set-350">
+
+            <div class="jh-locations-menu">
+              <div class="jh-locations-menu__panel hospitals-menu is-expanded" aria-expanded="false">
+                <div class="jh-locations-menu__tab is-expanded">
+                  <h3>Hospitals</h3>
+                </div>
+                <div class="jh-locations-menu__content is-expanded" aria-hidden="false">
+                  <div class="jh-locations-menu__info">
+                    When hospitalization is needed, Jefferson Health provides the best inpatient care.
+                    <div class="jh-locations-menu__list-heading">
+                      Select below to view Location Details
+                    </div>
+                  </div>
+                  <div class="jh-locations-menu__list-wrapper">
+                    <ul class="jh-locations-menu__list"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="jh-locations-menu__panel outpatient-menu">
+                <div class="jh-locations-menu__tab is-collapsed">
+                  <h3>Outpatient</h3>
+                </div>
+                <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
+                  <div class="jh-locations-menu__info">
+                    When hospitalization is needed, Jefferson Health provides the best inpatient care.
+                    <div class="jh-locations-menu__list-heading">
+                      Select below to view Location Details
+                    </div>
+                  </div>
+                  <div class="jh-locations-menu__list-wrapper">
+                    <ul class="jh-locations-menu__list"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="jh-locations-menu__panel urgentcare-menu">
+                <div class="jh-locations-menu__tab is-collapsed">
+                  <h3>Urgent Care</h3>
+                </div>
+                <div class="jh-locations-menu__content is-collapsed" aria-hidden="true">
+                  <div class="jh-locations-menu__info">
+                    When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
+                    <div class="jh-locations-menu__list-heading">
+                      Select below to view Location Details
+                    </div>
+                  </div>
+                  <div class="jh-locations-menu__list-wrapper">
+                    <ul class="jh-locations-menu__list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /.ez-columns -->
+
+      </div><!-- /.jh-locations__main -->
     </section><!-- /.jh-locations-section -->
 
     <section class="jh-main-container">
