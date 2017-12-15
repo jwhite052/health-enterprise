@@ -459,74 +459,70 @@ background-color: transparent !important;
       <div class="jh-locations__main">
 
         <div class="ez-columns">
-          <div class="ez-col-set-200">
+          <div class="ez-col-set-250">
             <div class="jh-locations__title">
-              <h2>Our Care Network</h2>
+              <h2 style="font-size: 40px; "><em style="font-weight: normal;">Our Care</em> <span style="text-transform: uppercase;">Network</span></h2>
             </div>
           </div>
-          <div class="ez-col-fill-200">
+          <div class="ez-col-fill-250">
             <div class="jh-locations__intro">
               <p>Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the directory and map to find the best location for you including detailed driving directions and further information about services available at each of our offices.</p>
             </div>
           </div>
         </div>
 
-        <div class="ez-columns">
-          <div class="ez-col-res-100">
-
-            <!-- Locations Filter Options -->
-            <div class="jh-locations__search">
-              <div class="jh-search-locations">
-                <div class="jh-search-locations__input-wrapper">
-                  <label for="autocomplete">Location</label>
-                  <input id="autocomplete" class="jh-search-locations__address" type="text" placeholder="Enter location name or address" />
-                </div>
-                <div class="jh-search-locations__distance-wrapper" style="display: none;">
-                  <label for="jh-searchLocationsDistance">Within</label>
-                  <div class="dropdown-arrow-wrapper">
-                    <select id="jh-searchLocationsDistance" class="jh-search-locations__distance">
-                      <option value="default">--</option>
-                      <option value="1">1mi</option>
-                      <option value="5">5mi</option>
-                      <option value="10">10mi</option>
-                      <option value="25">25mi</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="jh-search-locations__select-wrapper">
-                  <label for="jh-searchLocationsRegion">Region</label>
-                  <div class="dropdown-arrow-wrapper">
-                    <select id="jh-searchLocationsRegion" class="jh-search-locations__region">
-                      <option value="default">All</option>
-                      <option value="philadelphia">Philadelphia</option>
-                      <option value="montgomery">Montgomery County</option>
-                      <option value="bucks">Bucks County</option>
-                      <option value="new jersey">New Jersey</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="jh-search-locations__select-wrapper">
-                  <label for="jh-searchLocationsType">Type</label>
-                  <div class="dropdown-arrow-wrapper">
-                    <select id="jh-searchLocationsType" class="jh-search-locations__type">
-                      <option value="default">All</option>
-                      <option value="hospital">Hospitals</option>
-                      <option value="outpatient">Outpatient</option>
-                      <option value="urgent">Urgent Care</option>
-                    </select>
-                  </div>
-                </div>
+        <!-- Locations Filter Options -->
+        <div class="jh-locations__search"  style="margin-top: 40px;">
+          <div class="jh-search-locations">
+            <div class="jh-search-locations__input-wrapper">
+              <label for="autocomplete">Location</label>
+              <input id="autocomplete" class="jh-search-locations__address" type="text" placeholder="Enter location name or address" />
+            </div>
+            <div class="jh-search-locations__distance-wrapper" style="display: none;">
+              <label for="jh-searchLocationsDistance">Within</label>
+              <div class="dropdown-arrow-wrapper">
+                <select id="jh-searchLocationsDistance" class="jh-search-locations__distance">
+                  <option value="default">--</option>
+                  <option value="1">1mi</option>
+                  <option value="5">5mi</option>
+                  <option value="10">10mi</option>
+                  <option value="25">25mi</option>
+                </select>
               </div>
             </div>
-
+            <div class="jh-search-locations__select-wrapper">
+              <label for="jh-searchLocationsRegion">Region</label>
+              <div class="dropdown-arrow-wrapper">
+                <select id="jh-searchLocationsRegion" class="jh-search-locations__region">
+                  <option value="default">All</option>
+                  <option value="philadelphia">Philadelphia</option>
+                  <option value="montgomery">Montgomery County</option>
+                  <option value="bucks">Bucks County</option>
+                  <option value="new jersey">New Jersey</option>
+                </select>
+              </div>
+            </div>
+            <div class="jh-search-locations__select-wrapper">
+              <label for="jh-searchLocationsType">Type</label>
+              <div class="dropdown-arrow-wrapper">
+                <select id="jh-searchLocationsType" class="jh-search-locations__type">
+                  <option value="default">All</option>
+                  <option value="hospital">Hospitals</option>
+                  <option value="outpatient">Outpatient</option>
+                  <option value="urgent">Urgent Care</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="ez-columns">
-          <div class="ez-col-fill-350">
+        <div class="ez-columns" >
+          <div class="ez-col-fill-400">
+
+
 
             <!-- Search Options -->
-            <div class="jh-locations__search-options">
+            <div class="jh-locations__search-options" style="display: none; position: absolute; top: 0;">
               <a class="jh-locations__search-reset" href="#">Reset Map</a>
             </div>
             <!-- Map -->
@@ -542,7 +538,7 @@ background-color: transparent !important;
               </div>
             </div>
           </div>
-          <div class="ez-col-set-350">
+          <div class="ez-col-set-400">
 
             <div class="jh-locations-menu">
               <div class="jh-locations-menu__panel hospitals-menu is-expanded" aria-expanded="false">
