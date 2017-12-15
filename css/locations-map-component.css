@@ -6,6 +6,21 @@
   overflow: hidden;
   z-index: 0;
 }
+.jh-locations__map::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+  opacity: .2;
+}
 @media only screen and (max-width: 480px) {
   .jh-locations__map{
     height: 250px;
@@ -21,7 +36,7 @@
   top: 0;
   left: 0;
   width: 280px;
-  height: 400px;
+  height: 100%;
   background-color: rgba(253,253,255,0.9);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   transition: ease-in .4s;
@@ -102,7 +117,7 @@
   font-size: 14px;
   padding: 20px;
   overflow-y: scroll;
-  height: 300px;
+  height: calc(100% - 100px);
 }
 .jh-locations-info-window__title {
   font-size: 20px;

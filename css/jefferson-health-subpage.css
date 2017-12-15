@@ -80,6 +80,7 @@
 /* Locations Search */
 .jh-page-template-subpage .jh-locations-list__search {
   padding: 20px;
+  background-color: #152456;
 }
 .jh-page-template-subpage .jh-locations-list__search::after {
   content: '';
@@ -89,27 +90,54 @@
 .jh-page-template-subpage .jh-locations-list__search input {
   height: 40px;
   width: 100%;
-  font-size: 18px;
+  font-size: 21px;
   margin: 0 20px 0 0;
   padding: 0 0 0 10px;
+  border: 0;
+  background-color: #fff;
+  border-bottom: 2px solid #569bca;
+  color: #569bca;
+}
+.jh-page-template-subpage .jh-locations-list__search input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgba(0,0,0,.4);
+}
+.jh-page-template-subpage .jh-locations-list__search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    rgba(0,0,0,.4);
+   opacity:  1;
+}
+.jh-page-template-subpage .jh-locations-list__search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    rgba(0,0,0,.4);
+   opacity:  1;
+}
+.jh-page-template-subpage .jh-locations-list__search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    rgba(0,0,0,.4);
+}
+.jh-page-template-subpage .jh-locations-list__search input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    rgba(0,0,0,.4);
+}
+
+.jh-page-template-subpage .jh-locations-list__search input::placeholder { /* Most modern browsers support this now. */
+   color:    rgba(0,0,0,.4);
 }
 .jh-page-template-subpage .jh-locations-list__search button {
   height: 30px;
   padding: 0 20px;
   margin: 0;
-  background-color: #ccc;
+  background-color: #fff;
   border: 0;
   border-radius: 0;
-  color: #fff;
+  color: #569bca;
 }
 .jh-page-template-subpage .jh-locations-list__search button:hover {
   background-color: #eee;
 }
 .jh-page-template-subpage .jh-locations-list__search button.asc {
   background-color: #569bca;
+  color: #fff;
 }
 .jh-page-template-subpage .jh-locations-list__search button.is-active {
   background-color: #569bca;
+  color: #fff;
 }
 
 /* Locations List */
@@ -126,6 +154,9 @@
 .jh-page-template-subpage .jh-locations-list__item {
   /*margin: 10px 0px;*/
   border-bottom: 1px solid #ccc;
+}
+.jh-page-template-subpage .jh-locations-list__item:last-of-type {
+  border: 0;
 }
 .jh-page-template-subpage .jh-locations__pagination {
   text-align: center;
@@ -542,8 +573,9 @@
 .jh-locations-list-window {
   overflow-y: scroll;
   width: 100%;
-  height: 450px;
+  height: 480px;
   background-color: #fff;
+  border-top: 2px solid #152456;
 }
 .jh-locations-list__options {
   padding: 10px 0;
