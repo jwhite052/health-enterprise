@@ -231,10 +231,19 @@
             <div class="jh-main-sidebar">
               <div class="jh-main-sidebar__inner">
 
+                <div class="ez-columns">
+                  <div class="ez-col-res-50" style="padding-right: 10px; margin-bottom: 20px;">
+                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">View Locations</a>
+                  </div>
+                  <div class="ez-col-res-50" style="padding-left: 10px;">
+                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">Site Search</a>
+                  </div>
+                </div>
+
                 <div class="jh-callout-box" style="background-color: #f2f4f8;">
                   <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title" style="font-style: normal; font-size: 26px; color: #152456; text-transform: uppercase;">
-                      Services
+                    <div class="jh-callout-box__title">
+                      Urgent Care Services
                     </div>
                     <div class="jh-callout-box__content">
                       <ul class="jh-callout-box__list">
@@ -279,65 +288,45 @@
           <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
             Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
           </p>
-          <div class="col-width-50">
 
+          <div class="ez-columns locations-map-wrapper">
+            <div class="ez-col-res-60">
+              <!-- Map -->
+              <div class="jh-map-container">
+                <div class="jh-map">
+                  <div class="jh-map__inner">
 
+                    <!-- Parsys goes here -->
+                    <div class="jh-locations__map" data-source="urgentcare">
+                      <div id="map"></div>
+                    </div>
 
-            <!-- Map -->
-            <div class="jh-map-container">
-              <div class="jh-map">
-                <div class="jh-map__inner">
-
-                  <!-- Parsys goes here -->
-                  <div class="jh-locations__map" data-source="urgentcare">
-                    <div id="map"></div>
                   </div>
-
                 </div>
               </div>
             </div>
+            <div class="ez-col-res-40" style="background-color: #fff; height: 600px;">
+              <!-- Locations List -->
+              <div id="locations-list" class="jh-locations" data-source="urgentcare">
+                <div class="jh-locations__inner">
 
-
-
-          </div>
-          <div class="col-width-50" style="background-color: #152456; height: 600px;">
-
-            <!-- Locations List -->
-            <div id="locations-list" class="jh-locations" data-source="urgentcare">
-              <div class="jh-locations__inner">
-
-                <div class="jh-locations-list__search">
-                  <input type="text" class="search" placeholder="Filter by location name or address" />
-                  <div class="jh-locations-list__options">
-                    <button class="sort" data-sort="name" style="float: right;">
-                      A to Z
-                    </button>
+                  <div class="jh-locations-list__search">
+                    <input type="text" class="search" placeholder="Filter by location name or address" />
+                    <div class="jh-locations-list__options">
+                      <button class="sort" data-sort="name" style="float: right;">
+                        A to Z
+                      </button>
+                    </div>
                   </div>
-                </div>
-
-                <div class="jh-locations-list-window">
-
-
-                <ul class="list jh-locations-list"></ul>
-                                </div>
-
-                <div class="jh-locations__pagination">
-                  <ul class="pagination"></ul>
+                  <div class="jh-locations-list-window">
+                    <ul class="list jh-locations-list"></ul>
+                  </div>
+                  <!-- <div class="jh-locations__pagination">
+                    <ul class="pagination"></ul>
+                  </div> -->
                 </div>
               </div>
             </div>
-
-            <!-- <div class="jh-callout-box" style="background-color: #fff;">
-              <div class="jh-callout-box__inner">
-                <div class="jh-callout-box__title">
-                  No Appointment Necessary
-                </div>
-                <div class="jh-callout-box__content">
-                  We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
-                </div>
-              </div>
-            </div> -->
-
           </div>
 
         </div>
