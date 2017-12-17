@@ -13,7 +13,8 @@
     <link href="/css/global-ribbon.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-landing-page.css" rel="stylesheet" />
-    <link href="/css/locations-map-component.css" rel="stylesheet" />
+    <link href="/components/css/locations-map.css" rel="stylesheet" />
+    <link href="/components/css/stats-box-link.css" rel="stylesheet" />
   </head>
   <body class="jefferson-health jh-page-template-landing-page">
 
@@ -330,7 +331,7 @@ background-color: transparent !important;
                     Hospital Locations
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -339,7 +340,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                     Care network with locations throughout Pennsylvania, New Jersey and Delaware.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -361,7 +362,7 @@ background-color: transparent !important;
                     Urgent Care Centers
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -370,7 +371,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                      No appointments necessary. On average, patients are treated and discharged within an hour.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -392,7 +393,7 @@ background-color: transparent !important;
                     NCI-Designated Cancer Center
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -401,7 +402,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                     The Sidney Kimmel Cancer Center is ranked amongst the top cancer hospitals by US News & World Report.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -424,7 +425,7 @@ background-color: transparent !important;
                     Rehab Specialty Services
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -433,7 +434,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                     Our goals are to minimize your pain, promote wellness so you can get back to your everyday life.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -456,7 +457,7 @@ background-color: transparent !important;
                     Outpatient Centers
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -465,7 +466,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                     Convenient locations throughout the Delaware Valley.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -488,7 +489,7 @@ background-color: transparent !important;
                     Testing & Imaging Centers
                   </div>
                 </div>
-                <div class="jh-stats-box-overlay-link">
+                <div class="jh-stats-box__link">
                   Learn More
                 </div>
               </div>
@@ -497,7 +498,7 @@ background-color: transparent !important;
                   <p class="jh-stats-box-overlay__text">
                     Convenient locations throughout the Delaware Valley.
                   </p>
-                  <div class="jh-stats-box-overlay-link">
+                  <div class="jh-stats-box-overlay__link">
                     Learn More
                   </div>
                 </div>
@@ -679,7 +680,7 @@ background-color: transparent !important;
       </div>
     </footer>
 
-    <script src="/js/locations-map-component.js"></script>
+    <script src="/components/js/locations-map.js"></script>
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <script>
@@ -688,7 +689,7 @@ background-color: transparent !important;
       initLocationsMap();
     }
     </script>
-    <script src="/js/stat-component.js"></script>
+    <script src="/components/js/stats-box-link.js"></script>
     <script src="/js/jefferson-health-landing-page.js"></script>
   </body>
 </html>
