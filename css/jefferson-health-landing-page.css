@@ -463,7 +463,7 @@
 .jh-locations-menu__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 }
 .jh-locations-menu__list li {
   position: relative;
@@ -471,7 +471,7 @@
   font-weight: bold;
   color: #569bca;
   margin: 0;
-  padding: 1em 0 1em 0;
+  padding: 10px 15px;
   border-bottom: 1px solid #f2f4f8;
   overflow: hidden;
 }

@@ -29,7 +29,6 @@ function initLocationsMap() {
 
   /**
    * Locations Data
-   * @param {Object} locations
   */
   function LocationsData(locations) {
     this.data = {};
@@ -58,8 +57,6 @@ function initLocationsMap() {
 
   /**
    * Initialize Markers
-   * @param {Object} map - DOM element for Google Map
-   * @param {Object} data - list of locations
   */
   function MapMarkers(map, data) {
     // array to store map markers
@@ -95,7 +92,7 @@ function initLocationsMap() {
           // custom properties
           location: list[i]
         });
-        
+
         // add marker reference to location list data
         list[i].marker = marker;
 
@@ -312,7 +309,7 @@ function initLocationsMap() {
   /**
    * Locations Map Filters
   */
-  function MapMarkerFilters(/** @param {LocationsMap} */ locationsMap, /** @param {Object} */ markers) {
+  function MapMarkerFilters(locationsMap, markers) {
     var currentMarkers = markers;
     var map = locationsMap.map;
     var mapFilterFieldsUI = {
