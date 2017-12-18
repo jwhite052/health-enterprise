@@ -13,6 +13,7 @@
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/css/locations-map-component.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--hospitals">
     <nav id="global-navigation" class="navbar navbar-default">
@@ -125,7 +126,7 @@
               <div class="jh-banner__inner">
 
                 <div class="jh-title">
-                  <h1>Hospitals</h1>
+                  <h1>Jefferson Health Hospitals</h1>
                 </div>
 
               </div>
@@ -266,11 +267,11 @@ Jefferson also stands out as among the best in the following specialty areas:
                   </div>
                 </div> -->
                 <div class="ez-columns">
-                  <div class="ez-col-res-50" style="padding-right: 10px; margin-bottom: 20px;">
-                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">View Locations</a>
+                  <div class="ez-col-res-100" style="margin-bottom: 15px;">
+                    <a class="jh-button" href="https://appointments.jefferson.edu/" target="_blank">View Locations</a>
                   </div>
-                  <div class="ez-col-res-50" style="padding-left: 10px;">
-                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">Site Search</a>
+                  <div class="ez-col-res-100" style="margin-bottom: 15px;">
+                    <a class="jh-button jh-button--new" href="https://appointments.jefferson.edu/" target="_blank">Search Jefferson Health</a>
                   </div>
                 </div>
 
@@ -288,14 +289,14 @@ Jefferson also stands out as among the best in the following specialty areas:
                       <p>
                         To speak with a JEFF NOW® representative, please choose one of the following options:
                       </p>
-                      <p style="font-size: 24px; font-weight: 300; text-align: center; margin: 10px 0 10px 0;">
+                      <p style="font-size: 24px; font-weight: normal; text-align: center; margin: 10px 0 10px 0; color: #013fa3;">
                         Call 1-800-533-3669
                       </p>
                       <p style="text-align: center; margin: 0;">
                         OR
                       </p>
                       <p>
-                        <a href="https://appointments.jefferson.edu/call/" target="_blank" style="display: block; padding: 5px 10px; background-color: #fff; color: #013fa3; text-decoration: none; text-align: center; border: 2px solid #013fa3;">Click to Talk to a JEFF NOW® representative</a>
+                        <a class="jh-button" href="https://appointments.jefferson.edu/call/" target="_blank">Click to Talk to a JEFF NOW® representative</a>
                       </p>
                       <p style="text-align: center;">
                         Available From 8 a.m. to 6 p.m., Monday through Friday
@@ -319,53 +320,60 @@ Jefferson also stands out as among the best in the following specialty areas:
       <div class="jh-main">
         <div class="jh-main__inner">
 
-          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
+          <h1 style="margin-top: 20px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
 
-          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
+          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 40px; font-size: 22px; font-weight: 300;">
             Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
           </p>
 
+          <div class="ez-columns">
+            <div class="ez-col-res-60 ez-pad-right-30" style="padding-top: 30px;">
 
+              <!-- Locations List -->
+              <div id="locations-list" class="jh-locations" data-source="hospitals">
+                <div class="jh-locations__inner">
 
-            <div class="ez-columns locations-map-wrapper">
-              <div class="ez-col-res-60">
-                <!-- Map -->
-                <div class="jh-map-container">
-                  <div class="jh-map">
-                    <div class="jh-map__inner">
-
-                      <!-- Parsys goes here -->
-                      <div class="jh-locations__map" data-source="hospitals">
-                        <div id="map"></div>
-                      </div>
-
+                  <div class="jh-locations-list__search">
+                    <input type="text" class="search" placeholder="Filter by location name or address" />
+                    <div class="jh-locations-list__options">
+                      <button class="sort" data-sort="name" style="float: right;">
+                        <i class="fa fa-sort-alpha-asc"></i>
+                      </button>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="ez-col-res-40" style="background-color: #fff; height: 600px;">
-                <!-- Locations List -->
-                <div id="locations-list" class="jh-locations" data-source="urgentcare">
-                  <div class="jh-locations__inner">
-
-                    <div class="jh-locations-list__search">
-                      <input type="text" class="search" placeholder="Filter by location name or address" />
-                      <div class="jh-locations-list__options">
-                        <button class="sort" data-sort="name" style="float: right;">
-                          A to Z
-                        </button>
-                      </div>
-                    </div>
-                    <div class="jh-locations-list-window">
-                      <ul class="list jh-locations-list"></ul>
-                    </div>
-                    <!-- <div class="jh-locations__pagination">
-                      <ul class="pagination"></ul>
-                    </div> -->
+                  <div class="jh-locations-list-window">
+                    <ul class="list jh-locations-list"></ul>
                   </div>
+                  <!-- <div class="jh-locations__pagination">
+                    <ul class="pagination"></ul>
+                  </div> -->
                 </div>
               </div>
+
             </div>
+            <div class="ez-col-res-40" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
+
+              <!-- Map -->
+              <div class="jh-map-container" style="">
+                <div class="jh-map">
+                  <div class="jh-map__inner">
+
+                    <!-- Parsys goes here -->
+                    <div class="jh-locations__map" data-source="hospitals">
+                      <div id="map"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
 
 
 
@@ -374,6 +382,16 @@ Jefferson also stands out as among the best in the following specialty areas:
     </section>
 
     <style>
+    .jh-locations-info-window__wrapper {
+      width: 100%;
+    }
+    .jh-locations-info-window__wrapper.is-hidden {
+      left: -100%;
+    }
+    .jh-locations-info-window__wrapper {
+      box-shadow: none;
+      transition: ease-in .15s;
+    }
     [class*='col-width-'] {
       box-sizing: border-box;
       float: left;
