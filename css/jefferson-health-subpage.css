@@ -191,6 +191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .jh-page-template-subpage .jh-location-card:hover {
   /*box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
+  background-color: #f8f8f8;
 }
 .jh-page-template-subpage .jh-location-card__inner {
   padding: 20px;
@@ -199,10 +200,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin: 10px 0;
 }
 .jh-page-template-subpage .jh-location-card__title h4 {
-  margin: 0;
+  margin: 0 0 10px 0;
   line-height: 1.4em;
   font-size: 21px;
-  color: #152456;
+  color: #569bca;
   font-weight: bold;
 }
 .jh-page-template-subpage .jh-location-card__category {
@@ -220,6 +221,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 .jh-page-template-subpage .jh-location-card__phone span {
   display: block;
+}
+.jh-location-card__links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.jh-location-card__links li {
+  display: inline;
+  padding: 0 15px;
+  border-right: 1px solid #ccc;
+}
+.jh-location-card__links > li:first-of-type {
+  padding-left: 0;
+}
+.jh-location-card__links > li:last-of-type {
+  border-right: 0;
 }
 
 /* Bootstrap - Pagination */
@@ -331,10 +348,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 100%;
   background-color: gray;
 }
-.jh-page-template-subpage  .jh-locations__map {
+.jh-page-template-subpage .jh-locations__map {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 600px;
   /*border: 1px solid #f2f4f8;*/
   overflow: hidden;
   z-index: 0;
@@ -595,10 +612,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   display: table;
 }
 .jh-locations-list-window {
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   width: 100%;
   background-color: #fff;
   border-top: 2px solid #152456;
+  height: 480px;
 }
 .jh-locations-list__options {
   padding: 10px 0;

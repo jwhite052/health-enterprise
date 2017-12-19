@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
@@ -13,6 +14,7 @@
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/css/locations-map-component.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--rehab">
     <nav id="global-navigation" class="navbar navbar-default">
@@ -116,6 +118,16 @@
     		});
     	});
   	</script>
+
+    <div class="jh-secondary-navbar-container">
+      <div class="jh-secondary-navbar">
+        <div class="jh-secondary-navbar__inner">
+
+          <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
+
+        </div>
+      </div>
+    </div>
 
     <header class="jh-header-container jh-page-template-subpage--urgent-care">
       <div class="jh-header">
@@ -244,11 +256,8 @@
                 </div> -->
 
                 <div class="ez-columns">
-                  <div class="ez-col-res-50" style="padding-right: 10px; margin-bottom: 20px;">
-                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">View Locations</a>
-                  </div>
-                  <div class="ez-col-res-50" style="padding-left: 10px;">
-                    <a href="https://appointments.jefferson.edu/" style="padding: 5px 10px; background-color: #fff; color: #013fa3; font-size: 14px; display: block; text-align: center; text-decoration: none; text-transform: none; border: 2px solid #013fa3;" target="_blank">Site Search</a>
+                  <div class="ez-col-res-100" style="margin-bottom: 15px;">
+                    <a class="jh-button" href="#locations">View Locations</a>
                   </div>
                 </div>
 
@@ -379,22 +388,8 @@
             Our specialists are available for your outpatient rehabilitation and physical therapy needs, in addition to inpatient rehabilitation for more serious injuries. We have 15 locations in order to get you back to work or the playing field. Use the search below to find the best location for you.
           </p>
           <div class="ez-columns locations-map-wrapper">
-            <div class="ez-col-res-60">
-              <!-- Map -->
-              <div class="jh-map-container">
-                <div class="jh-map">
-                  <div class="jh-map__inner">
+            <div class="ez-col-set-600" style="border-right: 1px solid #ccc;">
 
-                    <!-- Parsys goes here -->
-                    <div class="jh-locations__map" data-source="urgentcare">
-                      <div id="map"></div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ez-col-res-40" style="background-color: #fff; height: 600px;">
               <!-- Locations List -->
               <div id="locations-list" class="jh-locations" data-source="urgentcare">
                 <div class="jh-locations__inner">
@@ -415,8 +410,26 @@
                   </div> -->
                 </div>
               </div>
+
             </div>
-          </div>
+            <div class="ez-col-fill-600" style="background-color: #fff; height: 600px;">
+
+              <!-- Map -->
+              <div class="jh-map-container">
+                <div class="jh-map">
+                  <div class="jh-map__inner">
+
+                    <!-- Parsys goes here -->
+                    <div class="jh-locations__map" data-source="urgentcare">
+                      <div id="map"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- /.ez-columns -->
 
         </div>
       </div>
@@ -436,16 +449,6 @@
     .col-width-80 { width: 80%; }
     .gutter-right { padding-right: 80px; }
     </style>
-
-    <section class="jh-main-container">
-      <div class="jh-main">
-        <div class="jh-main__inner">
-
-
-
-        </div>
-      </div>
-    </section>
 
     <footer class="jh-footer-container">
       <div class="jh-footer">

@@ -1,7 +1,7 @@
 /*
 * Callback for Google Maps API
 */
-function initLocationsMap() {
+function initLocationsMap(dataObj) {
 
   'use strict';
 
@@ -29,7 +29,6 @@ function initLocationsMap() {
 
   /**
    * Locations Data
-   * @param {Object} locations
   */
   function LocationsData(locations) {
     this.data = {};
@@ -58,8 +57,6 @@ function initLocationsMap() {
 
   /**
    * Initialize Markers
-   * @param {Object} map - DOM element for Google Map
-   * @param {Object} data - list of locations
   */
   function MapMarkers(map, data) {
     // array to store map markers
@@ -486,6 +483,7 @@ function initLocationsMap() {
   // UI components
   var locationsMap = new LocationsMap(document.getElementById('map'));
   var locationsData = new LocationsData(mapComponentElement.getAttribute('data-source'));
+  locationsData.data = dataObj;
   var mapInfoWindow = new MapInfoWindow(mapComponentElement);
   var mapMarkers = new MapMarkers(locationsMap.map, locationsData.data);
   mapMarkers.setClickHandler(mapInfoWindow);
