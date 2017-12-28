@@ -64,8 +64,11 @@
       '<li><a class="jh-location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></li></ul>'));
 
       // create new list item element
-      var newListItem = $('<li>',{
+      var newListItem = $('<li>', {
         class: 'jh-locations-list__item',
+        attr: {
+          'data-id': i
+        },
         html: $('<div>', {
           class: 'jh-location-card',
           html: $('<div>', {

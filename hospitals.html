@@ -13,7 +13,7 @@
     <link href="/css/global-ribbon.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
-    <link href="/css/locations-map-component.css" rel="stylesheet" />
+    <link href="/components/css/locations-map-list.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--hospitals">
@@ -401,16 +401,14 @@
     </footer>
 
     <script src="/js/list.min.js"></script>
-    <script src="/js/locations-list-filter-component.js"></script>
-    <script src="/js/locations-map-component.js"></script>
+    <script src="/components/js/locations-list-filter.js"></script>
+    <script src="/components/js/locations-map-list.js"></script>
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <script>
-    var listDataObj = initLocationsList();
-
     // Google Maps API callback
     function initMap() {
-      var mapMarkers = initLocationsMap(listDataObj);
+      initLocationsMap();
     }
     </script>
   </body>
