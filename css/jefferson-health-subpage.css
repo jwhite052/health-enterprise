@@ -1,14 +1,8 @@
 /* Template Styles */
 
 /* Header */
-.jh-page-template-subpage .jh-header-container {
-  position: relative;
-  background-color: #f2f4f8;
-  background-size: cover;
-  background-position: center center;
-  height: 250px;
-}
-.jh-page-template-subpage--urgent-care .jh-header-container {
+
+/* .jh-page-template-subpage--urgent-care .jh-header-container {
   background-image: url('/images/ThinkstockPhotos-639811460.jpg');
   background-position: bottom center;
 }
@@ -31,23 +25,7 @@
 .jh-page-template-subpage--outpatient-centers .jh-header-container {
   background-image: url('/images/ThinkstockPhotos-669520230.jpg');
   background-position: center center;
-}
-.jh-page-template-subpage .jh-header-container::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: calc(100%);
-  /* background-color: rgba(0,0,40,.5); */
-  background-color: #fff;
-  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
-  opacity: 1;
-  z-index: 0;
-}
+} */
 /*.jh-page-template-subpage .jh-header-container::after {
   content: '';
   position: absolute;
@@ -61,17 +39,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
   z-index: 1;
 }*/
-.jh-page-template-subpage .jh-header {
+
+/* Header */
+.jh-header {
   position: relative;
-  z-index: 2;
 }
-.jh-page-template-subpage .jh-header {
-  padding-top: 110px;
+/* Page Banner */
+.jh-page-banner {
+  position: relative;
+  background-color: #f2f4f8;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
 }
-/* Banner */
-.jh-page-template-subpage .jh-banner {
+.jh-page-banner::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%);
+  /* background-color: rgba(0,0,40,.5); */
+  background-color: #fff;
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+  opacity: 1;
+  z-index: 0;
 }
-.jh-page-template-subpage .jh-title h1 {
+.jh-page-banner__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.jh-page-title {
+  position: relative;
+  z-index: 1;
+}
+.jh-page-title h1 {
   font-size: 40px;
   text-transform: none;
   color: #152456;
