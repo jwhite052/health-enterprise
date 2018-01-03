@@ -17,7 +17,7 @@
     <link href="/components/css/locations-map-list.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--hospitals">
+  <body class="jefferson-health jh-page-template-subpage">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -120,126 +120,111 @@
     	});
   	</script>
 
-    <header class="jh-header">
+    <header class="jh-header-section">
 
       <!-- Secondary Navbar -->
-      <div class="jh-secondary-navbar-container">
-        <div class="jh-secondary-navbar">
-          <div class="jh-secondary-navbar__inner">
-
-            <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
-
-          </div>
+      <div class="jh-secondary-navbar">
+        <div class="jh-secondary-navbar__inner container">
+          <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
         </div>
       </div>
 
       <!-- Page Banner -->
       <div class="jh-page-banner" style="background-image: url('/images/ThinkstockPhotos-842459670.jpg'); background-position: center center;">
-        <div class="jh-page-banner__inner">
-
-          <div class="jh-page-title">
-            <h1>Jefferson Health Hospitals</h1>
+        <div class="jh-page-banner-title">
+          <div class="jh-page-banner-title__inner container">
+            <h1 class="jh-page-banner-title__text">Jefferson Health Hospitals</h1>
           </div>
-
         </div>
       </div>
 
     </header>
 
-    <section class="jh-navbar-container">
-      <div class="jh-navbar">
-        <div class="jh-navbar__inner">
+    <section class="jh-toolbar-section">
+      <div class="jh-toolbar-section__inner container">
 
-          <div class="jh-breadcrumbs">
-            <div class="jh-breadcrumbs__inner">
-              <a href="/">Jefferson Health</a> > Hospitals
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jh-breadcrumbs">
+              <div class="jh-breadcrumbs__inner">
+                <a href="/">Jefferson Health</a> <span>/</span> Hospitals
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
+
       </div>
     </section>
-<style>
 
-/* Map Section */
-.jh-main-container {
-  background-color: #fff;
-}
-.jh-main {
-  margin: 0 auto;
-}
-.jh-main__inner {
-  padding: 20px;
-}
+    <section class="jh-main-section">
+      <div class="jh-main-section__inner container">
 
-</style>
-    <section class="jh-main-container">
-      <div class="jh-main">
-        <div class="jh-main__inner">
-
-          <div class="ez-columns">
-            <div class="ez-col-res-70 ez-pad-right-80">
+          <div class="row">
+            <div class="col-md-8">
 
               <section class="jh-main-content">
-                <div class="jh-main-content">
-                  <div class="jh-main-content__inner">
+                <div class="jh-main-content__inner">
 
-                    <!-- Intro Copy -->
-                    <section class="jh-main-intro">
-                      <div class="jh-main-intro">
-                        <div class="jh-main-intro">
-                          <h3>
-                            Services close to home. Access to a broad physician network. And caregivers who care – about you.
-                          </h3>
-                          <p>
-                            Jefferson Health offers excellent clinical and compassionate care for our patients in the Philadelphia region, educating the health professionals of tomorrow in a variety of disciplines and discovering new knowledge that will define the future of clinical care.
-                          </p>
-
-                          <p>
-                            Jefferson ranks as 16th Best Hospital on <strong>U.S. News & World Report's Honor Roll</strong> list. We continue to top the list of hospitals in Pennsylvania (3rd) and the Philadelphia metro area (2nd) in U.S. News & World Report's annual listing of the best hospitals and specialties.</p>
-                            <p>
-
+                  <!-- Intro Copy -->
+                  <section class="jh-main-intro">
+                      <div class="jh-main-intro__inner">
+                        <h3>
+                          Services close to home. Access to a broad physician network. And caregivers who care – about you.
+                        </h3>
+                        <p>
+                          Jefferson Health offers excellent clinical and compassionate care for our patients in the Philadelphia region, educating the health professionals of tomorrow in a variety of disciplines and discovering new knowledge that will define the future of clinical care.
+                        </p>
+                        <p>
+                          Jefferson ranks as 16th Best Hospital on <strong>U.S. News & World Report's Honor Roll</strong> list. We continue to top the list of hospitals in Pennsylvania (3rd) and the Philadelphia metro area (2nd) in U.S. News & World Report's annual listing of the best hospitals and specialties.
+                        </p>
+                        <p>
     Jefferson also stands out as among the best in the following specialty areas:
-                          </p>
-                          <div class="ez-columns">
-                            <div class="ez-col-res-50">
-                              <ul class="jh-callout-box__list">
-                                <li>Orthopedics</li>
-                                <li>Cancer</li>
-                                <li>Ear, Nose & Throat</li>
-                                <li>Gastroenterology & GI Surgery</li>
-                                <li>Nephrology</li>
-                                <li>Neurology & Neurosurgery</li>
-                              </ul>
-                            </div>
-                            <div class="ez-col-res-50">
-                              <ul class="jh-callout-box__list">
-                                <li>Ophthalmology</li>
-                                <li>Diabetes & Endocrinology</li>
-                                <li>Geriatrics</li>
-                                <li>Cardiology & Heart Surgery</li>
-                                <li>Urology</li>
-                                <li>And more...</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                        </p>
+
+                        <div class="row">
+                          <div class="col-md-6">
+
+                            <ul class="jh-callout-box__list">
+                              <li>Orthopedics</li>
+                              <li>Cancer</li>
+                              <li>Ear, Nose & Throat</li>
+                              <li>Gastroenterology & GI Surgery</li>
+                              <li>Nephrology</li>
+                              <li>Neurology & Neurosurgery</li>
+                            </ul>
+
+                          </div><!-- /.col -->
+                          <div class="col-md-6">
+
+                            <ul class="jh-callout-box__list">
+                              <li>Ophthalmology</li>
+                              <li>Diabetes & Endocrinology</li>
+                              <li>Geriatrics</li>
+                              <li>Cardiology & Heart Surgery</li>
+                              <li>Urology</li>
+                              <li>And more...</li>
+                            </ul>
+
+                          </div><!-- /.col -->
+                        </div><!-- /.row -->
+
                       </div>
-                    </section>
+                  </section><!-- /.jh-main-intro -->
 
-                  </div>
                 </div>
-              </section>
+              </section><!-- /.jh-main-content -->
 
-            </div>
-            <div class="ez-col-res-30">
+            </div><!-- /.col -->
+            <div class="col-md-4">
 
               <section class="jh-main-sidebar">
                 <div class="jh-main-sidebar">
                   <div class="jh-main-sidebar__inner">
 
-                    <div class="ez-columns">
-                      <div class="ez-col-res-100" style="margin-bottom: 15px;">
+                    <div class="row">
+                      <div class="col-md-12" style="margin-bottom: 15px;">
                         <a class="jh-button" href="#locations">View Locations</a>
                       </div>
                     </div>
@@ -268,7 +253,6 @@
                           <p style="text-align: center;">
                             Available From 8 a.m. to 6 p.m., Monday through Friday
                           </p>
-
                         </div>
                       </div>
                     </div>
@@ -277,16 +261,14 @@
                 </div>
               </section>
 
-            </div>
-          </div><!-- /.ez-columns -->
+            </div><!-- /.col -->
+          </div><!-- /.row -->
 
-        </div>
-      </div>
-    </section>
+      </div><!-- /.jh-main inner /.container -->
+    </section><!-- /.jh-main -->
 
-    <section id="locations" class="jh-main-container jh-main-container--locations">
-      <div class="jh-main">
-        <div class="jh-main__inner">
+    <section id="locations" class="jh-locations-section">
+        <div class="jh-locations-section__inner container">
 
           <h1 style="margin-top: 20px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">
             Locations
@@ -296,8 +278,8 @@
             Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
           </p>
 
-          <div class="ez-columns">
-            <div class="ez-col-res-60 ez-pad-right-30" style="padding-top: 30px;">
+          <div class="row">
+            <div class="col-md-7" style="padding-top: 30px;">
 
               <!-- Locations List -->
               <div id="locations-list" class="jh-locations" data-source="hospitals">
@@ -320,8 +302,8 @@
                 </div>
               </div>
 
-            </div><!-- /.ez-col -->
-            <div class="ez-col-res-40" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
+            </div><!-- /.col -->
+            <div class="col-md-5" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
 
               <!-- Map -->
               <div class="jh-map-container" style="">
@@ -337,12 +319,10 @@
                 </div>
               </div>
 
-            </div><!-- /.ez-col -->
-          </div><!-- /.ez-columns -->
-
+            </div><!-- /.col -->
+          </div><!-- /.row -->
         </div>
-      </div>
-    </section>
+    </section><!-- /.locaitons-section -->
 
     <style>
     .jh-locations-info-window__wrapper {

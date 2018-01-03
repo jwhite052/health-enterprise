@@ -1,49 +1,20 @@
-/* Template Styles */
-
-/* Header */
-
-/* .jh-page-template-subpage--urgent-care .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-639811460.jpg');
-  background-position: bottom center;
-}
-.jh-page-template-subpage--rehab .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-87666828.jpg');
-  background-position: center center;
-}
-.jh-page-template-subpage--hospitals .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-842459670.jpg');
-  background-position: center center;
-}
-.jh-page-template-subpage--physician-search .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-649541722.jpg');
-  background-position: bottom -220px center;
-}
-.jh-page-template-subpage--testing-imaging-centers .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-667873244.jpg');
-  background-position: bottom -220px center;
-}
-.jh-page-template-subpage--outpatient-centers .jh-header-container {
-  background-image: url('/images/ThinkstockPhotos-669520230.jpg');
-  background-position: center center;
-} */
-/*.jh-page-template-subpage .jh-header-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
-  z-index: 1;
-}*/
-
 /* Header */
 .jh-header {
   position: relative;
 }
+
+/* Secondary Navbar */
+[class*="jh-secondary-navbar"] {
+  box-sizing: border-box;
+}
+.jh-secondary-navbar {
+  height: 60px;
+}
+.jh-secondary-navbar__inner {
+  line-height: 60px;
+  text-align: right;
+}
+
 /* Page Banner */
 .jh-page-banner {
   position: relative;
@@ -52,7 +23,7 @@
   background-position: center center;
   height: 250px;
 }
-.jh-page-banner::before {
+.old-jh-page-banner::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -69,50 +40,100 @@
   z-index: 0;
 }
 .jh-page-banner__inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.jh-page-title {
   position: relative;
-  z-index: 1;
+  height: 100%;
 }
-.jh-page-title h1 {
-  font-size: 40px;
+
+/* Page Banner Title */
+.jh-page-banner-title {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  background-color: rgba(86, 155, 202, .7);
+  width: 100%;
+  padding: 10px 0;
+}
+.jh-page-banner-title__inner {
+
+}
+.jh-page-banner-title__text {
+  font-size: 32px;
   text-transform: none;
-  color: #152456;
+  color: #fff;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
+
+/* Toolbar Section */
+.jh-toolbar-section {
+  box-sizing: border-box;
+  height: 50px;
+}
+.jh-toolbar-section__inner {
+
+}
+
+/* Breadcrumbs */
+.jh-breadcrumbs {
+
+}
+.jh-breadcrumbs__inner {
+  line-height: 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999;
+}
+.jh-breadcrumbs__inner a {
+  font-weight: bold;
+}
+.jh-breadcrumbs__inner span {
+  margin: 0 7px;
+}
+
+/* Main Section */
+.jh-main-section {
+  padding: 10px 0 50px 0;
+}
+
+/* Main Content */
+.jh-main-content__inner {
+  padding-right: 50px;
+}
+
 /* Main Intro */
-.jh-page-template-subpage .jh-main-intro h3 {
+.jh-main-intro h3 {
   font-size: 21px;
   color: #569bca;
 }
+
 /* Locations */
-.jh-page-template-subpage .jh-locations {
+.jh-locations {
   max-width: 1200px;
   margin: 0 auto;
 }
-.jh-page-template-subpage .jh-locations__inner {
+
+.jh-locations__inner {
   /*padding: 20px;*/
 }
-.jh-page-template-subpage .jh-locations::after {
+.jh-locations::after {
   content: '';
   display: table;
   clear: both;
 }
+
 /* Locations Search */
-.jh-page-template-subpage .jh-locations-list__search {
+.jh-locations-list__search {
   padding: 20px;
   background-color: #152456;
 }
-.jh-page-template-subpage .jh-locations-list__search::after {
+.jh-locations-list__search::after {
   content: '';
   display: table;
   clear: both;
 }
-.jh-page-template-subpage .jh-locations-list__search input {
+.jh-locations-list__search input {
   height: 40px;
   width: 100%;
   font-size: 21px;
@@ -122,28 +143,27 @@
   background-color: #fff;
   color: #569bca;
 }
-.jh-page-template-subpage .jh-locations-list__search input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.jh-locations-list__search input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    rgba(0,0,0,.4);
 }
-.jh-page-template-subpage .jh-locations-list__search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.jh-locations-list__search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    rgba(0,0,0,.4);
    opacity:  1;
 }
-.jh-page-template-subpage .jh-locations-list__search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+.jh-locations-list__search input::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    rgba(0,0,0,.4);
    opacity:  1;
 }
-.jh-page-template-subpage .jh-locations-list__search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.jh-locations-list__search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    rgba(0,0,0,.4);
 }
-.jh-page-template-subpage .jh-locations-list__search input::-ms-input-placeholder { /* Microsoft Edge */
+.jh-locations-list__search input::-ms-input-placeholder { /* Microsoft Edge */
    color:    rgba(0,0,0,.4);
 }
-
-.jh-page-template-subpage .jh-locations-list__search input::placeholder { /* Most modern browsers support this now. */
+.jh-locations-list__search input::placeholder { /* Most modern browsers support this now. */
    color:    rgba(0,0,0,.4);
 }
-.jh-page-template-subpage .jh-locations-list__search button {
+.jh-locations-list__search button {
   height: 30px;
   padding: 0 20px;
   margin: 0;
@@ -152,66 +172,66 @@
   border-radius: 0;
   color: #569bca;
 }
-.jh-page-template-subpage .jh-locations-list__search button:hover {
+.jh-locations-list__search button:hover {
   background-color: #eee;
 }
-.jh-page-template-subpage .jh-locations-list__search button.asc {
+.jh-locations-list__search button.asc {
   background-color: #569bca;
   color: #fff;
 }
-.jh-page-template-subpage .jh-locations-list__search button.is-active {
+.jh-locations-list__search button.is-active {
   background-color: #569bca;
   color: #fff;
 }
 
 /* Locations List */
-.jh-page-template-subpage .jh-locations-list {
+.jh-locations-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.jh-page-template-subpage .jh-locations-list::after {
+.jh-locations-list::after {
   content: '';
   display: table;
   clear: both;
 }
-.jh-page-template-subpage .jh-locations-list__item {
+.jh-locations-list__item {
   /*margin: 10px 0px;*/
   border-bottom: 1px solid #ccc;
 }
-.jh-page-template-subpage .jh-locations-list__item:last-of-type {
+.jh-locations-list__item:last-of-type {
   border: 0;
 }
-.jh-page-template-subpage .jh-locations__pagination {
+.jh-locations__pagination {
   text-align: center;
 }
 
 /* Location Card */
-.jh-page-template-subpage [class^="jh-location-card"] {
+[class*="jh-location-card"] {
   box-sizing: border-box;
 }
-.jh-page-template-subpage .jh-location-card {
+.jh-location-card {
   width: 100%;
   background-color: #fff;
 }
-.jh-page-template-subpage .jh-location-card:hover {
+.jh-location-card:hover {
   /*box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
   background-color: #f8f8f8;
 }
-.jh-page-template-subpage .jh-location-card__inner {
+.jh-location-card__inner {
   padding: 20px;
 }
-.jh-page-template-subpage .jh-location-card__title  {
+.jh-location-card__title  {
   margin: 10px 0;
 }
-.jh-page-template-subpage .jh-location-card__title h4 {
+.jh-location-card__title h4 {
   margin: 0 0 10px 0;
   line-height: 1.4em;
   font-size: 21px;
   color: #569bca;
   font-weight: bold;
 }
-.jh-page-template-subpage .jh-location-card__category {
+.jh-location-card__category {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: .1em;
@@ -220,11 +240,11 @@
   color: #999;
   display: none;
 }
-.jh-page-template-subpage .jh-location-card__address {
+.jh-location-card__address {
   font-size: 16px;
   font-weight: bold;
 }
-.jh-page-template-subpage .jh-location-card__phone span {
+.jh-location-card__phone span {
   display: block;
 }
 .jh-location-card__links {
@@ -245,17 +265,17 @@
 }
 
 /* Bootstrap - Pagination */
-.jh-page-template-subpage .jh-locations .pagination {
+.jh-locations .pagination {
   display: inline-block;
   padding-left: 0;
   margin: 20px 0;
   border-radius: 4px;
 }
-.jh-page-template-subpage .jh-locations .pagination > li {
+.jh-locations .pagination > li {
   display: inline;
 }
-.jh-page-template-subpage .jh-locations .pagination > li > a,
-.jh-page-template-subpage .jh-locations .pagination > li > span {
+.jh-locations .pagination > li > a,
+.jh-locations .pagination > li > span {
   position: relative;
   float: left;
   padding: 6px 12px;
@@ -266,83 +286,83 @@
   border: 1px solid #ddd;
   margin-left: -1px;
 }
-.jh-page-template-subpage .jh-locations .pagination > li:first-child > a,
-.jh-page-template-subpage .jh-locations .pagination > li:first-child > span {
+.jh-locations .pagination > li:first-child > a,
+.jh-locations .pagination > li:first-child > span {
   margin-left: 0;
   border-radius: 0;
   /*border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;*/
 }
-.jh-page-template-subpage .jh-locations .pagination > li:last-child > a,
-.jh-page-template-subpage .jh-locations .pagination > li:last-child > span {
+.jh-locations .pagination > li:last-child > a,
+.jh-locations .pagination > li:last-child > span {
   border-radius: 0;
   /*border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;*/
 }
-.jh-page-template-subpage .jh-locations .pagination > li > a:hover,
-.jh-page-template-subpage .jh-locations .pagination > li > span:hover,
-.jh-page-template-subpage .jh-locations .pagination > li > a:focus,
-.jh-page-template-subpage .jh-locations .pagination > li > span:focus {
+.jh-locations .pagination > li > a:hover,
+.jh-locations .pagination > li > span:hover,
+.jh-locations .pagination > li > a:focus,
+.jh-locations .pagination > li > span:focus {
   z-index: 2;
   color: #23527c;
   background-color: #eeeeee;
   border-color: #ddd;
 }
-.jh-page-template-subpage .jh-locations .pagination > .active > a,
-.jh-page-template-subpage .jh-locations .pagination > .active > span,
-.jh-page-template-subpage .jh-locations .pagination > .active > a:hover,
-.jh-page-template-subpage .jh-locations .pagination > .active > span:hover,
-.jh-page-template-subpage .jh-locations .pagination > .active > a:focus,
-.jh-page-template-subpage .jh-locations .pagination > .active > span:focus {
+.jh-locations .pagination > .active > a,
+.jh-locations .pagination > .active > span,
+.jh-locations .pagination > .active > a:hover,
+.jh-locations .pagination > .active > span:hover,
+.jh-locations .pagination > .active > a:focus,
+.jh-locations .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
   background-color: #569bca;
   border-color: #569bca;
   cursor: default;
 }
-.jh-page-template-subpage .jh-locations .pagination > .disabled > span,
-.jh-page-template-subpage .jh-locations .pagination > .disabled > span:hover,
-.jh-page-template-subpage .jh-locations .pagination > .disabled > span:focus,
-.jh-page-template-subpage .jh-locations .pagination > .disabled > a,
-.jh-page-template-subpage .jh-locations .pagination > .disabled > a:hover,
-.jh-page-template-subpage .jh-locations .pagination > .disabled > a:focus {
+.jh-locations .pagination > .disabled > span,
+.jh-locations .pagination > .disabled > span:hover,
+.jh-locations .pagination > .disabled > span:focus,
+.jh-locations .pagination > .disabled > a,
+.jh-locations .pagination > .disabled > a:hover,
+.jh-locations .pagination > .disabled > a:focus {
   color: #777777;
   background-color: #fff;
   border-color: #ddd;
   cursor: not-allowed;
 }
-.jh-page-template-subpage .jh-locations .pagination-lg > li > a,
-.jh-page-template-subpage .jh-locations .pagination-lg > li > span {
+.jh-locations .pagination-lg > li > a,
+.jh-locations .pagination-lg > li > span {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
 }
-.jh-page-template-subpage .jh-locations .pagination-lg > li:first-child > a,
-.jh-page-template-subpage .jh-locations .pagination-lg > li:first-child > span {
+.jh-locations .pagination-lg > li:first-child > a,
+.jh-locations .pagination-lg > li:first-child > span {
   border-radius: 0;
   /*border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;*/
 }
-.jh-page-template-subpage .jh-locations .pagination-lg > li:last-child > a,
-.jh-page-template-subpage .jh-locations .pagination-lg > li:last-child > span {
+.jh-locations .pagination-lg > li:last-child > a,
+.jh-locations .pagination-lg > li:last-child > span {
   border-radius: 0;
   /*border-bottom-right-radius: 6px;
   border-top-right-radius: 6px;*/
 }
-.jh-page-template-subpage .jh-locations .pagination-sm > li > a,
-.jh-page-template-subpage .jh-locations .pagination-sm > li > span {
+.jh-locations .pagination-sm > li > a,
+.jh-locations .pagination-sm > li > span {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
 }
-.jh-page-template-subpage .jh-locations .pagination-sm > li:first-child > a,
-.jh-page-template-subpage .jh-locations .pagination-sm > li:first-child > span {
+.jh-locations .pagination-sm > li:first-child > a,
+.jh-locations .pagination-sm > li:first-child > span {
   border-radius: 0;
   /*border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;*/
 }
-.jh-page-template-subpage .jh-locations .pagination-sm > li:last-child > a,
-.jh-page-template-subpage .jh-locations .pagination-sm > li:last-child > span {
+.jh-locations .pagination-sm > li:last-child > a,
+.jh-locations .pagination-sm > li:last-child > span {
   border-radius: 0;
   /*border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;*/
@@ -353,7 +373,7 @@
   width: 100%;
   background-color: gray;
 }
-.jh-page-template-subpage .jh-locations__map {
+.jh-locations__map {
   position: relative;
   width: 100%;
   height: 600px;
@@ -634,7 +654,7 @@
   display: table;
   clear: both;
 }
-
+/* Button */
 .jh-button {
   padding: 8px 10px;
   background-color: #4e65b8;
@@ -645,9 +665,60 @@
   text-decoration: none;
   text-transform: none;
 }
-
 .jh-button:hover {
   background-color: #809cce;
   color: #fff;
   text-decoration: none;
 }
+/* Locations Section */
+.jh-locations-section {
+  background-color: #f2f4f8;
+  padding: 50px 0;
+}
+.jh-locations-section__inner {
+
+}
+
+
+
+/* Template Styles */
+
+/* Header */
+
+/* .jh-page-template-subpage--urgent-care .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-639811460.jpg');
+  background-position: bottom center;
+}
+.jh-page-template-subpage--rehab .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-87666828.jpg');
+  background-position: center center;
+}
+.jh-page-template-subpage--hospitals .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-842459670.jpg');
+  background-position: center center;
+}
+.jh-page-template-subpage--physician-search .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-649541722.jpg');
+  background-position: bottom -220px center;
+}
+.jh-page-template-subpage--testing-imaging-centers .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-667873244.jpg');
+  background-position: bottom -220px center;
+}
+.jh-page-template-subpage--outpatient-centers .jh-header-container {
+  background-image: url('/images/ThinkstockPhotos-669520230.jpg');
+  background-position: center center;
+} */
+/*.jh-page-template-subpage .jh-header-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  z-index: 1;
+}*/

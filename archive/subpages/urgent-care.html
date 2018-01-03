@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jefferson Health</title>
+    <title></title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
@@ -11,13 +11,12 @@
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/css/global-ribbon.css" rel="stylesheet" />
-    <link href="/css/ez-columns.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
     <link href="/components/css/locations-map-list.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body class="jefferson-health jh-page-template-subpage">
+  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--urgent-care">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -120,137 +119,196 @@
     	});
   	</script>
 
-    <header class="jh-header-section">
-
-      <!-- Secondary Navbar -->
+    <div class="jh-secondary-navbar-container">
       <div class="jh-secondary-navbar">
-        <div class="jh-secondary-navbar__inner container">
+        <div class="jh-secondary-navbar__inner">
+
           <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
+
         </div>
       </div>
+    </div>
 
-      <!-- Page Banner -->
-      <div class="jh-page-banner" style="background-image: url('/images/ThinkstockPhotos-639811460.jpg'); background-position: center bottom;">
-        <div class="jh-page-banner-title">
-          <div class="jh-page-banner-title__inner container">
-            <h1 class="jh-page-banner-title__text">Urgent Care Centers</h1>
-          </div>
-        </div>
-      </div>
+    <header class="jh-header-container">
+      <div class="jh-header">
+          <div class="jh-header__inner">
 
-    </header>
+            <div class="jh-banner">
+              <div class="jh-banner__inner">
 
-    <section class="jh-toolbar-section">
-      <div class="jh-toolbar-section__inner container">
+                <div class="jh-title">
+                  <h1>Urgent Care</h1>
+                </div>
 
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="jh-breadcrumbs">
-              <div class="jh-breadcrumbs__inner">
-                <a href="/">Jefferson Health</a> <span>/</span> Urgent Care Centers
               </div>
             </div>
 
           </div>
-        </div>
+      </div>
+    </header>
 
+    <section class="jh-navbar-container">
+      <div class="jh-navbar">
+        <div class="jh-navbar__inner">
+
+          <div class="jh-breadcrumbs">
+            <div class="jh-breadcrumbs__inner">
+              <a href="/">Jefferson Health</a> > Urgent Care
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<style>
+
+/* Map Section */
+.jh-main-container {
+  background-color: #fff;
+}
+.jh-main {
+  margin: 0 auto;
+}
+.jh-main__inner {
+  padding: 20px;
+}
+
+</style>
+    <section class="jh-main-container">
+      <div class="jh-main">
+        <div class="jh-main__inner">
+
+          <section class="jh-main-content col-width-70 gutter-right">
+            <div class="jh-main-content">
+              <div class="jh-main-content__inner">
+
+                <!-- Intro Copy -->
+                <section class="jh-main-intro">
+                  <div class="jh-main-intro">
+                    <div class="jh-main-intro">
+                      <h3>
+                        When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
+                      </h3>
+                      <p>
+                        You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
+                      </p>
+                      <p>
+                        We're proud to say that the Jefferson at Washington Square urgent care and Smylie Times has been awarded the Certified Urgent Care Category 1 designation by the Urgent Care Association of America and are one of the select few facilities around the county that have met all of the UCAO's nationally-standardized criteria.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="jh-main-callout-box">
+                  <div class="jh-main-callout-box__inner">
+                    <div class="jh-main-callout-box__title">
+                      Know Before You Go
+                    </div>
+                    <div class="jh-main-callout-box__content" style="font-size: 18px; color: #152456; line-height: 1.6em;">
+                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
+
+ -->
+
+
+
+                <!-- Locations List -->
+                <!-- <div id="locations-list" class="jh-locations" data-source="urgentcare">
+                  <div class="jh-locations__inner">
+
+                    <div class="jh-locations-list__search">
+                      <input type="text" class="search" placeholder="Filter by location name or address" />
+                      <button class="sort" data-sort="name" style="float: right;">
+                        Sort by name
+                      </button>
+                    </div>
+
+                    <ul class="list jh-locations-list"></ul>
+
+                    <div class="jh-locations__pagination">
+                      <ul class="pagination"></ul>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+          </section>
+
+          <section class="jh-main-sidebar col-width-30">
+            <div class="jh-main-sidebar">
+              <div class="jh-main-sidebar__inner">
+
+                <div class="ez-columns">
+                  <div class="ez-col-res-100" style="margin-bottom: 15px;">
+                    <a class="jh-button" href="#locations">View Locations</a>
+                  </div>
+                </div>
+
+                <div class="jh-callout-box" style="background-color: #f2f4f8;">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title">
+                      Urgent Care Services
+                    </div>
+                    <div class="jh-callout-box__content">
+                      <ul class="jh-callout-box__list">
+                        <li>General illness</li>
+                        <li>Seasonal allergies</li>
+                        <li>Migraines</li>
+                        <li>Skin rashes</li>
+                        <li>Abscesses</li>
+                        <li>Sprains and fractures</li>
+                        <li>Physicals</li>
+                        <li>Vaccinations (where available)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="jh-callout-box" style="background-color: #d3d7e7;">
+                  <div class="jh-callout-box__inner">
+                    <div class="jh-callout-box__title" style="color: #152456;">
+                      No Appointment Necessary
+                    </div>
+                    <div class="jh-callout-box__content">
+                      We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+        </div>
       </div>
     </section>
 
-    <section class="jh-main-section">
-      <div class="jh-main-section__inner container">
+    <section class="jh-main-container jh-main-container--locations">
+      <div class="jh-main">
+        <div class="jh-main__inner">
 
-          <div class="row">
-            <div class="col-md-8">
+          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
 
-              <section class="jh-main-content">
-                <div class="jh-main-content__inner">
-
-                  <!-- Intro Copy -->
-                  <section class="jh-main-intro">
-                      <div class="jh-main-intro__inner">
-                        <h3>
-                          When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
-                        </h3>
-                        <p>
-                          You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
-                        </p>
-                        <p>
-                          We're proud to say that the Jefferson at Washington Square urgent care and Smylie Times has been awarded the Certified Urgent Care Category 1 designation by the Urgent Care Association of America and are one of the select few facilities around the county that have met all of the UCAO's nationally-standardized criteria.
-                        </p>
-                      </div>
-                  </section><!-- /.jh-main-intro -->
-
-                </div>
-              </section><!-- /.jh-main-content -->
-
-            </div><!-- /.col -->
-            <div class="col-md-4">
-
-              <section class="jh-main-sidebar">
-                <div class="jh-main-sidebar">
-                  <div class="jh-main-sidebar__inner">
-
-                    <div class="row">
-                      <div class="col-md-12" style="margin-bottom: 15px;">
-                        <a class="jh-button" href="#locations">Find A Location</a>
-                      </div>
-                    </div>
-
-                    <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8;">
-                      <div class="jh-callout-box__inner">
-                        <div class="jh-callout-box__title">
-                          Urgent Care Services
-                        </div>
-                        <div class="jh-callout-box__content">
-                          <ul class="jh-callout-box__list">
-                            <li>General illness</li>
-                            <li>Seasonal allergies</li>
-                            <li>Migraines</li>
-                            <li>Skin rashes</li>
-                            <li>Abscesses</li>
-                            <li>Sprains and fractures</li>
-                            <li>Physicals</li>
-                            <li>Vaccinations (where available)</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </section>
-
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-
-      </div><!-- /.jh-main inner /.container -->
-    </section><!-- /.jh-main -->
-
-    <section id="locations" class="jh-locations-section">
-        <div class="jh-locations-section__inner container">
-
-          <h1 style="margin-top: 20px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">
-            Locations
-          </h1>
-
-          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 40px; font-size: 22px; font-weight: 300;">
-            Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
+          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
+            Staffed by Jefferson doctors board certified in emergency medicine, you will receive the same expert care as you've come to expect at Jefferson. Our Urgent Care centers are available at the locations below and will be expanding to other areas in the near future.
           </p>
-
-          <div class="row">
-            <div class="col-md-7" style="padding-top: 30px;">
+          <div class="ez-columns locations-map-wrapper">
+            <div class="ez-col-set-600" style="border-right: 1px solid #ccc;">
 
               <!-- Locations List -->
-              <div id="locations-list" class="jh-locations" data-source="hospitals">
+              <div id="locations-list" class="jh-locations" data-source="urgentcare">
                 <div class="jh-locations__inner">
 
                   <div class="jh-locations-list__search">
                     <input type="text" class="search" placeholder="Filter by location name or address" />
                     <div class="jh-locations-list__options">
                       <button class="sort" data-sort="name" style="float: right;">
-                        <i class="fa fa-sort-alpha-asc"></i>
+                        A to Z
                       </button>
                     </div>
                   </div>
@@ -263,16 +321,16 @@
                 </div>
               </div>
 
-            </div><!-- /.col -->
-            <div class="col-md-5" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
+            </div>
+            <div class="ez-col-fill-600" style="background-color: #fff; height: 600px;">
 
               <!-- Map -->
-              <div class="jh-map-container" style="">
+              <div class="jh-map-container">
                 <div class="jh-map">
                   <div class="jh-map__inner">
 
                     <!-- Parsys goes here -->
-                    <div class="jh-locations__map" data-source="hospitals">
+                    <div class="jh-locations__map" data-source="urgentcare">
                       <div id="map"></div>
                     </div>
 
@@ -280,45 +338,14 @@
                 </div>
               </div>
 
-            </div><!-- /.col -->
-          </div><!-- /.row -->
+            </div>
+          </div><!-- /.ez-columns -->
+
         </div>
-    </section><!-- /.locaitons-section -->
+      </div>
+    </section>
 
     <style>
-    .jh-locations-info-window__wrapper {
-      width: 100%;
-    }
-    .jh-locations-info-window__wrapper.is-hidden {
-      left: 0;
-      top: -100%;
-    }
-    .jh-locations-info-window__wrapper {
-      box-shadow: none;
-      transition: ease-in .15s;
-      background-color: #fff;
-      height: 250px;
-    }
-    .jh-page-template-subpage .jh-locations__map {
-      height: 500px;
-    }
-    .jh-locations-info-window__title {
-      font-size: 16px;
-    }
-    .jh-locations-info-window__address {
-      font-size: 14px;
-    }
-    .jh-locations-list-window {
-      /* overflow-y: scroll; */
-      width: 100%;
-      background-color: #fff;
-      border-top: 2px solid #152456;
-      height: 100%;
-    }
-    .jh-page-template-subpage .jh-locations__map {
-      height: 400px;
-    }
-
     [class*='col-width-'] {
       box-sizing: border-box;
       float: left;

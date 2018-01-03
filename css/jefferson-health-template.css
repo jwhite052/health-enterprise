@@ -34,7 +34,7 @@ h3 {
   box-sizing: border-box;
 }
 .jh-header {
-  
+
 }
 
 /* Navbar Section */
@@ -63,22 +63,6 @@ h3 {
 
 .jh-breadcrumbs__inner {
   font-size: 14px;
-}
-
-/* Secondary Navigation */
-.jh-secondary-navbar-container {
-  box-sizing: border-box;
-  background-color: #fff;
-  height: 60px;
-}
-.jh-secondary-navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.jh-secondary-navbar__inner {
-  padding-top: 20px;
-  text-align: right;
 }
 
 /* Footer */
