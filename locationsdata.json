@@ -333,5 +333,110 @@
     	"url": "/content/health/find-a-location/locations/jefferson-urgent-care-willow-grove.html",
     	"position": { "lat": 40.1688489, "lng": -75.1262753 }
     }
+  ],
+  "rehab": [
+    {
+      "type": "rehab",
+      "name": "JeffFit – Art Museum",
+      "address": "2130 Spring Garden Street, 2nd Floor<br>Philadelphia, PA 19130",
+      "phone": "For appointments, please call: 215-955-1200<br>Appointments are available Monday through Friday, 7 a.m. to 6 p.m.",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
+    },
+    {
+      "type": "rehab",
+      "name": "JeffFit – Center City",
+      "address": "25 South 9th Street<br>Philadelphia, PA 19107",
+      "phone": "For appointments, please call: 215-955-1200<br>Appointments are available Monday through Friday, 7 a.m. to 6 p.m.",
+      "position": { "lat": 39.9511849, "lng": -75.1575963 }
+    },
+    {
+      "type": "rehab",
+      "name": "JeffFit – Navy Yard",
+      "address": "4050 South 26th Street<br>Suite 140<br>Philadelphia, PA 19112",
+      "phone": "For appointments, please call: 215-955-1200",
+      "position": { "lat": 39.8995653, "lng": -75.196966 }
+    },
+    {
+      "type": "rehab",
+      "name": "JeffFit – North Philadelphia",
+      "address": "2108 Cecil B. Moore Avenue<br>Philadelphia, PA 19121",
+      "phone": "For appointments, please call: 215-955-1200",
+      "position": { "lat": 39.980004, "lng": -75.171917 }
+    },
+    {
+      "type": "rehab",
+      "name": "JeffFit – South Philadelphia",
+      "address": "Methodist Hospital<br>2301 South Broad Street<br>3rd Floor<br>Philadelphia, PA 19148",
+      "phone": "For appointments, please call:&nbsp;215-955-1200<br>Appointments are available Monday, Wednesday and Friday between 7:30 a.m. to 4 p.m., and Tuesday and Thursday from 7:30 a.m. to 6:30 p.m.",
+      "position": { "lat": 39.9212052, "lng": -75.1718686 }
+    },
+    {
+      "type": "rehab",
+      "name": "Abington Hospital – Jefferson Health",
+      "address": "Buerger Building, Ground Floor<br>1200 Old York Road<br>Abington, PA 19001",
+      "phone": "215-481-2161<br>215-481-2251 (fax)<br>For appointments, please call: 215-481-2161",
+      "position": { "lat": 40.1193723, "lng": -75.1225546 }
+    },
+    {
+      "type": "rehab",
+      "name": "Abington Hospital – Landsdale Hospital",
+      "address": "100 Medical Campus Drive<br>Lansdale, PA",
+      "phone": "215-361-4531<br>215-361-4969 (fax)<br>For appointments, please call: 215-481-2160",
+      "position": { "lat": 40.2504456, "lng": -75.2735901 }
+    },
+    {
+      "name": "Abington Health Center – Blue Bell",
+      "address": "721 Arbor Way, Suite 104A<br>Blue Bell, PA 19422",
+      "phone": "215-540-1520<br>215-540-1599 (fax)<br>For appointments, please call: 215-481-2160",
+      "position": { "lat": 40.1405931, "lng": -75.28767 }
+    },
+    {
+      "type": "rehab",
+      "name": "Abington Health Center – Willow Grove",
+      "address": "Willowood Building, Suite 150<br>2510 Maryland Road<br>Willow Grove, PA 19090",
+      "phone": "215-481-5711<br>215-481-5623 (fax)<br>For appointments, please call: 215-481-2160",
+      "position": { "lat": 40.1634051, "lng": -75.132257 }
+    },
+    {
+      "type": "rehab",
+      "name": "Abington Health Center – Warminster",
+      "address": "225 Newtown Road<br>Warminster, PA 18974",
+      "phone": "215-441-7455<br>215-441-3743 (fax)",
+      "position": { "lat": 40.1850865, "lng": -75.0809491 }
+    },
+    {
+      "type": "rehab",
+      "name": "Rehabilitation Services at Artman",
+      "address": "The Becoming Center<br>250 North Bethlehem Pike<br>Ambler, PA 19002",
+      "phone": "215-540-0763<br>215-643-7623 (fax)<br>For appointments, please call: 215-481-2160",
+      "position": { "lat": 40.1668871, "lng": -75.223337 }
+    },
+    {
+      "type": "rehab",
+      "name": "Physical Therapy in Warrington",
+      "address": "1380 Easton Road<br>Warrington, PA 18976",
+      "phone": "215-558-4183<br>215-343-8096 (fax)<br>For appointments, please call: 215-481-2160",
+      "position": { "lat": 40.2517905, "lng": -75.1368779 }
+    },
+    {
+      "type": "rehab",
+      "name": "Aria Center for Rehab and Wellness",
+      "address": "131 Lincoln Highway<br>Fairless Hills, PA 19030<br>For appointments, please call: 215-831-5800",
+      "position": { "lat": 40.1749884, "lng": -74.863175 }
+    },
+    {
+      "type": "rehab",
+      "name": "Aria – Frankford Hospital",
+      "address": "4900 Frankford Avenue<br>Philadelphia, PA 19124",
+      "phone": "Phone: 215-831-2000<br>For appointments, please call: 215-955-1200",
+      "position": { "lat": 40.0196895, "lng": -75.0838933 }
+    },
+    {
+      "type": "rehab",
+      "name": "Aria – Torresdale Hospital",
+      "address": "10800 Knights Road<br>Philadelphia, PA 19114",
+      "phone": "215-612-4001<br>215-612-4584 (fax)<br>For appointments, please call: 1-877-808-ARIA",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    }
   ]
 }
