@@ -54,7 +54,7 @@
   padding: 10px 0;
 }
 .jh-page-banner-title__inner {
-
+  position: relative;
 }
 .jh-page-banner-title__text {
   font-size: 32px;
@@ -94,7 +94,7 @@
 
 /* Main Section */
 .jh-main-section {
-  padding: 10px 0 50px 0;
+  padding: 10px 0 40px 0;
 }
 
 /* Main Content */
@@ -591,7 +591,7 @@
   margin-bottom: 0;
 }
 .jh-callout-box__inner {
-  padding: 30px;
+  padding: 25px;
 }
 .jh-callout-box__title {
   font-size: 21px;
@@ -607,7 +607,7 @@
 }
 .jh-callout-box__list li {
   position: relative;
-  margin: .8em 0;
+  margin: .5em 0;
   font-weight: normal;
   font-size: 16px;
 }
@@ -637,7 +637,6 @@
   display: table;
 }
 .jh-locations-list-window {
-  overflow-y: scroll;
   width: 100%;
   background-color: #fff;
   border-top: 2px solid #152456;
@@ -673,7 +672,7 @@
 /* Locations Section */
 .jh-locations-section {
   background-color: #f2f4f8;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .jh-locations-section__inner {
 
@@ -728,4 +727,24 @@
   height: 50px;
   font-size: 24px;
   line-height: 50px;
+}
+
+/* Footer Toolbar */
+.footer-toolbar {
+  height: 70px;
+  background-color: #569bca;
+}
+.footer-toolbar__phone {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+.social-icons {
+  float: right;
+  font-size: 30px;
+  line-height: 70px;
+}
+.social-icons a {
+  color: #fff;
 }

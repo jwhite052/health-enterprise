@@ -421,7 +421,8 @@
     {
       "type": "rehab",
       "name": "Aria Center for Rehab and Wellness",
-      "address": "131 Lincoln Highway<br>Fairless Hills, PA 19030<br>For appointments, please call: 215-831-5800",
+      "address": "131 Lincoln Highway<br>Fairless Hills, PA 19030",
+      "phone": "For appointments, please call: 215-831-5800",
       "position": { "lat": 40.1749884, "lng": -74.863175 }
     },
     {
