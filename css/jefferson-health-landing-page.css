@@ -45,6 +45,9 @@
   background-size: auto;
 }
 /* End move to page props */
+.jh-header__inner {
+  position: relative;
+}
 .jh-header-content {
   position: relative;
   z-index: 1;

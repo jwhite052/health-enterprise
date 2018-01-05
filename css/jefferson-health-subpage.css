@@ -729,22 +729,6 @@
   line-height: 50px;
 }
 
-/* Footer Toolbar */
-.footer-toolbar {
-  height: 70px;
-  background-color: #569bca;
-}
-.footer-toolbar__phone {
-  line-height: 70px;
-  font-weight: bold;
-  font-size: 18px;
-  float: left;
-}
-.social-icons {
-  float: right;
-  font-size: 30px;
-  line-height: 70px;
-}
-.social-icons a {
-  color: #fff;
+.jh-main-intro__inner > h3 {
+  font-style: italic;
 }

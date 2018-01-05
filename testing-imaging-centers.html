@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Jefferson Health</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
@@ -11,12 +11,13 @@
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="/css/global-ribbon.css" rel="stylesheet" />
+    <link href="/css/ez-columns.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
-    <link href="/css/locations-map-component.css" rel="stylesheet" />
+    <link href="/components/css/locations-map-list.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--testing-imaging-centers">
+  <body class="jefferson-health jh-page-template-subpage">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -119,257 +120,204 @@
     	});
   	</script>
 
-    <div class="jh-secondary-navbar-container">
+    <header class="jh-header-section">
+
+      <!-- Secondary Navbar -->
       <div class="jh-secondary-navbar">
-        <div class="jh-secondary-navbar__inner">
-
+        <div class="jh-secondary-navbar__inner container">
           <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
-
         </div>
       </div>
-    </div>
 
-    <header class="jh-header-container jh-page-template-subpage--urgent-care">
-      <div class="jh-header">
-          <div class="jh-header__inner">
-
-            <div class="jh-banner">
-              <div class="jh-banner__inner">
-
-                <div class="jh-title">
-                  <h1>Testing & Imaging Centers</h1>
-                </div>
-
-              </div>
-            </div>
-
+      <!-- Page Banner -->
+      <div class="jh-page-banner" style="background-image: url('/images/ThinkstockPhotos-667873244.jpg'); background-position: center bottom -150px;">
+        <div class="jh-page-banner-title">
+          <div class="jh-page-banner-title__inner container">
+            <h1 class="jh-page-banner-title__text">Testing & Imaging Centers</h1>
+            <img src="/images/best-hospitals-honor-roll.png" style="position: absolute; right: 20px; bottom: 0px; z-index: 2; width: 120px;" />
           </div>
+        </div>
       </div>
+
     </header>
 
-    <section class="jh-navbar-container">
-      <div class="jh-navbar">
-        <div class="jh-navbar__inner">
+    <section class="jh-toolbar-section">
+      <div class="jh-toolbar-section__inner container">
 
-          <div class="jh-breadcrumbs">
-            <div class="jh-breadcrumbs__inner">
-              <a href="/">Jefferson Health</a> > Testing & Imaging Centers
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="jh-breadcrumbs">
+              <div class="jh-breadcrumbs__inner">
+                <a href="/">Jefferson Health</a> <span>/</span> Testing & Imaging Centers
+              </div>
             </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
-<style>
 
-/* Map Section */
-.jh-main-container {
-  background-color: #fff;
-}
-.jh-main {
-  margin: 0 auto;
-}
-.jh-main__inner {
-  padding: 20px;
-}
-
-</style>
-    <section class="jh-main-container">
-      <div class="jh-main">
-        <div class="jh-main__inner">
-
-          <section class="jh-main-content col-width-70 gutter-right">
-            <div class="jh-main-content">
-              <div class="jh-main-content__inner">
-
-                <!-- Intro Copy -->
-                <section class="jh-main-intro">
-                  <div class="jh-main-intro">
-                    <div class="jh-main-intro">
-                      <h3>
-                        Our goal is to minimize pain, promote wellness and regain function &ndash; providing the highest quality of care for every patient, every day.
-                      </h3>
-                      <p>
-                        In Center City, we offer Jefferson Outpatient Imaging – a world-class outpatient diagnostic imaging facility integrating leading-edge medical technology with your individual needs in mind. Just north of the city, we have five outpatient imaging locations from Abington to Blue Bell, Pennsylvania. In New Jersey, we’ve got you covered with four outpatient imaging locations across Gloucester and Camden counties. With more services located at Jefferson Bucks Hospital – and throughout the Northeast – Jefferson’s testing and imaging services are right where you need them to be. <a href="#">Find a location ></a>
-                      </p>
-                    </div>
-                  </div>
-                </section>
-
-                <!-- <div class="jh-main-callout-box">
-                  <div class="jh-main-callout-box__inner">
-                    <div class="jh-main-callout-box__title">
-                      Know Before You Go
-                    </div>
-                    <div class="jh-main-callout-box__content" style="font-size: 18px; color: #152456; line-height: 1.6em;">
-                      Have an unexpected illness or injury but unsure whether to rush to the ER? Knowing the difference between emergency care and urgent care can save your life. When in doubt, it's better to be safe and call 9-1-1 or go to the closest ER.
-                    </div>
-                  </div>
-                </div> -->
-
-                <!-- <h2 style="border-bottom: 1px solid #569bca; margin-top: 40px;">Services</h2>
-
- -->
-
-
-
-                <!-- Locations List -->
-                <!-- <div id="locations-list" class="jh-locations" data-source="urgentcare">
-                  <div class="jh-locations__inner">
-
-                    <div class="jh-locations-list__search">
-                      <input type="text" class="search" placeholder="Filter by location name or address" />
-                      <button class="sort" data-sort="name" style="float: right;">
-                        Sort by name
-                      </button>
-                    </div>
-
-                    <ul class="list jh-locations-list"></ul>
-
-                    <div class="jh-locations__pagination">
-                      <ul class="pagination"></ul>
-                    </div>
-                  </div>
-                </div> -->
-
-
-
-              </div>
-            </div>
-          </section>
-
-          <section class="jh-main-sidebar col-width-30">
-            <div class="jh-main-sidebar">
-              <div class="jh-main-sidebar__inner">
-
-
-<!--
-                <div class="jh-callout-box" style="background-color: #d3d7e7;">
-                  <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title" style="color: #152456;">
-                      No Appointment Necessary
-                    </div>
-                    <div class="jh-callout-box__content">
-                      We treat patients of all ages, from infants to seniors. Walk-ins are welcome. On average, patients are <strong>treated and discharged within an hour</strong>.
-                    </div>
-                  </div>
-                </div> -->
-
-                <div class="ez-columns">
-                  <div class="ez-col-res-100" style="margin-bottom: 15px;">
-                    <a class="jh-button" href="#locations">View Locations</a>
-                  </div>
-                </div>
-
-                <!-- <a href="https://appointments.jefferson.edu/" style="padding: 10px 15px; background-color: #013fa3; color: #fff; font-size: 16px; display: block; margin-bottom: 30px; text-align: center; letter-spacing: .1em; text-decoration: none; text-transform: uppercase;" target="_blank">Request an Appointment ></a> -->
-
-                <!-- <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8;">
-                  <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title" style="text-align: left;">
-                      Need help?
-                    </div>
-                    <div class="jh-callout-box__content">
-                      <p>
-                        Our friendly, experienced JEFF NOW® representatives are here to help you find the right doctor or location and schedule appointments.
-                      </p>
-                      <p>
-                        To speak with a JEFF NOW® representative, please choose one of the following options:
-                      </p>
-                      <p style="font-size: 24px; font-weight: 300; text-align: center; margin: 10px 0 10px 0;">
-                        Call 1-800-533-3669
-                      </p>
-                      <p style="text-align: center; margin: 0;">
-                        OR
-                      </p>
-                      <p>
-                        <a href="https://appointments.jefferson.edu/call/" target="_blank" style="display: block; padding: 5px 10px; background-color: #fff; color: #013fa3; text-decoration: none; text-align: center; border: 2px solid #013fa3;">Click to Talk to a JEFF NOW® representative</a>
-                      </p>
-                      <p style="text-align: center;">
-                        Available From 8 a.m. to 6 p.m., Monday through Friday
-                      </p>
-
-                    </div>
-                  </div>
-                </div> -->
-                <div class="jh-callout-box" style="background-color: #f2f4f8;">
-                  <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title">
-                      Specialty Services
-                    </div>
-                    <div class="jh-callout-box__content">
-                      <p>
-                        Our radiological specialties include neuroradiology, interventional radiology, and pediatric radiology, to name a few.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-        </div>
       </div>
     </section>
 
-    <section class="jh-main-container jh-main-container--locations">
-      <div class="jh-main">
-        <div class="jh-main__inner">
+    <section class="jh-main-section">
+      <div class="jh-main-section__inner container">
 
-          <h1 style="margin-top: 40px; text-align: center; font-size: 32px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px;">Locations</h1>
+          <div class="row">
+            <div class="col-md-8">
 
-          <p style="max-width: 80%; margin: 0 auto; margin-bottom: 80px; font-size: 22px; font-weight: 300;">
-            We know how important it is to have access to a health care system that provides every test you’ll need. Jefferson offers 24 testing and imaging centers located throughout the Greater Philadelphia Region.
-          </p>
-          <div class="ez-columns locations-map-wrapper">
-            <div class="ez-col-set-600" style="border-right: 1px solid #ccc;">
+              <section class="jh-main-content">
+                <div class="jh-main-content__inner">
 
-              <!-- Locations List -->
-              <div id="locations-list" class="jh-locations" data-source="urgentcare">
-                <div class="jh-locations__inner">
+                  <!-- Intro Copy -->
+                  <section class="jh-main-intro">
+                      <div class="jh-main-intro__inner">
+                        <h3>
+                          Our goal is to minimize pain, promote wellness and regain function &ndash; providing the highest quality of care for every patient, every day.
+                        </h3>
+                        <p>
+                          In Center City, we offer Jefferson Outpatient Imaging – a world-class outpatient diagnostic imaging facility integrating leading-edge medical technology with your individual needs in mind. Just north of the city, we have five outpatient imaging locations from Abington to Blue Bell, Pennsylvania. In New Jersey, we’ve got you covered with four outpatient imaging locations across Gloucester and Camden counties. With more services located at Jefferson Bucks Hospital – and throughout the Northeast – Jefferson’s testing and imaging services are right where you need them to be.
+                        </p>
+                      </div>
+                  </section><!-- /.jh-main-intro -->
 
-                  <div class="jh-locations-list__search">
-                    <input type="text" class="search" placeholder="Filter by location name or address" />
-                    <div class="jh-locations-list__options">
-                      <button class="sort" data-sort="name" style="float: right;">
-                        A to Z
-                      </button>
-                    </div>
-                  </div>
-                  <div class="jh-locations-list-window">
-                    <ul class="list jh-locations-list"></ul>
-                  </div>
-                  <!-- <div class="jh-locations__pagination">
-                    <ul class="pagination"></ul>
-                  </div> -->
                 </div>
-              </div>
+              </section><!-- /.jh-main-content -->
 
-            </div>
-            <div class="ez-col-fill-600" style="background-color: #fff; height: 600px;">
+            </div><!-- /.col -->
+            <div class="col-md-4">
 
-              <!-- Map -->
-              <div class="jh-map-container">
-                <div class="jh-map">
-                  <div class="jh-map__inner">
+              <section class="jh-main-sidebar">
+                <div class="jh-main-sidebar">
+                  <div class="jh-main-sidebar__inner">
 
-                    <!-- Parsys goes here -->
-                    <div class="jh-locations__map" data-source="urgentcare">
-                      <div id="map"></div>
+                    <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
+                      <div class="jh-callout-box__inner">
+                          <p>
+                            We have several convenient locations throughout Pennsylvania, New Jersey and Delaware.
+                          </p>
+                          <p>
+                            <a class="jh-button" href="#locations">Find a Location Near You</a>
+                          </p>
+                        </div>
+                      </div>
                     </div>
 
                   </div>
                 </div>
+              </section>
+
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+
+      </div><!-- /.jh-main inner /.container -->
+    </section><!-- /.jh-main -->
+
+    <!-- Locations Section -->
+    <section id="locations" class="jh-locations-section">
+      <div class="jh-locations-section__inner container">
+
+        <div class="row">
+          <div class="col-md-8">
+
+            <h2 class="section-title" style=" font-weight: bold;">
+              Locations
+            </h2>
+
+            <p style="margin-bottom: 40px;">
+              Jefferson Health offers an extensive care network with offices throughout Pennsylvania, New Jersey and Delaware. Use the search below to find the best location for you including detailed driving directions and further information about services available at each of our offices.
+            </p>
+
+          </div><!-- /.col -->
+          <div class="col-md-4" style="padding-top: 30px;">
+
+            <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
+              <div class="jh-callout-box__inner">
+                <p>
+                  The core values of our organization and clinical expertise demonstrate the staff’s firm commitment to providing the <strong>highest quality of care</strong> for every patient, every day.
+                </p>
               </div>
-
             </div>
-          </div><!-- /.ez-columns -->
 
-        </div>
-      </div>
-    </section>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-md-8" style="padding-top: 30px;">
+
+            <!-- Locations List -->
+            <div id="locations-list" class="jh-locations" data-source="rehab">
+              <div class="jh-locations__inner">
+
+                <div class="jh-locations-list__search">
+                  <input type="text" class="search" placeholder="Filter by location name or address" />
+                  <div class="jh-locations-list__options">
+                    <button class="sort" data-sort="name" style="float: right;">
+                      <i class="fa fa-sort-alpha-asc"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="jh-locations-list-window">
+                  <ul class="list jh-locations-list"></ul>
+                </div>
+
+              </div>
+            </div><!-- /.locations-list -->
+
+          </div><!-- /.col -->
+          <div class="col-md-4" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
+
+            <!-- Map -->
+            <div class="jh-map-container" style="">
+              <div class="jh-map">
+                <div class="jh-map__inner">
+
+                  <!-- Parsys goes here -->
+                  <div class="jh-locations__map" data-source="rehab">
+                    <div id="map"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div><!-- /.jh-map-container -->
+
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.jh-locations-section -->
 
     <style>
+    .jh-locations-info-window__wrapper {
+      width: 100%;
+    }
+    .jh-locations-info-window__wrapper.is-hidden {
+      left: 0;
+      top: -100%;
+    }
+    .jh-locations-info-window__wrapper {
+      box-shadow: none;
+      transition: ease-in .15s;
+      background-color: #fff;
+      height: 250px;
+    }
+    .jh-page-template-subpage .jh-locations__map {
+      height: 500px;
+    }
+    .jh-locations-info-window__title {
+      font-size: 16px;
+    }
+    .jh-locations-info-window__address {
+      font-size: 14px;
+    }
+    .jh-locations-list-window {
+      /* overflow-y: scroll; */
+      width: 100%;
+      background-color: #fff;
+      border-top: 2px solid #152456;
+      height: 100%;
+    }
+    .jh-page-template-subpage .jh-locations__map {
+      height: 400px;
+    }
+
     [class*='col-width-'] {
       box-sizing: border-box;
       float: left;
@@ -384,16 +332,30 @@
     .gutter-right { padding-right: 80px; }
     </style>
 
-    <footer class="jh-footer-container">
-      <div class="jh-footer">
-        <div class="jh-footer__inner">
+    <section class="footer-toolbar">
+      <div class="footer-toolbar__inner container">
+
+        <div class="footer-toolbar__phone">
+          Need help? Call 1-800-JEFF-NOW
         </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;
+          <a href="#"><i class="fa fa-twitter-square"></i></a>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="jh-footer">
+      <div class="jh-footer__inner container">
+        &copy; Copyright Jefferson Health. All rights reserved.
       </div>
     </footer>
 
     <script src="/js/list.min.js"></script>
-    <script src="/js/locations-list-filter-component.js"></script>
-    <script src="/js/locations-map-component.js"></script>
+    <script src="/components/js/locations-list-filter.js"></script>
+    <script src="/components/js/locations-map-list.js"></script>
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <script>

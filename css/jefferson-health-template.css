@@ -65,8 +65,34 @@ h3 {
   font-size: 14px;
 }
 
+/* Footer Toolbar */
+.footer-toolbar {
+  height: 70px;
+  background-color: #569bca;
+}
+.footer-toolbar__phone {
+  line-height: 70px;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+.social-icons {
+  float: right;
+  font-size: 30px;
+  line-height: 70px;
+}
+.social-icons a {
+  color: #fff;
+}
+
 /* Footer */
-.jh-footer-container {
+.jh-footer {
   background-color: #000222;
   height: 60px;
+}
+.jh-footer__inner {
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 13px;
 }
