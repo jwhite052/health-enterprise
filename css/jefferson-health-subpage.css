@@ -653,22 +653,7 @@
   display: table;
   clear: both;
 }
-/* Button */
-.jh-button {
-  padding: 8px 10px;
-  background-color: #4e65b8;
-  color: #fff;
-  font-size: 16px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  text-transform: none;
-}
-.jh-button:hover {
-  background-color: #809cce;
-  color: #fff;
-  text-decoration: none;
-}
+
 /* Locations Section */
 .jh-locations-section {
   background-color: #f2f4f8;
@@ -731,4 +716,26 @@
 
 .jh-main-intro__inner > h3 {
   font-style: italic;
+}
+
+.jh-locations-section .jh-callout-box {
+  background-color: #fff;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+/* Section Title */
+.section-title {
+  position: relative;
+  padding-top: 20px;
+  margin: 0 0 40px 0;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  height: 3px;
+  width: 50px;
+  background-color: #569bca;
 }

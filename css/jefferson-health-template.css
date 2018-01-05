@@ -66,15 +66,19 @@ h3 {
 }
 
 /* Footer Toolbar */
+.footer-toolbar * {
+  box-sizing: border-box;
+}
 .footer-toolbar {
   height: 70px;
   background-color: #569bca;
 }
 .footer-toolbar__phone {
   line-height: 70px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 18px;
   float: left;
+  color: #fff;
 }
 .social-icons {
   float: right;
@@ -83,6 +87,15 @@ h3 {
 }
 .social-icons a {
   color: #fff;
+}
+.search-icon {
+  float: right;
+  font-size: 30px;
+  line-height: 70px;
+  padding: 0 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  border-width: 0 2px 0 2px;
+  margin-left: 50px;
 }
 
 /* Footer */
@@ -95,4 +108,60 @@ h3 {
   padding-top: 20px;
   color: #fff;
   font-size: 13px;
+}
+
+/* Button */
+.jh-button {
+  padding: 8px 15px;
+  background-color: #4e65b8;
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+}
+.jh-button:hover {
+  background-color: #809cce;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Announcement Bar */
+#announcement-bar {
+  background-color: #e0eff5;
+  padding: 15px;
+  box-shadow: 4px 4px 4px #ddd;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 480px) {
+  #announcement-bar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+#announcement-bar .title {
+  font-weight: 900;
+  font-size: 24px;
+  color: #4578bc;
+  padding-top: 0px;
+}
+@media only screen and (max-width: 480px) {
+  #announcement-bar .title {
+    padding-bottom: 20px;
+  }
+}
+#announcement-bar .copy {
+  font-size: 16px;
+  color: #152456;
+  padding-top: 0px;
+}
+#announcement-bar .copy a {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 11px;
+  color: #4578bc;
+  text-transform: uppercase;
+  line-height: normal;
 }

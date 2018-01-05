@@ -427,16 +427,191 @@
     },
     {
       "type": "rehab",
-      "name": "Aria – Frankford Hospital",
+      "name": "Jefferson Frankford Hospital",
       "address": "4900 Frankford Avenue<br>Philadelphia, PA 19124",
       "phone": "Phone: 215-831-2000<br>For appointments, please call: 215-955-1200",
       "position": { "lat": 40.0196895, "lng": -75.0838933 }
     },
     {
       "type": "rehab",
-      "name": "Aria – Torresdale Hospital",
+      "name": "Jefferson Torresdale Hospital",
       "address": "10800 Knights Road<br>Philadelphia, PA 19114",
       "phone": "215-612-4001<br>215-612-4584 (fax)<br>For appointments, please call: 1-877-808-ARIA",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    }
+  ],
+  "imaging": [
+    {
+      "type": "imaging",
+      "name": "Center City Philadelphia",
+      "address": "850 Walnut Street<br>Ground Floor, Walnut Towers<br>Philadelphia, PA 19107",
+      "phone": "215-503-4900",
+      "position": { "lat": 39.9522733, "lng": -75.148905 }
+    },
+    {
+      "type": "imaging",
+      "name": "Bustleton Northeast Philadelphia",
+      "address": "9601 Bustleton Avenue<br>Philadelphia, PA 19115",
+      "phone": "215-676-5100",
+      "position": { "lat": 40.0870701, "lng": -75.0375401 }
+    },
+    {
+      "type": "imaging",
+      "name": "Collegeville, PA",
+      "address": "534 West 2nd Avenue (Route 29, next to Wawa)<br>Suite 102<br>Collegeville, PA 19426",
+      "phone": "610-831-0500",
+      "position": { "lat": 39.9522733, "lng": -75.148905 }
+    },
+    {
+      "type": "imaging",
+      "name": "East Norriton, PA",
+      "address": "1 West Germantown Pike<br>East Norriton, PA 19401",
+      "phone": "610-277-3202",
+      "position": { "lat": 40.1424503, "lng": -75.3148018 }
+    },
+    {
+      "type": "imaging",
+      "name": "Villanova, PA",
+      "address": "Marcus Institute of Integrative Health<br>789 E. Lancaster Avenue<br>Villanova, PA 19085",
+      "position": { "lat": 39.9522733, "lng": -75.148905 }
+    },
+    {
+      "type": "imaging",
+      "name": "Chestnut Hill",
+      "address": "Chestnut Hill Hospital<br>8835 Chestnut Hill Ave.<br>Philadelphia, PA 19118",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Darby, PA",
+      "address": "Mercy Fitzgerald Hospital<br>1500 Lansdowne Avenue<br>Darby, PA 19023",
+      "phone": "215-503-4915",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "West Grove, PA",
+      "address": "Jennersville Regional Hospital<br>1015 West Baltimore Pike<br>West Grove, PA 19390",
+      "phone": "215-503-4915",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Wilmington, DE",
+      "address": "Saint Francis Healthcare<br>701 North Clayton Street<br>Wilmington, DE 19805",
+      "phone": "215-503-4915",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Salem, NJ",
+      "address": "The Memorial Hospital of Salem County<br>310 Woodstown Road<br>Salem, NJ 08079",
+      "phone": "215-503-4915",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Abington Hospital – Jefferson Health",
+      "address": "Widener Building, ground floor<br>1200 Old York Road<br>Abington, PA 19001",
+      "phone": "215-481-7595",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Abington – Lansdale Hospital",
+      "address": "Main Entrance<br>100 Medical Campus Drive<br>Lansdale, PA 19446",
+      "phone": "215-361-4501",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Abington Health Center – Blue Bell",
+      "address": "721 Arbor Way<br>Blue Bell, PA 19422",
+      "phone": "215-619-6400",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Abington Health Center – Warminster",
+      "address": "215 Newtown Road<br>Warminster, PA 18974",
+      "phone": "215-441-7507",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Abington Health Center – Willow Grove",
+      "address": "Blairwood Building, Suite 3 & 4<br>2701 Blair Mill Road<br>Willow Grove, PA 19090",
+      "phone": "215-481-5400",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Radiology —​ Medical Imaging",
+      "address": "2201 Chapel Avenue West<br>Cherry Hill, NJ 08002",
+      "phone": "Appointments Only: 856-406-4100<br>Nuclear Medicine Appointments: 856-488-6813",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Radiology —​ Medical Imaging",
+      "address": "18 E. Laurel Road Stratford, NJ 08084<br>Stratford, NJ 08084",
+      "phone": "Appointments Only: 856-406-4100<br>Nuclear Medicine Appointments: 856-346-7999",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Radiology —​ Medical Imaging",
+      "address": "435 Hurffville-Cross Keys Road<br>Turnersville, NJ 08012",
+      "phone": "Appointments Only: 856-406-4100<br>Nuclear Medicine Appointments: 856-582-2769<br>For CDs, Imaging Films & Reports: 856-582-2844",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Outpatient Medical Imaging —​ Washington Twp",
+      "address": "900 Medical Center Drive<br>Sewell, NJ 08080",
+      "phone": "Appointments Only: 856-406-4100<br>For CDs, Imaging Films & Reports: 856-582-3130",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Bucks Hospital",
+      "address": "380 North Oxford Valley Road<br>Langhorne, PA 19047",
+      "phone": "Phone: 215-949-5000",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Frankford Hospital",
+      "address": "4900 Frankford Avenue<br>Philadelphia, PA 19124",
+      "phone": "Phone: 215-831-2000",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Torresdale Hospital",
+      "address": "10800 Knights Road<br>Philadelphia, PA 19114",
+      "phone": "Phone: 215-612-4000",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Health - The Professional Court",
+      "address": "Bustleton Avenue and Verree Road<br>Philadelphia, PA 19116",
+      "phone": "Main Phone: 215-827-8200",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Outpatient Imaging - Center City",
+      "address": "850 Walnut Street<br>Philadelphia, PA 19107",
+      "phone": "Main Phone: 215-503-4900<br>Fax: 215-503-4921",
+      "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    },
+    {
+      "type": "imaging",
+      "name": "Jefferson Health - The Annex",
+      "address": "2451 Grant Avenue<br>Philadelphia, PA 19114",
+      "phone": "Main Phone: 215-464-8050 (MRI Testing)<br>Alternate Phone: 215-831-5800 (PET Scan Testing)",
       "position": { "lat": 40.0716695, "lng": -74.9854092 }
     }
   ]
