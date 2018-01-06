@@ -264,6 +264,125 @@ background-color: transparent !important;
 	})(jQuery);
 	</script>
 
+  <style>
+  .nav-menu-section {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100%;
+    /* background-color: rgba(0,0,0,.5); */
+    transition: ease-out .3s;
+  }
+  .nav-menu-section.menu-open {
+    width: 100%;
+    right: 0;
+  }
+  body.menu-open::before {
+    content: '';
+    position: fixed;
+    display: block;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000222;
+    opacity: .8;
+  }
+  .menu-button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+  .menu-button a {
+    display: block;
+    background-color: rgba(0,0,0,.8);
+    width: 100px;
+    height: 65px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .menu-button a:hover {
+    background-color: rgba(0,0,0,1);
+  }
+  .main-menu {
+    float: right;
+    width: 400px;
+    height: 100%;
+    background-color: #569bca;
+  }
+  body {
+    transition: ease-out .2s;
+  }
+  body.menu-open {
+    overflow-y:hidden;
+    height: 100%;
+  }
+  .main-menu__header {
+    height: 65px;
+    padding: 20px;
+  }
+  .main-menu__header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
+    padding: 0;
+  }
+  .main-menu__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main-menu__links li {
+    margin: 15px 0px;
+  }
+  </style>
+
+  <div class="menu-button">
+    <a href="#"><i class="fa fa-bars"></i><br>MENU</a>
+  </div>
+  <section class="nav-menu-section">
+    <div class="main-menu">
+      <div class="main-menu__inner">
+        <div class="main-menu__header">
+          <h1>Jefferson Health</h1>
+        </div>
+        <ul class="main-menu__links">
+          <li>
+            <a href="#">Jefferson Health Hospitals</a>
+          </li>
+          <li>
+            <a href="#">Sidney Kimmel Cancer Center</a>
+          </li>
+          <li>
+            <a href="#">Urgent Care Centers</a>
+          </li>
+          <li>
+            <a href="#">Outpatient Centers</a>
+          </li>
+          <li>
+            <a href="#">Rehab Specialty Services</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.menu-button a').on('click', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('menu-open');
+      $('.nav-menu-section').toggleClass('menu-open');
+    });
+  </script>
   <div id="announcement-bar">
     <div class="container">
       <div class="row">
@@ -743,7 +862,7 @@ background-color: transparent !important;
       <div class="footer-toolbar__inner container">
 
         <div class="footer-toolbar__phone">
-          Need help? Call 1-800-JEFF-NOW
+          Connect with us: &nbsp;&nbsp;<strong>Call 1-800-JEFF-NOW</strong>
         </div>
 
         <div class="social-icons">
