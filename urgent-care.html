@@ -2,22 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jefferson Health</title>
+    <!-- Libraries -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="/css/global-ribbon.css" rel="stylesheet" />
-    <link href="/css/ez-columns.css" rel="stylesheet" />
+    <!-- Template -->
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
-    <link href="/components/css/locations-map-list.css" rel="stylesheet" />
+    <!-- Components -->
+    <link href="/components/css/global-ribbon.css" rel="stylesheet" />
+    <link href="/components/css/locations-map.css" rel="stylesheet" />
+    <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body class="jefferson-health jh-page-template-subpage">
+  <body class="jefferson-health">
+
+    <!-- Global Ribbon -->
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,14 +41,50 @@
         <div id="bs-global-navbar-collapse" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a class="nav-heading" href="#" data-toggle="dropdown">
+                <a class="nav-heading" href="#" data-toggle="dropdown" aria-expanded="true">
                   All Locations<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="http://www.abingtonhealth.org/our-locations/" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Abington location'])" >Abington</a></li>
-                  <li><a href="https://www.ariahealth.org/about-aria/campus-locations-and-outpatient-sites" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Aria location'])">Aria</a></li>
-                  <li><a href="http://hospitals.jefferson.edu/find-a-location/?utm_source=jefferson&utm_medium=nav&utm_campaign=global" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Jefferson location'])">Jefferson</a></li>
-  				<li><a href="https://www.kennedyhealth.org/facilities-directory?field_category=1571&title=&field_addressgeo_latlon_op=-&field_addressgeo_latlon=" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Kennedy location'])">Kennedy</a></li>
+                  <li class="dropdown dropdown-submenu">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Center City location'])">
+                          Center City
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="http://hospitals.jefferson.edu/">Thomas Jefferson University Hospital</a></li>
+                          <li><a href="http://hospitals.jefferson.edu/departments-and-services/jefferson-hospital-for-neuroscience.html">Jefferson Hospital for Neuroscience</a></li>
+                          <li><a href="http://hospitals.jefferson.edu/find-a-location/locations/methodist-hospital.html">Methodist Hospital</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown dropdown-submenu">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Abington location'])">
+                          Abington
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="https://www.abingtonhealth.org/">Abington - Jefferson Health</a></li>
+                          <li><a href="https://www.abingtonhealth.org/our-locations/abington-lansdale-hospital">Abington -
+   Lansdale Hospital Jefferson Health</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown dropdown-submenu">
+  					<a class="dropdown-toggle" data-toggle="dropdown" href="#" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Northeast location'])">
+                          Northeast
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="https://www.ariahealth.org/bucks-county">Jefferson Bucks Hospital</a></li>
+                          <li><a href="https://www.ariahealth.org/frankford">Jefferson Frankford Hospital</a></li>
+                          <li><a href="https://www.ariahealth.org/torresdale">Jefferson Torresdale Hospital</a></li>
+                      </ul>
+                  </li>
+  				<li class="dropdown dropdown-submenu menu-width">
+                  	<a class="dropdown-toggle " data-toggle="dropdown" href="#" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'New Jersey location'])">
+                      	New Jersey <span class="navlink-spacer"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="https://www.kennedyhealth.org/">Jefferson Cherry Hill Hospital</a></li>
+                          <li><a href="https://www.kennedyhealth.org/">Jefferson Stratford Hospital</a></li>
+                          <li><a href="https://www.kennedyhealth.org/">Jefferson Washington Township Hospital</a></li>
+                      </ul>
+                  </li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -51,10 +92,10 @@
                   Careers<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="http://www.abingtonhealth.org/JoinOurTeam/" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'AH Careers'])">Abington</a></li>
-                  <li><a href="https://www.ariahealth.org/careers-education" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Aria Careers'])">Aria</a></li>
-                  <li><a href="http://hr.jefferson.edu/human-resources/careers.html?utm_source=jefferson&utm_medium=nav&utm_campaign=global" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'JH Careers'])">Jefferson</a></li>
-                    <li><a href="https://www.kennedyhealth.org/careers" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Kennedy Careers'])">Kennedy</a></li>
+                  <li><a href="http://www.abingtonhealth.org/JoinOurTeam/" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'AH Careers'])">Abington</a></li>
+                  <li><a href="https://www.ariahealth.org/careers-education" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Aria Careers'])">Aria</a></li>
+                  <li><a href="http://hr.jefferson.edu/human-resources/careers.html?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'JH Careers'])">Jefferson</a></li>
+                    <li><a href="https://www.kennedyhealth.org/careers" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Kennedy Careers'])">Kennedy</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -62,93 +103,60 @@
                   Give Now<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="http://www.abingtonhealth.org/WaysOfGiving/" onClick="ga('send', 'event', 'Dropdowns', 'Click', 'Give AH'])">Abington</a></li>
-                  <li><a href="https://w3.jefferson.edu/giving/aria.html" onClick="ga(‘send’, ‘event’, ‘Dropdowns', 'Click', ‘Give Aria’])">Aria</a></li>
-                  <li><a href="https://w3.jefferson.edu/giving.cfm?utm_source=jefferson&utm_medium=nav&utm_campaign=global" onClick="ga('send, ‘event’, ‘Dropdowns', 'Click', ‘Give JH’])">Jefferson</a></li>
-                    <li><a href="https://www.kennedyhealth.org/giving-kennedy-health-care-foundation" onClick="ga(‘send’, ‘event’, ‘Dropdowns', 'Click', ‘Give Kennedy’])">Kennedy</a></li>
+                  <li><a href="http://www.abingtonhealth.org/WaysOfGiving/" onclick="ga('send', 'event', 'Dropdowns', 'Click', 'Give AH'])">Abington</a></li>
+                  <li><a href="https://w3.jefferson.edu/giving/aria.html" onclick="ga(‘send’, ‘event’, ‘Dropdowns', 'Click', ‘Give Aria’])">Aria</a></li>
+                  <li><a href="https://w3.jefferson.edu/giving.cfm?utm_source=jefferson&amp;utm_medium=nav&amp;utm_campaign=global" onclick="ga('send, ‘event’, ‘Dropdowns', 'Click', ‘Give JH’])">Jefferson</a></li>
+                    <li><a href="https://www.kennedyhealth.org/giving-kennedy-health-care-foundation" onclick="ga(‘send’, ‘event’, ‘Dropdowns', 'Click', ‘Give Kennedy’])">Kennedy</a></li>
                 </ul>
             </li>
             <li class="hidden-xs hidden-sm">
               <div class="navbar-phone-1">
-  		      <a href="http://hospitals.jefferson.edu/patients-and-visitors/make-an-appointment.html" data-tel-mobile="1-800-533-3669" onClick="ga('send', 'event', 'Navigation', 'Click', 'JEFF NOW'])" >Call 1-800-JEFF-NOW</a>
+  		      <a href="http://hospitals.jefferson.edu/patients-and-visitors/make-an-appointment.html" data-tel-mobile="1-800-533-3669" onclick="ga('send', 'event', 'Navigation', 'Click', 'JEFF NOW'])">Call 1-800-JEFF-NOW</a>
   		  </div>
             </li>
             <li>
-              <a class="nav-heading" href="http://www.jefferson.edu/university.html" style="border-bottom: 0;" onClick="ga('send', 'event', 'Navigation', 'Click', 'University'])" >UNIVERSITY</a></li>
+              <a class="nav-heading" href="http://www.jefferson.edu/university.html" style="border-bottom: 0;" onclick="ga('send', 'event', 'Navigation', 'Click', 'University'])">UNIVERSITY</a></li>
             <li class="visible-xs visible-sm" style="padding-top: 20px;">
               <div class="navbar-phone-2">
-  		      <a href="http://hospitals.jefferson.edu/patients-and-visitors/make-an-appointment.html" data-tel-mobile="1-800-533-3669" onClick="ga('send', 'event', 'Navigation', 'Click', 'JEFF NOW'])" >1-800-JEFF-NOW</a>
+  		      <a href="http://hospitals.jefferson.edu/patients-and-visitors/make-an-appointment.html" data-tel-mobile="1-800-533-3669" onclick="ga('send', 'event', 'Navigation', 'Click', 'JEFF NOW'])">1-800-JEFF-NOW</a>
   		  </div>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
+    </nav><!-- /#global-navigation -->
 
-    <script>
-    	$(document).ready(function() {
-    		var is_mobile;
-
-    		/* Detects mobile browser */
-    		if( navigator.userAgent.match(/Mobi/i)
-    			|| navigator.userAgent.match(/Android/i)
-    			|| navigator.userAgent.match(/iPhone/i)
-    			|| navigator.userAgent.match(/Silk/i)
-    			|| navigator.userAgent.match(/Kindle/i)
-    			|| navigator.userAgent.match(/BlackBerry/i)
-    			|| navigator.userAgent.match(/Opera Mini/i)
-    			|| navigator.userAgent.match(/Opera Mobi/i) ) {
-    		   	is_mobile = true;
-    		  	console.log("Device: mobile");
-    		}
-    		else {
-    			is_mobile = false;
-    			console.log("Device: desktop");
-    		}
-
-    		/* Sets link href */
-    		$("#global-navigation .navbar-phone-1 > a, #global-navigation .navbar-phone-2 > a").click(function(e) {
-    			if (is_mobile) {
-    				var link_href = $(this).attr("data-tel-mobile");
-    				link_href = link_href.replace(/\s+/g, ''); /* remove white space */
-    				if (link_href.substr(0,4) != "tel:") {
-    					link_href = "tel:" + link_href;
-    					$(this).attr("href", link_href).attr("target","_blank"); /* new window for phone dialer */
-    				}
-    			}
-    		});
-    	});
-  	</script>
-
-    <header class="jh-header-section">
+    <!-- Header Section -->
+    <header class="header-section">
 
       <!-- Secondary Navbar -->
-      <div class="jh-secondary-navbar">
-        <div class="jh-secondary-navbar__inner container">
+      <div class="secondary-navbar">
+        <div class="secondary-navbar__inner container">
           <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
         </div>
       </div>
 
       <!-- Page Banner -->
-      <div class="jh-page-banner" style="background-image: url('/images/ThinkstockPhotos-511394143.jpg'); background-position: center bottom -100px;">
-        <div class="jh-page-banner-title">
-          <div class="jh-page-banner-title__inner container">
-            <h1 class="jh-page-banner-title__text">Urgent Care Centers</h1>
+      <div class="page-banner" style="background-image: url('/images/ThinkstockPhotos-511394143.jpg'); background-position: center bottom -100px;">
+        <div class="page-banner-title">
+          <div class="page-banner-title__inner container">
+            <h1 class="page-banner-title__text">Urgent Care Centers</h1>
             <img src="/images/best-hospitals-honor-roll.png" style="position: absolute; right: 20px; bottom: 0px; z-index: 2; width: 120px;" />
           </div>
         </div>
       </div>
 
-    </header>
+    </header><!-- /.header-section -->
 
-    <section class="jh-toolbar-section">
-      <div class="jh-toolbar-section__inner container">
+    <!-- Toolbar Section -->
+    <section class="toolbar-section">
+      <div class="toolbar-section__inner container">
 
         <div class="row">
           <div class="col-md-12">
 
-            <div class="jh-breadcrumbs">
-              <div class="jh-breadcrumbs__inner">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__inner">
                 <a href="/">Jefferson Health</a> <span>/</span> Urgent Care Centers
               </div>
             </div>
@@ -157,175 +165,173 @@
         </div>
 
       </div>
-    </section>
+    </section><!-- /.toolbar-section -->
 
-    <section class="jh-main-section">
-      <div class="jh-main-section__inner container">
+    <!-- Main Section -->
+    <section class="main-section">
+      <div class="main-section__inner container">
 
           <div class="row">
             <div class="col-md-8">
 
-              <section class="jh-main-content">
-                <div class="jh-main-content__inner">
+              <!-- Main Content -->
+              <section class="main-content">
+                <div class="main-content__inner">
 
                   <!-- Intro Copy -->
-                  <section class="jh-main-intro">
-                      <div class="jh-main-intro__inner">
-                        <h3>
-                          When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
-                        </h3>
-                        <p>
-                          You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
-                        </p>
-                        <!-- <p>
-                          We're proud to say that the Jefferson at Washington Square urgent care and Smylie Times has been awarded the Certified Urgent Care Category 1 designation by the Urgent Care Association of America and are one of the select few facilities around the county that have met all of the UCAO's nationally-standardized criteria.
-                        </p> -->
+                  <section class="main-intro">
+                    <div class="main-intro__inner">
+                      <h3>
+                        When your condition can't wait – like a bad cough or a sprained knee – Jefferson Health Urgent Care is your best option.
+                      </h3>
+                      <p>
+                        You feel ill or have a minor injury. Your doctor's office either has closed for the day or can't squeeze you into the schedule. You think about going to the emergency room, but your condition isn't life threatening and you don't want to sit in the waiting room for hours.
+                      </p>
 
-                        <!-- Callout Box -->
+                      <h2 class="section-title" style="margin-top: 20px; font-weight: bold;">
+                      Services
+                      </h2>
 
-                        <h2 class="section-title" style="margin-top: 20px; font-weight: bold;">
-                        Services
-                        </h2>
+                      <p>
+                        You will receive the same level of expert care as you've come to expect at Jefferson. Our Urgent Care doctors are highly trained and board certified in Emergency Medicine.
+                      </p>
 
-                        <p>
-                          You will receive the same level of expert care as you've come to expect at Jefferson. Our Urgent Care doctors are highly trained and board certified in Emergency Medicine.
-                        </p>
+                      <div class="row">
+                        <div class="col-md-3" style="padding-top: 30px;">
 
-                        <div class="row">
-                          <div class="col-md-3" style="padding-top: 30px;">
-                            <img src="/images/urgent-care-2-400x400.jpg" style="width: 100%;">
-                          </div>
-                          <div class="col-md-9">
-                            <h3 style="margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #f2f4f8;">
-                              Conditions Treated
-                            </h3>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <ul class="jh-callout-box__list">
-                                  <li>General illness</li>
-                                  <li>Seasonal allergies</li>
-                                  <li>Migraines</li>
-                                  <li>Skin rashes</li>
-                                </ul>
-                              </div>
-                              <div class="col-md-6">
-                                <ul class="jh-callout-box__list">
-                                  <li>Abscesses</li>
-                                  <li>Sprains and fractures</li>
-                                  <li>Cold, cough & flu symptoms</li>
-                                  <li>Minor burns</li>
-                                </ul>
-                              </div>
+                          <img src="/images/urgent-care-2-400x400.jpg" style="width: 100%;">
+
+                        </div>
+                        <div class="col-md-9">
+
+                          <h3 style="margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid #f2f4f8;">
+                            Conditions Treated
+                          </h3>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <ul class="callout-box__list">
+                                <li>General illness</li>
+                                <li>Seasonal allergies</li>
+                                <li>Migraines</li>
+                                <li>Skin rashes</li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6">
+                              <ul class="callout-box__list">
+                                <li>Abscesses</li>
+                                <li>Sprains and fractures</li>
+                                <li>Cold, cough & flu symptoms</li>
+                                <li>Minor burns</li>
+                              </ul>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="row">
-                          <div class="col-md-3" style="padding-top: 30px;">
-                            <img src="/images/urgent-care-1-400x400.jpg" style="width: 100%;">
-                          </div>
-                          <div class="col-md-9">
-                            <h3 style="margin-bottom: 10px; padding-bottom: 6px;  border-bottom: 2px solid #f2f4f8;">
-                              Services Offered
-                            </h3>
-                            <div class="row">
-                              <div class="col-md-6">
-                                <ul class="jh-callout-box__list">
-                                  <li>Care Coordination</li>
-                                  <li>Electrocardiograms</li>
-                                  <li>Intravenous Fluids</li>
-                                  <li>Nebulizer Therapy</li>
-                                </ul>
-                              </div>
-                              <div class="col-md-6">
-                                <ul class="jh-callout-box__list">
-                                  <li>On-site X-rays</li>
-                                  <li>On-site Lab</li>
-                                  <li>Physicals</li>
-                                  <li>Vaccinations (where available)</li>
-                                </ul>
-                              </div>
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
+                      <div class="row">
+                        <div class="col-md-3" style="padding-top: 30px;">
+
+                          <img src="/images/urgent-care-1-400x400.jpg" style="width: 100%;">
+
+                        </div>
+                        <div class="col-md-9">
+
+                          <h3 style="margin-bottom: 10px; padding-bottom: 6px;  border-bottom: 2px solid #f2f4f8;">
+                            Services Offered
+                          </h3>
+
+                          <div class="row">
+                            <div class="col-md-6">
+
+                              <ul class="callout-box__list">
+                                <li>Care Coordination</li>
+                                <li>Electrocardiograms</li>
+                                <li>Intravenous Fluids</li>
+                                <li>Nebulizer Therapy</li>
+                              </ul>
                             </div>
-                          </div>
-                        </div>
 
+                            <div class="col-md-6">
 
+                              <ul class="callout-box__list">
+                                <li>On-site X-rays</li>
+                                <li>On-site Lab</li>
+                                <li>Physicals</li>
+                                <li>Vaccinations (where available)</li>
+                              </ul>
 
+                            </div><!-- /.col -->
+                          </div><!-- /.row -->
 
-                      </div>
-                  </section><!-- /.jh-main-intro -->
+                        </div><!-- /.col -->
+                      </div><!-- /.row -->
 
-                </div>
-              </section><!-- /.jh-main-content -->
+                    </div><!-- /.main-intro__inner -->
+                  </section><!-- /.main-intro -->
+
+                </div><!-- /.main-content__inner -->
+              </section><!-- /.main-content -->
 
             </div><!-- /.col -->
             <div class="col-md-4">
 
-              <section class="jh-main-sidebar">
-                <div class="jh-main-sidebar">
-                  <div class="jh-main-sidebar__inner">
+              <!-- Main Sidebar -->
+              <section class="main-sidebar">
+                <div class="main-sidebar__inner">
 
-                    <!-- <div class="row">
-                      <div class="col-md-12" style="margin-bottom: 15px;">
-                        <a class="jh-button" href="#locations">View All Locations</a>
-                      </div>
-                    </div> -->
-                    <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
-                      <div class="jh-callout-box__inner">
-                          <p>
-                            We have <strong>7 urgent care centers</strong> throughout Philadelphia, Montgomery County, and Bucks County.
-                          </p>
-                          <p>
-                            <a class="jh-button" href="#locations">Find a Location Near You</a>
-                          </p>
-                        </div>
-                      </div>
+                  <div class="callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
+                    <div class="callout-box__inner">
+                      <p>
+                        We have <strong>7 urgent care centers</strong> throughout Philadelphia, Montgomery County, and Bucks County.
+                      </p>
+                      <p>
+                        <a class="button-default" href="#locations">Find a Location Near You</a>
+                      </p>
                     </div>
-
-                    <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
-                      <div class="jh-callout-box__inner">
-                          <p>
-                            <strong>No appointment necessary,</strong> walk-ins are welcome. On average, patients are treated and discharged within an hour.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="jh-callout-box" style="background-color: #fff; border: 2px solid #f2f4f8;">
-                      <div class="jh-callout-box__inner">
-                        <div class="jh-callout-box__title">
-                          Have Questions?
-                        </div>
-                        <div class="jh-callout-box__content">
-                          <p style="font-size: 24px; font-weight: normal; text-align: center; margin: 10px 0 10px 0; color: #013fa3;">
-                            Call 1-800-533-3669
-                          </p>
-                          <p style="text-align: center; margin: 0;">
-                            OR
-                          </p>
-                          <p>
-                            <a class="jh-button" href="https://appointments.jefferson.edu/call/" target="_blank">Click to Talk to a JEFF NOW® representative</a>
-                          </p>
-                          <p style="text-align: center; font-size: 12px;">
-                            Available From 8 a.m. to 6 p.m., Monday through Friday
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
-                </div>
-              </section>
+
+                  <div class="callout-box" style="background-color: #fff; border: 2px solid #f2f4f8; margin-bottom: 20px;">
+                    <div class="callout-box__inner">
+                        <p>
+                          <strong>No appointment necessary,</strong> walk-ins are welcome. On average, patients are treated and discharged within an hour.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="callout-box" style="background-color: #fff; border: 2px solid #f2f4f8;">
+                    <div class="callout-box__inner">
+                      <div class="callout-box__title">
+                        Have Questions?
+                      </div>
+                      <div class="callout-box__content">
+                        <p style="font-size: 24px; font-weight: normal; text-align: center; margin: 10px 0 10px 0; color: #013fa3;">
+                          Call 1-800-533-3669
+                        </p>
+                        <p style="text-align: center; margin: 0;">
+                          OR
+                        </p>
+                        <p>
+                          <a class="button-default" href="https://appointments.jefferson.edu/call/" target="_blank">Click to Talk to a JEFF NOW® representative</a>
+                        </p>
+                        <p style="text-align: center; font-size: 12px;">
+                          Available From 8 a.m. to 6 p.m., Monday through Friday
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!-- /.main-sidebar__inner -->
+              </section><!-- /.main-sidebar -->
 
             </div><!-- /.col -->
           </div><!-- /.row -->
 
-      </div><!-- /.jh-main inner /.container -->
-    </section><!-- /.jh-main -->
+      </div><!-- /.main inner /.container -->
+    </section><!-- /.main -->
 
     <!-- Locations Section -->
-    <section id="locations" class="jh-locations-section">
-      <div class="jh-locations-section__inner container">
+    <section id="locations" class="locations-section">
+      <div class="locations-section__inner container">
 
         <div class="row">
           <div class="col-md-8" style="padding-right: 50px;">
@@ -341,8 +347,8 @@
           </div><!-- /.col -->
           <div class="col-md-4" style="padding-top: 30px;">
 
-            <div class="jh-callout-box">
-              <div class="jh-callout-box__inner">
+            <div class="callout-box">
+              <div class="callout-box__inner">
                 <p>
                   <strong>Walk-ins are welcome</strong> or call the urgent care center location you will be visiting to let us know you are coming. Your wait time is based on your arrival time.
                 </p>
@@ -355,19 +361,19 @@
           <div class="col-md-8" style="padding-top: 30px;">
 
             <!-- Locations List -->
-            <div id="locations-list" class="jh-locations" data-source="urgentcare">
-              <div class="jh-locations__inner">
+            <div id="locations-list" class="locations" data-source="urgentcare">
+              <div class="locations__inner">
 
-                <div class="jh-locations-list__search">
+                <div class="locations-list__search">
                   <input type="text" class="search" placeholder="Filter by location name or address" />
-                  <div class="jh-locations-list__options">
+                  <div class="locations-list__options">
                     <button class="sort" data-sort="name" style="float: right;">
                       <i class="fa fa-sort-alpha-asc"></i>
                     </button>
                   </div>
                 </div>
-                <div class="jh-locations-list-window">
-                  <ul class="list jh-locations-list"></ul>
+                <div class="locations-list-window">
+                  <ul class="list locations-list"></ul>
                 </div>
 
               </div>
@@ -377,79 +383,31 @@
           <div class="col-md-4" style="position: -webkit-sticky; position: sticky; top: 0; padding-top: 30px;">
 
             <!-- Map -->
-            <div class="jh-map-container" style="">
-              <div class="jh-map">
-                <div class="jh-map__inner">
+            <div class="map-container">
+              <div class="map">
+                <div class="map__inner">
 
                   <!-- Parsys goes here -->
-                  <div class="jh-locations__map" data-source="urgentcare">
+                  <div class="locations__map" data-source="urgentcare">
                     <div id="map"></div>
                   </div>
 
                 </div>
               </div>
-            </div><!-- /.jh-map-container -->
+            </div><!-- /.map-container -->
 
           </div><!-- /.col -->
         </div><!-- /.row -->
+        
       </div><!-- /.container -->
-    </section><!-- /.jh-locations-section -->
+    </section><!-- /.locations-section -->
 
-    <style>
-    .jh-locations-info-window__wrapper {
-      width: 100%;
-    }
-    .jh-locations-info-window__wrapper.is-hidden {
-      left: 0;
-      top: -100%;
-    }
-    .jh-locations-info-window__wrapper {
-      box-shadow: none;
-      transition: ease-in .15s;
-      background-color: #fff;
-      height: 250px;
-    }
-    .jh-page-template-subpage .jh-locations__map {
-      height: 500px;
-    }
-    .jh-locations-info-window__title {
-      font-size: 16px;
-    }
-    .jh-locations-info-window__address {
-      font-size: 14px;
-    }
-    .jh-locations-list-window {
-      /* overflow-y: scroll; */
-      width: 100%;
-      background-color: #fff;
-      border-top: 2px solid #152456;
-      height: 100%;
-    }
-    .jh-page-template-subpage .jh-locations__map {
-      height: 400px;
-    }
-
-    [class*='col-width-'] {
-      box-sizing: border-box;
-      float: left;
-    }
-    .col-width-20 { width: 20%; }
-    .col-width-30 { width: 30%; }
-    .col-width-40 { width: 40%; }
-    .col-width-50 { width: 50%; }
-    .col-width-60 { width: 60%; }
-    .col-width-70 { width: 70%; }
-    .col-width-80 { width: 80%; }
-    .gutter-right { padding-right: 80px; }
-
-
-    </style>
-
+    <!-- Footer Toolbar -->
     <section class="footer-toolbar">
       <div class="footer-toolbar__inner container">
 
         <div class="footer-toolbar__phone">
-          Need help? Call 1-800-JEFF-NOW
+          Connect with us: &nbsp;&nbsp;<strong>Call 1-800-JEFF-NOW</strong>
         </div>
 
         <div class="social-icons">
@@ -463,22 +421,27 @@
       </div>
     </section>
 
-    <footer class="jh-footer">
-      <div class="jh-footer__inner container">
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-section__inner container">
         &copy; Copyright Jefferson Health. All rights reserved.
       </div>
     </footer>
 
+    <!-- Locations Map -->
+    <script src="/components/js/locations-map.js"></script>
+    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <!-- Global Ribbon -->
+    <script src="/components/js/global-ribbon.js"></script>
     <script src="/js/list.min.js"></script>
     <script src="/components/js/locations-list-filter.js"></script>
     <script src="/components/js/locations-map-list.js"></script>
-    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <script>
-    // Google Maps API callback
-    function initMap() {
-      initLocationsMap();
-    }
+      // Google Maps API callback
+      function initMap() {
+        initLocationsMap();
+      }
     </script>
   </body>
 </html>

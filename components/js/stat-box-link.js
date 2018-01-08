@@ -1,8 +1,8 @@
 (function() {
-  var elementsArr = document.getElementsByClassName('jh-stats-box-container');
+  var elementsArr = document.getElementsByClassName('stat-box-container');
   for (var i = 0; i < elementsArr.length; i++) {
     // check if stats overlay exists
-    if (elementsArr[i].getElementsByClassName('jh-stats-box-overlay')[0]) {
+    if (elementsArr[i].getElementsByClassName('stat-box-overlay')[0]) {
       elementsArr[i].addEventListener('mouseover', function() {
         this.classList += ' is-active';
       });

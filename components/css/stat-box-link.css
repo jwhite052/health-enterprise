@@ -1,8 +1,8 @@
 /* Stats Box */
-[class^="jh-stats-box"] * {
+[class^="stat-box"] * {
   box-sizing: border-box;
 }
-.jh-stats-box-container {
+.stat-box-container {
   position: relative;
   width: 16.66%;
   float: left;
@@ -11,64 +11,64 @@
   border-right: 2px solid #fff;
   overflow: hidden;
 }
-.jh-stats-box-container a {
+.stat-box-container a {
   text-decoration: none;
 }
-.jh-stats-box-container:first-of-type {
+.stat-box-container:first-of-type {
   border-left: 2px solid #fff;
 }
 @media (max-width : 992px) {
-  .jh-stats-box-container {
+  .stat-box-container {
     width: 33.3%;
     margin-top: 0px;
     border-bottom: 2px solid #fff;
   }
 }
 @media (max-width : 480px) {
-  .jh-stats-box-container {
+  .stat-box-container {
     width: 50%;
   }
 }
-.jh-stats-box {
+.stat-box {
   position: relative;
   top: 0;
   z-index: 1;
   height: 300px;
   transition: ease-in .15s;
 }
-.is-active .jh-stats-box {
+.is-active .stat-box {
   top: -100px;
   transition: ease-in .15s;
 }
-.is-active .jh-stats-box .jh-stats-box__icon {
+.is-active .stat-box .stat-box__icon {
   opacity: 0;
   transition: ease-in .15s;
 }
-.jh-stats-box__inner {
+.stat-box__inner {
   padding: 60px 20px;
 }
-.jh-stats-box__icon {
+.stat-box__icon {
   opacity: 1;
   text-align: center;
   transition: ease-in .3s;
 }
-.jh-stats-box__icon img {
+.stat-box__icon img {
   width: 50px;
 }
-.jh-stats-box__number {
+.stat-box__number {
   text-align: center;
   font-size: 60px;
   font-weight: bold;
   color: #152456;
 }
-.jh-stats-box__title {
+.stat-box__title {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #569bca;
 }
-.jh-stats-box-overlay {
+.stat-box-overlay {
   position: absolute;
   left: 0;
   width: calc(100%);
@@ -79,23 +79,23 @@
   top: 100%;
   background-color: transparent;
 }
-.is-active .jh-stats-box-overlay {
+.is-active .stat-box-overlay {
   top: 140px;
 }
-.jh-stats-box-overlay__inner {
+.stat-box-overlay__inner {
   position: relative;
   height: 100%;
   padding: 0 0 0 0;
 }
-.jh-stats-box-overlay__text {
+.stat-box-overlay__text {
   line-height: normal;
   margin: 0 !important;
   padding: 0;
   color: #152456;
   font-size: 14px;
 }
-.jh-stats-box-overlay__link,
-.jh-stats-box__link {
+.stat-box-overlay__link,
+.stat-box__link {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -114,14 +114,14 @@
   letter-spacing: .2em;
   opacity: 1;
 }
-.jh-stats-box__link {
+.stat-box__link {
   color: #bbb;
   transition: ease-in .15s;
 }
-.jh-stats-box-overlay__link:hover,
-.jh-stats-box__link:hover {
+.stat-box-overlay__link:hover,
+.stat-box__link:hover {
   text-decoration: underline;
 }
-.is-active .jh-stats-box__link {
+.is-active .stat-box__link {
   opacity: 0;
 }

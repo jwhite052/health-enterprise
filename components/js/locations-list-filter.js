@@ -27,7 +27,7 @@
   }
 
   var jsonObj = data;
-  var locationsListUI = $('.jh-locations-list');
+  var locationsListUI = $('.locations-list');
 
   for (var key in jsonObj) {
     var obj = jsonObj[key];
@@ -47,43 +47,43 @@
       var phone = obj[i].phone;
       var hours = obj[i].hours;
       var bodyEl = $('<div>', {
-        class: 'jh-location-card__body'
+        class: 'location-card__body'
       });
-      // bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '<br />' +
-      // '<a class="jh-location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>'));
-      bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '</p>'));
+      // bodyEl.append($('<p class="location-card__address address">' + obj[i].address + '<br />' +
+      // '<a class="location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>'));
+      bodyEl.append($('<p class="location-card__address address">' + obj[i].address + '</p>'));
       if (phone) {
         // phone = phone.replace(/: /gi, ': <br>');
-        bodyEl.append($('<p class="jh-location-card__phone">' + phone + '</p>'));
+        bodyEl.append($('<p class="location-card__phone">' + phone + '</p>'));
       }
       if (hours) {
-        bodyEl.append($('<p class="jh-location-card__hours">' + hours + '</p>'));
+        bodyEl.append($('<p class="location-card__hours">' + hours + '</p>'));
       }
 
-      bodyEl.append($('<ul class="jh-location-card__links"><li><a class="jh-location-card__details-link" href="' + obj[i].url + '">View Location Details</a></li> ' +
-      '<li><a class="jh-location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></li></ul>'));
+      bodyEl.append($('<ul class="location-card__links"><li><a class="location-card__details-link" href="' + obj[i].url + '">View Location Details</a></li> ' +
+      '<li><a class="location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></li></ul>'));
 
       // create new list item element
       var newListItem = $('<li>', {
-        class: 'jh-locations-list__item',
+        class: 'locations-list__item',
         attr: {
           'data-id': i
         },
         html: $('<div>', {
-          class: 'jh-location-card',
+          class: 'location-card',
           html: $('<div>', {
-            class: 'jh-location-card__inner',
+            class: 'location-card__inner',
             html: $('<div>', {
-              class: 'jh-location-card__image'
+              class: 'location-card__image'
             }).add('<div>', {
-              class: 'jh-location-card__category category',
+              class: 'location-card__category category',
               attr: {
                 'data-category': category
               },
               html: categoryStr
             }).add($('<div>', {
-              class: 'jh-location-card__title name',
-              // html: $('<h4>' + obj[i].name + '</h4>' + '<a class="jh-location-card__details-link" href="' + obj[i].url + '">View Location Details</a>')
+              class: 'location-card__title name',
+              // html: $('<h4>' + obj[i].name + '</h4>' + '<a class="location-card__details-link" href="' + obj[i].url + '">View Location Details</a>')
               html: $('<h4>' + obj[i].name + '</h4>')
             })).add(bodyEl)
           })
@@ -120,7 +120,7 @@
 //   }
 //
 //   var jsonObj = data;
-//   var locationsListUI = $('.jh-locations-list');
+//   var locationsListUI = $('.locations-list');
 //
 //   for (var key in jsonObj) {
 //     var obj = jsonObj[key];
@@ -140,40 +140,40 @@
 //       var phone = obj[i].phone;
 //       var hours = obj[i].hours;
 //       var bodyEl = $('<div>', {
-//         class: 'jh-location-card__body'
+//         class: 'location-card__body'
 //       });
-//       // bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '<br />' +
-//       // '<a class="jh-location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>'));
-//       bodyEl.append($('<p class="jh-location-card__address address">' + obj[i].address + '</p>'));
+//       // bodyEl.append($('<p class="location-card__address address">' + obj[i].address + '<br />' +
+//       // '<a class="location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>'));
+//       bodyEl.append($('<p class="location-card__address address">' + obj[i].address + '</p>'));
 //       if (phone) {
 //         // phone = phone.replace(/: /gi, ': <br>');
-//         bodyEl.append($('<p class="jh-location-card__phone">' + phone + '</p>'));
+//         bodyEl.append($('<p class="location-card__phone">' + phone + '</p>'));
 //       }
 //       if (hours) {
-//         bodyEl.append($('<p class="jh-location-card__hours">' + hours + '</p>'));
+//         bodyEl.append($('<p class="location-card__hours">' + hours + '</p>'));
 //       }
 //
-//       bodyEl.append($('<ul class="jh-location-card__links"><li><a class="jh-location-card__details-link" href="' + obj[i].url + '">View Location Details</a></li> ' +
-//       '<li><a class="jh-location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></li></ul>'));
+//       bodyEl.append($('<ul class="location-card__links"><li><a class="location-card__details-link" href="' + obj[i].url + '">View Location Details</a></li> ' +
+//       '<li><a class="location-card__directions-link" href="' + encodeURI('https://www.google.com/maps/place/' + obj[i].address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></li></ul>'));
 //
 //       // create new list item element
 //       var newListItem = $('<li>',{
-//         class: 'jh-locations-list__item',
+//         class: 'locations-list__item',
 //         html: $('<div>', {
-//           class: 'jh-location-card',
+//           class: 'location-card',
 //           html: $('<div>', {
-//             class: 'jh-location-card__inner',
+//             class: 'location-card__inner',
 //             html: $('<div>', {
-//               class: 'jh-location-card__image'
+//               class: 'location-card__image'
 //             }).add('<div>', {
-//               class: 'jh-location-card__category category',
+//               class: 'location-card__category category',
 //               attr: {
 //                 'data-category': category
 //               },
 //               html: categoryStr
 //             }).add($('<div>', {
-//               class: 'jh-location-card__title name',
-//               // html: $('<h4>' + obj[i].name + '</h4>' + '<a class="jh-location-card__details-link" href="' + obj[i].url + '">View Location Details</a>')
+//               class: 'location-card__title name',
+//               // html: $('<h4>' + obj[i].name + '</h4>' + '<a class="location-card__details-link" href="' + obj[i].url + '">View Location Details</a>')
 //               html: $('<h4>' + obj[i].name + '</h4>')
 //             })).add(bodyEl)
 //           })

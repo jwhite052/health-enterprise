@@ -1,12 +1,12 @@
 /* Locations Map */
-.jh-locations__map {
+.locations__map {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
   z-index: 0;
 }
-/* .jh-locations__map::after {
+/* .locations__map::after {
   content: '';
   display: block;
   position: absolute;
@@ -22,7 +22,7 @@
   opacity: .2;
 } */
 @media only screen and (max-width: 480px) {
-  .jh-locations__map{
+  .locations__map{
     height: 250px;
   }
 }
@@ -31,7 +31,7 @@
 [class^="locations-info-window"] {
   box-sizing: border-box;
 }
-.jh-locations-info-window__wrapper {
+.locations-info-window__wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,16 +42,16 @@
   transition: ease-in .4s;
   overflow: hidden;
 }
-.jh-locations-info-window__wrapper * {
+.locations-info-window__wrapper * {
   box-sizing: border-box;
 }
-.jh-locations-info-window__wrapper.is-visible {
+.locations-info-window__wrapper.is-visible {
 }
-.jh-locations-info-window__wrapper.is-hidden {
+.locations-info-window__wrapper.is-hidden {
   left: -400px;
 }
 @media only screen and (max-width: 480px) {
-  .jh-locations-info-window__wrapper {
+  .locations-info-window__wrapper {
     width: 225px;
     left: 0px;
     top: 0px;
@@ -59,7 +59,7 @@
     width: 100%;
   }
 }
-.jh-locations-info-window__title-bar {
+.locations-info-window__title-bar {
   position: relative;
   background-color: #666;
   height: 35px;
@@ -72,16 +72,16 @@
   letter-spacing: .1em;
   text-align: center;
 }
-.jh-locations-info-window__wrapper--hospitals .jh-locations-info-window__title-bar {
+.locations-info-window__wrapper--hospitals .locations-info-window__title-bar {
   background-color: #4a7ab8;
 }
-.jh-locations-info-window__wrapper--outpatient .jh-locations-info-window__title-bar {
+.locations-info-window__wrapper--outpatient .locations-info-window__title-bar {
   background-color: #ab2d8b;
 }
-.jh-locations-info-window__wrapper--urgentcare .jh-locations-info-window__title-bar {
+.locations-info-window__wrapper--urgentcare .locations-info-window__title-bar {
   background-color: #f8ad40;
 }
-.jh-locations-info-window__close {
+.locations-info-window__close {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -92,11 +92,11 @@
   height: 22px;
   opacity: 0.7;
 }
-.jh-locations-info-window__close:hover {
+.locations-info-window__close:hover {
   opacity: 1;
 }
-.jh-locations-info-window__close:before,
-.jh-locations-info-window__close:after {
+.locations-info-window__close:before,
+.locations-info-window__close:after {
   position: absolute;
   left: 11px;
   content: ' ';
@@ -104,13 +104,13 @@
   width: 2px;
   background-color: #fff;
 }
-.jh-locations-info-window__close:before {
+.locations-info-window__close:before {
   transform: rotate(45deg);
 }
-.jh-locations-info-window__close:after {
+.locations-info-window__close:after {
   transform: rotate(-45deg);
 }
-.jh-locations-info-window {
+.locations-info-window {
   /*background-color: #fff;
   padding: 20px;
   box-shadow: 10px 5px 5px black !important;*/
@@ -119,20 +119,20 @@
   overflow-y: scroll;
   height: calc(100% - 100px);
 }
-.jh-locations-info-window__title {
+.locations-info-window__title {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 15px 0;
   padding: 0;
   color: #152456;
 }
-.jh-locations-info-window__address {
+.locations-info-window__address {
   font-size: 16px;
 }
-.jh-locations-info-window__locationlink {
+.locations-info-window__locationlink {
 
 }
-.jh-locations-info-window__locationlink a {
+.locations-info-window__locationlink a {
   box-sizing: border-box;
   text-decoration: none;
   color: #569bca;
@@ -144,34 +144,34 @@
   font-weight: bold;
   padding: 5px 2px;
 }
-.jh-locations-info-window__locationlink a:hover {
+.locations-info-window__locationlink a:hover {
   background-color: #569bca;
   color: #fff;
 }
-.jh-locations-info-window__directionslink {
+.locations-info-window__directionslink {
   font-weight: bold;
   color: #569bca;
   text-decoration: none;
   font-size: .8em;
   text-transform: uppercase;
 }
-.jh-locations-info-window__bottom {
+.locations-info-window__bottom {
   height: 65px;
   padding: 15px;
 }
 @media only screen and (max-width: 480px) {
-  .jh-locations-info-window {
+  .locations-info-window {
     font-size: 13px;
     height: 150px;
   }
-  .jh-locations-info-window__title {
+  .locations-info-window__title {
     font-size: 16px;
     font-weight: bold;
   }
-  .jh-locations-info-window__address {
+  .locations-info-window__address {
     font-size: 14px;
   }
-  .jh-locations-info-window__locationlink a {
+  .locations-info-window__locationlink a {
     font-size: 12px;
   }
 }

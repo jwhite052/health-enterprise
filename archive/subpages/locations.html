@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script
@@ -13,10 +12,8 @@
     <link href="/css/global-ribbon.css" rel="stylesheet" />
     <link href="/css/jefferson-health-template.css" rel="stylesheet" />
     <link href="/css/jefferson-health-subpage.css" rel="stylesheet" />
-    <link href="/css/locations-map-component.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
-  <body class="jefferson-health jh-page-template-subpage jh-page-template-subpage--physician-search">
+  <body class="jefferson-health jh-page-template-subpage">
     <nav id="global-navigation" class="navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -119,17 +116,7 @@
     	});
   	</script>
 
-    <div class="jh-secondary-navbar-container">
-      <div class="jh-secondary-navbar">
-        <div class="jh-secondary-navbar__inner">
-
-          <a href="#"><i class="fa fa-search"></i> Search Jefferson Health</a>
-
-        </div>
-      </div>
-    </div>
-
-    <header class="jh-header-container jh-page-template-subpage--urgent-care">
+    <header class="jh-header-container">
       <div class="jh-header">
           <div class="jh-header__inner">
 
@@ -137,7 +124,7 @@
               <div class="jh-banner__inner">
 
                 <div class="jh-title">
-                  <h1>Physician Search</h1>
+                  <h1>Locations</h1>
                 </div>
 
               </div>
@@ -153,121 +140,72 @@
 
           <div class="jh-breadcrumbs">
             <div class="jh-breadcrumbs__inner">
-              <a href="/">Jefferson Health</a> > Physician Search
+              Jefferson Health > Locations
             </div>
           </div>
 
         </div>
       </div>
     </section>
-<style>
 
-/* Map Section */
-.jh-main-container {
-  background-color: #fff;
-}
-.jh-main {
-  margin: 0 auto;
-}
-.jh-main__inner {
-  padding: 20px;
-}
+    <section class="jh-map-container">
+      <div class="jh-map">
+        <div class="jh-map__inner">
 
-.jh-google-search input {
-  width: 100%;
-  height: 50px;
-  font-size: 24px;
-  line-height: 50px;
-}
-</style>
+          <!-- Parsys goes here -->
+          <div class="jh-map-component"></div>
+
+        </div>
+      </div>
+    </section>
+
     <section class="jh-main-container">
       <div class="jh-main">
         <div class="jh-main__inner">
 
-          <section class="jh-main-content col-width-70 gutter-right">
-            <div class="jh-main-content">
-              <div class="jh-main-content__inner">
+          <!-- Parsys goes here -->
+          <div id="locations-list" class="jh-locations">
+            <div class="jh-locations__inner">
 
-                <div class="jh-google-search">
-                  <input type="text" />
-                </div>
+              <div class="jh-locations__search">
+                <input type="text" class="search" placeholder="Enter a location name or address" />
+                <button id="filter-all">
+                  all
+                </button>
+                <button id="filter-hospital">
+                  hospital
+                </button>
+                <button id="filter-urgentcare">
+                  urgent care
+                </button>
+                <button id="filter-outpatient">
+                  outpatient
+                </button>
+                <button class="sort" data-sort="name" style="float: right;">
+                  Sort by name
+                </button>
+              </div>
 
+              <ul class="list jh-locations-list"></ul>
+
+              <div class="jh-locations__pagination">
+                <ul class="pagination"></ul>
               </div>
             </div>
-          </section>
-
-          <section class="jh-main-sidebar col-width-30">
-            <div class="jh-main-sidebar">
-              <div class="jh-main-sidebar__inner">
-
-                <div class="jh-callout-box" style="background-color: #d3d7e7;">
-                  <div class="jh-callout-box__inner">
-                    <div class="jh-callout-box__title" style="color: #152456;">
-                      Network Of Physicians
-                    </div>
-                    <div class="jh-callout-box__content">
-                      Looking for a doctor? Our online physician directory provides easy access to more than 1,100 doctors and health professionals with offices throughout Philadelphia, Pennsylvania, South Jersey and the Delaware Valley.
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </section>
-
-    <style>
-    [class*='col-width-'] {
-      box-sizing: border-box;
-      float: left;
-    }
-    .col-width-20 { width: 20%; }
-    .col-width-30 { width: 30%; }
-    .col-width-40 { width: 40%; }
-    .col-width-50 { width: 50%; }
-    .col-width-60 { width: 60%; }
-    .col-width-70 { width: 70%; }
-    .col-width-80 { width: 80%; }
-    .gutter-right { padding-right: 80px; }
-    </style>
-
-    <section class="footer-toolbar">
-      <div class="footer-toolbar__inner container">
-
-        <div class="footer-toolbar__phone">
-          Need help? Call 1-800-JEFF-NOW
-        </div>
-
-        <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook-square"></i></a>&nbsp;
-          <a href="#"><i class="fa fa-twitter-square"></i></a>
-          <div class="search-icon">
-            <a class="search-button" href="#"><i class="fa fa-search"></i></a>
           </div>
-        </div>
 
+        </div>
       </div>
     </section>
 
-    <footer class="jh-footer">
-      <div class="jh-footer__inner container">
-        &copy; Copyright Jefferson Health. All rights reserved.
+    <footer class="jh-footer-container">
+      <div class="jh-footer">
+        <div class="jh-footer__inner">
+        </div>
       </div>
     </footer>
 
-    <!-- <script src="/js/list.min.js"></script>
-    <script src="/js/locations-list-filter-component.js"></script>
-    <script src="/js/locations-map-component.js"></script> -->
-    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
-    <script>
-    // Google Maps API callback
-    function initMap() {
-      initLocationsMap();
-    }
-    </script> -->
+    <script src="/js/list.min.js"></script>
+    <script src="/js/jefferson-health-subpage.js"></script>
   </body>
 </html>

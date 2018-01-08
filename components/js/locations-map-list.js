@@ -165,7 +165,7 @@ function initLocationsMap() {
   };
   MapMarkers.prototype.setClickHandlerListItems = function() {
 
-    var listItems = document.getElementsByClassName('jh-locations-list__item');
+    var listItems = document.getElementsByClassName('locations-list__item');
     console.log(listItems);
     // set click handler for each marker
     for (var i = 0; i < listItems.length; i++) {
@@ -202,12 +202,12 @@ function initLocationsMap() {
       windowBottom: document.createElement('DIV')
     };
 
-    this.ui.element.classList.add('jh-locations-info-window__wrapper', 'locations-info-window__wrapper--default', 'is-hidden');
-    this.ui.titleBar.classList.add('jh-locations-info-window__title-bar');
-    this.ui.titleBarName.classList.add('jh-locations-info-window__title-bar-name');
-    this.ui.close.classList.add('jh-locations-info-window__close');
-    this.ui.content.classList.add('jh-locations-info-window');
-    this.ui.windowBottom.classList.add('jh-locations-info-window__bottom');
+    this.ui.element.classList.add('locations-info-window__wrapper', 'locations-info-window__wrapper--default', 'is-hidden');
+    this.ui.titleBar.classList.add('locations-info-window__title-bar');
+    this.ui.titleBarName.classList.add('locations-info-window__title-bar-name');
+    this.ui.close.classList.add('locations-info-window__close');
+    this.ui.content.classList.add('locations-info-window');
+    this.ui.windowBottom.classList.add('locations-info-window__bottom');
 
     this.ui.titleBar.appendChild(this.ui.titleBarName);
     this.ui.titleBar.appendChild(this.ui.close);
@@ -219,7 +219,7 @@ function initLocationsMap() {
     mapElement.append(this.ui.element);
 
     // event listeners
-    this.ui.element.getElementsByClassName('jh-locations-info-window__close')[0].addEventListener('click', function() {
+    this.ui.element.getElementsByClassName('locations-info-window__close')[0].addEventListener('click', function() {
       this.hide();
     }.bind(this));
   }
@@ -252,18 +252,18 @@ function initLocationsMap() {
     // remove existing window type class names
     this.ui.element.className = this.ui.element.className.replace(/locations-info-window__wrapper--[a-zA-z]*/g, ' ');
     // add current window type class name
-    this.ui.element.classList.add('jh-locations-info-window__wrapper' + classStr);
+    this.ui.element.classList.add('locations-info-window__wrapper' + classStr);
 
-    var content = '<h3 class="jh-locations-info-window__title">' + data.name + '</h3>' +
-    '<p class="jh-locations-info-window__address">' + data.address + '<br />' +
-    '<a class="jh-locations-info-window__directionslink" href="' + encodeURI('https://www.google.com/maps/place/' + data.address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>';
-    if (data.phone) { content += '<p class="jh-locations-info-window__phone">' + data.phone + '</p>'; }
-    if (data.hours) { content += '<p class="jh-locations-info-window__hours">' + data.hours + '</p>'; }
+    var content = '<h3 class="locations-info-window__title">' + data.name + '</h3>' +
+    '<p class="locations-info-window__address">' + data.address + '<br />' +
+    '<a class="locations-info-window__directionslink" href="' + encodeURI('https://www.google.com/maps/place/' + data.address.replace(/<br>/g,' ')) + '" target="_blank">Get Directions</a></p>';
+    if (data.phone) { content += '<p class="locations-info-window__phone">' + data.phone + '</p>'; }
+    if (data.hours) { content += '<p class="locations-info-window__hours">' + data.hours + '</p>'; }
     this.ui.content.innerHTML = content;
 
     // update view - view more details button link
     this.ui.windowBottom.innerHTML =
-    '<div class="jh-locations-info-window__locationlink"><a href="' + data.url + '">View More Details</a></div>';
+    '<div class="locations-info-window__locationlink"><a href="' + data.url + '">View More Details</a></div>';
   };
 
   /**
@@ -274,14 +274,14 @@ function initLocationsMap() {
     this.ui = {
       element: element,
       tab: {
-        'hospitals': document.querySelectorAll('.hospitals-menu .jh-locations-menu__tab')[0],
-        'outpatient': document.querySelectorAll('.outpatient-menu .jh-locations-menu__tab')[0],
-        'urgentcare': document.querySelectorAll('.urgentcare-menu .jh-locations-menu__tab')[0]
+        'hospitals': document.querySelectorAll('.hospitals-menu .locations-menu__tab')[0],
+        'outpatient': document.querySelectorAll('.outpatient-menu .locations-menu__tab')[0],
+        'urgentcare': document.querySelectorAll('.urgentcare-menu .locations-menu__tab')[0]
       },
       menu: {
-        'hospitals': document.querySelectorAll('.hospitals-menu .jh-locations-menu__list')[0],
-        'outpatient': document.querySelectorAll('.outpatient-menu .jh-locations-menu__list')[0],
-        'urgentcare': document.querySelectorAll('.urgentcare-menu .jh-locations-menu__list')[0]
+        'hospitals': document.querySelectorAll('.hospitals-menu .locations-menu__list')[0],
+        'outpatient': document.querySelectorAll('.outpatient-menu .locations-menu__list')[0],
+        'urgentcare': document.querySelectorAll('.urgentcare-menu .locations-menu__list')[0]
       }
     };
     populateList(this.ui.menu.hospitals, data.hospitals);
@@ -343,7 +343,7 @@ function initLocationsMap() {
     var thisMenuTab = event.target.parentNode;
     if (!thisMenuTab.classList.contains('is-expanded')) {
       // collapse expanded menu
-      this.toggleMenu(this.ui.element.querySelectorAll('.jh-locations-menu__tab.is-expanded')[0]);
+      this.toggleMenu(this.ui.element.querySelectorAll('.locations-menu__tab.is-expanded')[0]);
       this.toggleMenu(thisMenuTab);
     }
   };
@@ -356,15 +356,15 @@ function initLocationsMap() {
     var currentMarkers = markers;
     var map = locationsMap.map;
     var mapFilterFieldsUI = {
-      'address': document.getElementsByClassName('jh-search-locations__address')[0],
-      'distance': document.getElementsByClassName('jh-search-locations__distance')[0],
-      'region': document.getElementsByClassName('jh-search-locations__region')[0],
-      'type': document.getElementsByClassName('jh-search-locations__type')[0]
+      'address': document.getElementsByClassName('search-locations__address')[0],
+      'distance': document.getElementsByClassName('search-locations__distance')[0],
+      'region': document.getElementsByClassName('search-locations__region')[0],
+      'type': document.getElementsByClassName('search-locations__type')[0]
     };
 
     var updateMap = function() {
-      var region = document.getElementsByClassName('jh-search-locations__region')[0].value;
-      var type = document.getElementsByClassName('jh-search-locations__type')[0].value;
+      var region = document.getElementsByClassName('search-locations__region')[0].value;
+      var type = document.getElementsByClassName('search-locations__type')[0].value;
       for (var i = 0; i < currentMarkers.length; i++) {
         if ((currentMarkers[i].location.region === region.toLowerCase() || region.toLowerCase() === "default") &&
             (currentMarkers[i].location.type === type.toLowerCase() || type.toLowerCase() === "default")) {
@@ -376,8 +376,8 @@ function initLocationsMap() {
     };
 
     var updateMapRadius = function() {
-      var distance = document.getElementsByClassName('jh-search-locations__distance')[0].value;
-      var address = document.getElementsByClassName('jh-search-locations__address')[0].value;
+      var distance = document.getElementsByClassName('search-locations__distance')[0].value;
+      var address = document.getElementsByClassName('search-locations__address')[0].value;
 
       if (distance !== 'default') {
         console.log('Distance: ' + distance);
@@ -413,7 +413,7 @@ function initLocationsMap() {
     mapFilterFieldsUI.type.addEventListener('change', updateMap);
     mapFilterFieldsUI.distance.addEventListener('change', updateMapRadius);
 
-    document.getElementsByClassName('jh-locations__search-reset')[0].addEventListener('click', function(e) {
+    document.getElementsByClassName('locations__search-reset')[0].addEventListener('click', function(e) {
       e.preventDefault();
       if (currentSearchMarker) {
         currentSearchCircle.setMap(null);
@@ -427,7 +427,7 @@ function initLocationsMap() {
       mapFilterFieldsUI.region.selectedIndex = 0;
       mapFilterFieldsUI.type.selectedIndex = 0;
       mapFilterFieldsUI.distance.selectedIndex = 0;
-      document.getElementsByClassName('jh-search-locations__distance-wrapper')[0].style.display = "none";
+      document.getElementsByClassName('search-locations__distance-wrapper')[0].style.display = "none";
     });
 
     // sets the map on all markers in the array
@@ -511,18 +511,18 @@ function initLocationsMap() {
       });
       // show distance filter option only if location/address field is not empty
       if (mapFilterFieldsUI.address.value === '') {
-        document.getElementsByClassName('jh-search-locations__distance-wrapper')[0].style.display = "none";
+        document.getElementsByClassName('search-locations__distance-wrapper')[0].style.display = "none";
         currentSearchMarker.setMap(null);
         currentSearchCircle.setMap(null);
       } else {
-        document.getElementsByClassName('jh-search-locations__distance-wrapper')[0].style.display = "inline-block";
+        document.getElementsByClassName('search-locations__distance-wrapper')[0].style.display = "inline-block";
       }
     }
     initAutocomplete();
   }
 
   // view elements
-  var mapComponentElement = document.getElementsByClassName('jh-locations__map')[0];
+  var mapComponentElement = document.getElementsByClassName('locations__map')[0];
 
   // UI components
   var locationsMap = new LocationsMap(document.getElementById('map'));
@@ -534,13 +534,13 @@ function initLocationsMap() {
   mapMarkers.setClickHandlerListItems();
 
   var locationsMenu = {};
-  var locationsMenuElement = document.getElementsByClassName('jh-locations-menu')[0];
+  var locationsMenuElement = document.getElementsByClassName('locations-menu')[0];
   if (locationsMenuElement) {
     locationsMenu = new LocationsAccordionMenu(locationsData.data, locationsMenuElement);
   }
 
   var mapMarkerFilters = {};
-  var mapMarkerFiltersElement = document.getElementsByClassName('jh-locations__search')[0];
+  var mapMarkerFiltersElement = document.getElementsByClassName('locations__search')[0];
   if (mapMarkerFiltersElement) {
     mapMarkerFilters = new MapMarkerFilters(locationsMap, mapMarkers.markers);
   }
