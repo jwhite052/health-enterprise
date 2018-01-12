@@ -21,6 +21,17 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
   opacity: .2;
 }
+@media only screen and (max-width: 992px) {
+  .locations__map {
+    height: 300px;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .locations__map {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px) {
   .locations__map{
     height: 250px;

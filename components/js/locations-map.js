@@ -256,8 +256,12 @@ function initLocationsMap() {
       }
     }
     function clickHandler(e) {
-      e.preventDefault();
-      google.maps.event.trigger(this.marker, 'click');
+      // check if map is visible (desktop), set click to open info window
+      // otherwise (mobile), set click to default link
+      if (window.getComputedStyle(document.getElementsByClassName('locations__map')[0]).display !== 'none') {
+        e.preventDefault();
+        google.maps.event.trigger(this.marker, 'click');
+      }
     }
 
     // attach listener to each menu tab, bind handler to locations menu object

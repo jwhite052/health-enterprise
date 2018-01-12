@@ -76,6 +76,11 @@
 .header-section-content__title span {
   font-weight: 300;
 }
+@media (max-width : 480px) {
+  .header-section-content__title {
+    font-size: 40px;
+  }
+}
 .header-section-content__text {
   font-size: 18px;
   margin: 20px 0;
@@ -149,6 +154,9 @@
   .header-section-content__locations li::after {
     display: none;
   }
+  .header-section-content__tagline {
+    text-align: center;
+  }
 }
 
 /* US News Badge */
@@ -192,7 +200,11 @@
   display: table;
   clear: both;
 }
-
+@media only screen and (max-width: 480px) {
+  .stats-section {
+    margin-top: 20px;
+  }
+}
 /* Locations Section */
 #map {
   height: 100%;
@@ -216,8 +228,11 @@
   padding: 0 30px 0 0;
 }
 @media only screen and (max-width: 480px) {
+  .locations-section__inner > .row:first-of-type {
+    margin-bottom: 30px;
+  }
   .locations__main {
-    margin: 0;
+    margin: 20px;
   }
 }
 .locations__main::after {
@@ -250,7 +265,7 @@
 @media only screen and (max-width: 480px) {
   .locations-menu {
     margin-top: 0;
-    height: 300px;
+    height: 450px;
   }
 }
 .locations-menu__tab {
@@ -337,7 +352,7 @@
 }
 @media only screen and (max-width: 480px) {
   .locations-menu__content {
-    height: 150px;
+    height: 300px;
   }
 }
 .locations-menu__info {
@@ -366,7 +381,7 @@
 }
 @media only screen and (max-width: 480px) {
   .locations-menu__list-wrapper {
-    height: 150px;
+    height: 300px;
   }
 }
 .locations-menu__list {
@@ -399,6 +414,9 @@
 @media only screen and (max-width: 480px) {
   .locations-menu__list {
     padding: 0 15px;
+  }
+  .locations-menu__list li {
+    font-size: 14px;
   }
 }
 
@@ -573,6 +591,17 @@
   height: 500px;
   border: 0;
 }
+@media only screen and (max-width: 992px) {
+  .locations__map {
+    height: 300px;
+    border: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .locations__map {
+    display: none;
+  }
+}
 
 /* Locations Map Filters */
 .locations__search {
@@ -585,7 +614,7 @@
   width: 100%;
   /* background-color: #f2f4f8; */
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
   .locations__search {
     display: none;
   }

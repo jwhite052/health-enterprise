@@ -28,6 +28,11 @@ h5 {
 h3 {
   font-size: 26px;
 }
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
 
 /* Header */
 [class^="header-section"] {
@@ -79,15 +84,18 @@ h3 {
   float: left;
   color: #fff;
 }
-.social-icons {
+.footer-toolbar .social-icons {
   float: right;
   font-size: 30px;
   line-height: 70px;
 }
-.social-icons a {
+.footer-toolbar .social-icons a {
   color: #fff;
 }
-.search-icon {
+.footer-toolbar .social-icons a:hover {
+  color: #152456;
+}
+.footer-toolbar .search-icon {
   float: right;
   font-size: 30px;
   line-height: 70px;
@@ -95,6 +103,28 @@ h3 {
   border: 2px solid rgba(255,255,255,0.2);
   border-width: 0 2px 0 2px;
   margin-left: 50px;
+}
+@media (max-width : 768px) {
+  .footer-toolbar {
+    height: auto;
+    background-color: #569bca;
+    padding: 20px 0;
+  }
+  .footer-toolbar__phone {
+    line-height: normal;
+    margin-bottom: 20px;
+    float: none;
+  }
+  .footer-toolbar .social-icons {
+    float: none;
+    line-height: normal;
+  }
+  .footer-toolbar .search-icon {
+    float: right;
+    border: none;
+    line-height: normal;
+    padding: 0;
+  }
 }
 
 /* Footer */
