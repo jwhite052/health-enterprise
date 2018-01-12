@@ -1,3 +1,4 @@
+/* Search Tabs Box */
 (function() {
   var ui = {
     tabs: document.querySelectorAll('.search-tabs-box__tabs li'),

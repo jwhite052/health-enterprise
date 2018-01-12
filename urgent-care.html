@@ -398,7 +398,7 @@
 
           </div><!-- /.col -->
         </div><!-- /.row -->
-        
+
       </div><!-- /.container -->
     </section><!-- /.locations-section -->
 
@@ -428,17 +428,19 @@
       </div>
     </footer>
 
-    <!-- Locations Map -->
-    <script src="/components/js/locations-map.js"></script>
-    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <!-- List JS -->
+    <script src="/js/list.min.js"></script>
     <!-- Global Ribbon -->
     <script src="/components/js/global-ribbon.js"></script>
-    <script src="/js/list.min.js"></script>
+    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
+    <!-- Jeff API Key: AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <!-- Locations List Filter -->
     <script src="/components/js/locations-list-filter.js"></script>
+    <!-- Locations Map List -->
     <script src="/components/js/locations-map-list.js"></script>
+    <!-- Google API Callback -->
     <script>
-      // Google Maps API callback
       function initMap() {
         initLocationsMap();
       }

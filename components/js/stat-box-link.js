@@ -1,3 +1,4 @@
+/* Stat Box */
 (function() {
   var elementsArr = document.getElementsByClassName('stat-box-container');
   for (var i = 0; i < elementsArr.length; i++) {

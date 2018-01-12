@@ -619,10 +619,6 @@
       </div>
     </footer>
 
-    <!-- Locations Map -->
-    <script src="/components/js/locations-map.js"></script>
-    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
     <!-- Stat Box -->
     <script src="/components/js/stat-box-link.js"></script>
     <!-- Landing Page -->
@@ -631,9 +627,12 @@
     <script src="/components/js/global-ribbon.js"></script>
     <!-- Search Tabs Box -->
     <script src="/components/js/search-tabs-box.js"></script>
-
+    <!-- Locations Map -->
+    <script src="/components/js/locations-map.js"></script>
+    <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+    <!-- Google API Callback -->
     <script>
-      // Google Maps API callback
       function initMap() {
         initLocationsMap();
       }

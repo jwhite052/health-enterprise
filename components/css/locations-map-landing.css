@@ -1,0 +1,177 @@
+/* Locations Map */
+.locations__map {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  z-index: 0;
+}
+.locations__map::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+  opacity: .2;
+}
+@media only screen and (max-width: 480px) {
+  .locations__map{
+    height: 250px;
+  }
+}
+
+/* Locations Info Window */
+[class^="locations-info-window"] {
+  box-sizing: border-box;
+}
+.locations-info-window__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background-color: rgba(253,253,255,0.9);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  transition: ease-in .4s;
+  overflow: hidden;
+}
+.locations-info-window__wrapper * {
+  box-sizing: border-box;
+}
+.locations-info-window__wrapper.is-visible {
+}
+.locations-info-window__wrapper.is-hidden {
+  left: -400px;
+}
+@media only screen and (max-width: 480px) {
+  .locations-info-window__wrapper {
+    width: 225px;
+    left: 0px;
+    top: 0px;
+    height: 250px;
+    width: 100%;
+  }
+}
+.locations-info-window__title-bar {
+  position: relative;
+  background-color: #666;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  text-align: center;
+}
+.locations-info-window__wrapper--hospitals .locations-info-window__title-bar {
+  background-color: #4a7ab8;
+}
+.locations-info-window__wrapper--outpatient .locations-info-window__title-bar {
+  background-color: #ab2d8b;
+}
+.locations-info-window__wrapper--urgentcare .locations-info-window__title-bar {
+  background-color: #f8ad40;
+}
+.locations-info-window__close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+.locations-info-window__close:hover {
+  opacity: 1;
+}
+.locations-info-window__close:before,
+.locations-info-window__close:after {
+  position: absolute;
+  left: 11px;
+  content: ' ';
+  height: 23px;
+  width: 2px;
+  background-color: #fff;
+}
+.locations-info-window__close:before {
+  transform: rotate(45deg);
+}
+.locations-info-window__close:after {
+  transform: rotate(-45deg);
+}
+.locations-info-window {
+  /*background-color: #fff;
+  padding: 20px;
+  box-shadow: 10px 5px 5px black !important;*/
+  font-size: 14px;
+  padding: 20px;
+  overflow-y: scroll;
+  height: calc(100% - 100px);
+}
+.locations-info-window__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: #152456;
+}
+.locations-info-window__address {
+  font-size: 16px;
+}
+.locations-info-window__locationlink {
+
+}
+.locations-info-window__locationlink a {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #569bca;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  border: 2px solid #569bca;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 2px;
+}
+.locations-info-window__locationlink a:hover {
+  background-color: #569bca;
+  color: #fff;
+}
+.locations-info-window__directionslink {
+  font-weight: bold;
+  color: #569bca;
+  text-decoration: none;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.locations-info-window__bottom {
+  height: 65px;
+  padding: 15px;
+}
+@media only screen and (max-width: 480px) {
+  .locations-info-window {
+    font-size: 13px;
+    height: 150px;
+  }
+  .locations-info-window__title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .locations-info-window__address {
+    font-size: 14px;
+  }
+  .locations-info-window__locationlink a {
+    font-size: 12px;
+  }
+}
