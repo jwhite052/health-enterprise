@@ -336,6 +336,7 @@
         <div class="row">
           <div class="col-md-8" style="padding-right: 50px;">
 
+            <!-- Start Component -->
             <h2 class="section-title" style=" font-weight: bold;">
               Locations
             </h2>
@@ -434,16 +435,14 @@
     <script src="/components/js/global-ribbon.js"></script>
     <!-- My API Key: AIzaSyAdXlaNoumqLdoV5BNGvKes613OO_Zcdyw -->
     <!-- Jeff API Key: AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&callback=initMap&libraries=places" async defer></script>
+
     <!-- Locations List Filter -->
     <script src="/components/js/locations-list-filter.js"></script>
     <!-- Locations Map List -->
-    <script src="/components/js/locations-map-list.js"></script>
-    <!-- Google API Callback -->
+    <script src="/components/js/locations-map-subpage.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg&libraries=places"></script>
     <script>
-      function initMap() {
-        initLocationsMap();
-      }
+      initLocationsMap();
     </script>
   </body>
 </html>

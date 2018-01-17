@@ -24,7 +24,7 @@
     	"name": "Thomas Jefferson University Hospital",
     	"address": "111 South 11th Street<br>Philadelphia, PA 19107",
     	"phone": "Main Phone: 215-955-6000<br>Appointment Phone: 1-800-JEFF-NOW (215-533-3669)",
-    	"url": "/content/health/find-a-location/locations/tjuh-111-south-11th-street.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/tjuh-111-south-11th-street.html",
     	"position": { "lat": 39.9498262, "lng": -75.1584227 }
     },
     {
@@ -33,7 +33,7 @@
     	"name": "Jefferson Hospital for Neuroscience",
     	"address": "900 Walnut Street<br>Philadelphia, PA 19107",
     	"phone": "Main Phone: 215-955-6000<br>Appointment Phone: 1-800-JEFF-NOW (800-533-3669)",
-    	"url": "/content/health/find-a-location/locations/jefferson-hospital-for-neuroscience-900-walnut-street.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-hospital-for-neuroscience-900-walnut-street.html",
     	"position": { "lat": 39.9480344, "lng": -75.156207 }
     },
     {
@@ -42,7 +42,7 @@
     	"name": "Methodist Hospital",
     	"address": "2301 South Broad Street<br>Philadelphia, PA 19148",
     	"phone": "Main Phone: 215-952-9000<br>Appointment Phone: 800-JEFF-NOW (800-533-3669)<br>Radiology Appointments: 215-952-1234<br>Outpatient Rehabilitation Services: 215-339-4280",
-    	"url": "/content/health/find-a-location/locations/methodist-hospital.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/methodist-hospital.html",
     	"position": { "lat": 39.921183, "lng": -75.169701 }
     },
     {
@@ -78,7 +78,7 @@
     	"name": "Jefferson Cherry Hill Hospital",
     	"address": "2201 Chapel Avenue West<br>Cherry Hill, NJ 08002",
     	"phone": "Main phone: 856-488-6500",
-    	"url": "/content/health/find-a-location/locations/kennedy-cherry-hill.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/kennedy-cherry-hill.html",
     	"position": { "lat": 39.927982, "lng": -75.015943 }
     },
     {
@@ -87,7 +87,7 @@
     	"name": "Jefferson Stratford Hospital",
     	"address": "2201 Chapel Avenue West<br>Cherry Hill, NJ 08002",
     	"phone": "Main phone: 856-488-6500",
-    	"url": "/content/health/find-a-location/locations/kennedy-stratford.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/kennedy-stratford.html",
     	"position": { "lat": 39.828275, "lng": -75.008195 }
     },
     {
@@ -96,7 +96,7 @@
     	"name": "Jefferson Washington Township Hospital",
     	"address": "435 Hurffville-Cross Keys Road<br>Turnersville, NJ 08012",
     	"phone": "Main phone: 856-582-2500",
-    	"url": "/content/health/find-a-location/locations/kennedy-washington-township.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/kennedy-washington-township.html",
     	"position": { "lat": 39.735239, "lng": -75.065340 }
     },
     {
@@ -105,7 +105,7 @@
     	"name": "Rothman Orthopaedic Specialty Hospital &ndash; Bensalem",
     	"address": "3300 Tillman Drive<br>Bensalem, PA 19020",
     	"phone": "Phone: 1-800-JEFF-NOW",
-    	"url": "/content/health/find-a-location/locations/rothman-orthopaedic-specialty-hospital.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/rothman-orthopaedic-specialty-hospital.html",
     	"position": { "lat": 40.1129362, "lng": -74.9627666 }
     }
   ],
@@ -159,7 +159,7 @@
       "name": "Jefferson &ndash; Bala Cynwyd (225 East City Ave)",
       "address": "225 East City Avenue<br>Bala Cynwyd, PA 19004",
       "phone": "Appointment Phone:  800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-at-bala-cynwyd-225-east-city-avenue.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-at-bala-cynwyd-225-east-city-avenue.html",
       "position": { "lat": 40.0050928, "lng": -75.2192039 }
     },
     {
@@ -168,7 +168,7 @@
       "name": "Jefferson &ndash; Bala Cynwyd (401 City Line Ave)",
       "address": "401 City Line Avenue<br>Bala Cynwyd, PA 19004",
       "phone": "Main Phone:  610-667-5555 (Cardiology)<br>Alternate Phone: 215-955-1925 (Endocrinology)<br>Appointment Phone: 800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-at-bala-cynwyd-401-city-line-avenue.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-at-bala-cynwyd-401-city-line-avenue.html",
       "position": { "lat": 39.9998876, "lng": -75.2303063 }
     },
     {
@@ -177,7 +177,7 @@
       "name": "Jefferson Health &ndash; Smylie Times",
       "address": "2607 Rhawn Street<br>Suite 403<br>Philadelphia, PA 19152",
       "phone": "Appointment Phone: 800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-at-the-smylie-times.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-at-the-smylie-times.html",
       "position": { "lat": 40.0562602, "lng": -75.0452195 }
     },
     {
@@ -186,7 +186,7 @@
       "name": "Jefferson Health &ndash; Navy Yard",
       "address": "3 Crescent Drive<br>Philadelphia, PA 19112",
       "phone": "Main Phone: 215-503-3300<br>Appointment Phone: 800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-health-navy-yard.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-health-navy-yard.html",
       "position": { "lat": 39.8959772, "lng": -75.1740603 }
     },
     {
@@ -195,7 +195,7 @@
       "name": "Jefferson Health &ndash; Turnersville",
       "address": "188 Fries Mill Road<br>Turnersville, NJ 08012",
       "phone": "Appointment Phone: 800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-at-turnersville.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-at-turnersville.html",
       "position": { "lat": 39.7370413, "lng": -75.0468679 }
     },
     {
@@ -204,7 +204,7 @@
       "name": "Jefferson Health &ndash; Voorhees",
       "address": "443 Laurel Oak Road<br>Voorhees, NJ 08043",
       "phone": "Main Phone: 856-741-1000<br>Appointment Phone: 800-JEFF-NOW (800-533-3669)",
-      "url": "/content/health/find-a-location/locations/jefferson-health-voorhees.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-health-voorhees.html",
       "position": { "lat": 39.844291, "lng": -74.985362 }
     },
     {
@@ -241,7 +241,7 @@
     	"name": "Abington Jefferson Health &ndash; Elkins Park",
     	"address": "8250 Old York Road<br>Elkins Park, PA 19027",
     	"phone": "Elkins Park Medical Association: 215-885-8550<br>Wyncote Family Medicine: 215-886-0440<br>Laboratory Testing: 215-886-5738",
-    	"url": "/content/health/find-a-location/locations/abington-health-center-elkins-park.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/abington-health-center-elkins-park.html",
     	"position": { "lat": 40.082393, "lng": -75.1279097 }
     },
     {
@@ -250,7 +250,7 @@
     	"name": "Jefferson Health &ndash; Art Museum",
     	"address": "2130 Spring Garden Street<br>Philadelphia, PA 19130",
     	"phone": "Main phone: 215-955-9555",
-    	"url": "/content/health/find-a-location/locations/jefferson-health-art-museum.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-health-art-museum.html",
     	"position": { "lat": 39.963721, "lng": -75.173739 }
     },
     {
@@ -259,7 +259,7 @@
     	"name": "Jefferson Health &ndash; Burlington",
     	"address": "811 Sunset Road, Suite 104<br>Burlington, NJ 08016",
     	"phone": "Phone: 609-239-8690",
-    	"url": "/content/health/find-a-location/locations/jefferson-health-burlington.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-health-burlington.html",
     	"position": { "lat": 40.0492141, "lng": -74.8707033 }
     }
   ],
@@ -271,7 +271,7 @@
       "address": "Flourtown Shopping Center<br>1820 Bethlehem Pike<br>Flourtown, PA 19031",
       "phone": "Phone: 215-836-1354",
       "hours": "Hours: 8 a.m. &ndash; 8 p.m. Monday to Friday<br>9 a.m. &ndash; 5 p.m. Saturday and Sunday",
-      "url": "/content/health/find-a-location/locations/jefferson-urgent-care-flourtown.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-urgent-care-flourtown.html",
       "position": { "lat": 40.111191, "lng": -75.210331 }
     },
     {
@@ -281,7 +281,7 @@
       "address": "2021 Chestnut Street<br>Philadelphia, PA 19103",
       "phone": "Phone:  267-443-2020",
       "hours": "Hours: 8:30 a.m. &ndash; 8:30 p.m., 7 days a week",
-      "url": "/content/health/find-a-location/locations/2021-chestnut-street.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/2021-chestnut-street.html",
       "position": { "lat": 39.9521761, "lng": -75.1765097 }
     },
     {
@@ -291,7 +291,7 @@
       "address": "2607 Rhawn Street<br>Philadelphia, PA 19152",
       "phone": "Phone: 215-333-0304",
       "hours": "Hours: 8:30 a.m. &ndash; 8:30 p.m., 7 days a week",
-      "url": "/content/health/find-a-location/locations/jefferson-health-smylie-times.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-health-smylie-times.html",
       "position": { "lat": 40.0562602, "lng": -75.0452195 }
     },
     {
@@ -301,7 +301,7 @@
       "address": "700 Walnut Street<br>Philadelphia, PA 19106",
       "phone": "Phone: 215-333-0304",
       "hours": "Hours: 8:30 a.m. &ndash; 8:30 p.m., 7 days a week",
-      "url": "/content/health/find-a-location/locations/jefferson-at-washington-square.html",
+      "url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-at-washington-square.html",
       "position": { "lat": 39.9479655, "lng": -75.1532154 }
     },
     {
@@ -311,7 +311,7 @@
     	"address": "2966 Street Road<br>Bensalem, PA",
     	"phone": "Phone: 215-638-0666",
     	"hours": "Hours: 7 days a week, from 8 a.m. to 8 p.m.",
-    	"url": "/content/health/find-a-location/locations/jefferson-urgent-care-bensalem.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-urgent-care-bensalem.html",
     	"position": { "lat": 40.1132751, "lng": -74.9587764 }
     },
     {
@@ -321,7 +321,7 @@
     	"address": "2451 Grant Avenue<br>Philadelphia, PA",
     	"phone": "Phone: 215-934-3471",
     	"hours": "Hours: 7 days a week, from 8 a.m. to 8 p.m.",
-    	"url": "/content/health/find-a-location/locations/jefferson-urgent-care-grant-avenue.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-urgent-care-grant-avenue.html",
     	"position": { "lat": 40.080427, "lng": -75.02851 }
     },
     {
@@ -330,7 +330,7 @@
     	"name": "Jefferson Urgent Care &ndash; Willow Grove",
     	"address": "2603 Easton Road<br>Willow Grove, PA 19090",
     	"phone": "Phone: 267-537-3300",
-    	"url": "/content/health/find-a-location/locations/jefferson-urgent-care-willow-grove.html",
+    	"url": "http://hospitals.jefferson.edu/content/health/find-a-location/locations/jefferson-urgent-care-willow-grove.html",
     	"position": { "lat": 40.1688489, "lng": -75.1262753 }
     }
   ],
@@ -613,6 +613,121 @@
       "address": "2451 Grant Avenue<br>Philadelphia, PA 19114",
       "phone": "Main Phone: 215-464-8050 (MRI Testing)<br>Alternate Phone: 215-831-5800 (PET Scan Testing)",
       "position": { "lat": 40.0716695, "lng": -74.9854092 }
+    }
+  ],
+  "outpatient": [
+    {
+      "type": "outpatient",
+      "name": "Abington Jefferson Health – Blue Bell",
+      "address": "721 Arbor Way<br>Blue Bell, PA 19422",
+      "phone": "Main Phone: 215-619-6400<br>Appointment Phone: 215-481-EXAM (3926)",
+      "position": { "lat": 40.140589, "lng": -75.285476 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Abington Jefferson Health – Elkins Park",
+      "address": "2130 Spring Garden Street, 2nd Floor<br>Philadelphia, PA 19130",
+      "phone": "Elkins Park Medical Association: 215-885-8550<br>Wyncote Family Medicine: 215-886-0440<br>Laboratory Testing: 215-886-5738",
+      "position": { "lat": 39.963835, "lng": -75.173494 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Abington Jefferson Health – Lower Gwynedd",
+      "address": "605 N Bethlehem Pike<br>Lower Gwynedd, PA 19002",
+      "phone": "",
+      "position": { "lat": 40.174705, "lng": -75.224594 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Abington Health Center - Montgomeryville",
+      "address": "1010 Horsham Road<br>North Wales, PA 19454<br>(corner of Horsham and Upper State Roads)",
+      "phone": "Phone: 215-517-1000",
+      "position": { "lat": 40.239174 , "lng": -75.231481 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Abington Health Center - Warminster",
+      "address": "225 Newtown Road<br>Warminster, PA 18974",
+      "phone": "Phone: 215-441-6600",
+      "position": { "lat": 40.185082, "lng": -75.078755 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Abington Health Center - Willow Grove",
+      "address": "2500 Maryland Rd<br>Willow Grove, PA 19090",
+      "phone": "",
+      "position": { "lat": 40.162173, "lng": -75.130144 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Aria Health Center for Rehabilitation and Wellness",
+      "address": "131 Lincoln Highway<br>Fairless Hills, PA 19030",
+      "phone": "Phone: 215-269-6620",
+      "position": { "lat": , "lng":  }
+    },
+    {
+      "type": "outpatient",
+      "name": "The Annex",
+      "address": "2451 Grant Avenue<br>Philadelphia, PA 19114",
+      "phone": "MRI Testing: 215-464-8050<br>PET Scan Testing: 215-831-5800",
+      "position": { "lat": 40.080427, "lng": -75.026321 }
+    },
+    {
+      "type": "outpatient",
+      "name": "The Professional Court",
+      "address": "Bustleton Avenue and Verree Road<br>Philadelphia, PA 19116",
+      "phone": "Phone: 215-827-8200",
+      "position": { "lat": 40.108322, "lng": -75.026332 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson at Bala Cynwyd (225 East City Avenue)",
+      "address": "225 East City Avenue<br>Bala Cynwyd, PA 19004",
+      "phone": "Appointment Phone: 800-JEFF-NOW (800-533-3669)",
+      "position": { "lat": 40.0052846, "lng": -75.219211 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson at Bala Cynwyd (401 City Line Avenue)",
+      "address": "401 East City Line Avenue<br>Bala Cynwyd, PA 19004",
+      "phone": "Main Phone: 610-667-5555 (Cardiology)<br>Alternate Phone: 215-955-1925 (Endocrinology)<br>Appointment Phone: 800-JEFF-NOW (800-533-3669)",
+      "position": { "lat": 40.008533, "lng": -75.213062 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson Health - Art Museum",
+      "address": "2130 Spring Garden Street<br>Philadelphia, PA 19130",
+      "phone": "Main Phone: 215-955-9555",
+      "hours": "Hours of Operation<br>Monday through Thursday: 8 a.m. - 8 p.m.<br>Friday: 8 a.m. - 5 p.m.<br>Saturday: 8:30 a.m. - 12 p.m.",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson Health - Burlington",
+      "address": "",
+      "phone": "",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson Health - Navy Yard",
+      "address": "",
+      "phone": "",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson Health - Smylie Times",
+      "address": "",
+      "phone": "",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
+    },
+    {
+      "type": "outpatient",
+      "name": "Jefferson Health - Voorhees",
+      "address": "",
+      "phone": "",
+      "position": { "lat": 39.9638346, "lng": -75.1756828 }
     }
   ]
 }

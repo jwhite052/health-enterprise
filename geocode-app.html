@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geocode App</title>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  </head>
+    <body onload="initialize()">
+     <div id="map" style="width: 320px; height: 480px;"></div>
+      <div>
+        <input id="address" type="textbox" value="Sydney, NSW">
+        <input type="button" value="Encode" onclick="codeAddress()">
+      </div>
+<div id="output">
+
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Ljo3gaxiAY83sPabqHZCa7_GFA7a9Jg"></script>
+    <script>
+    var geocoder;
+var map;
+function initialize() {
+geocoder = new google.maps.Geocoder();
+var latlng = new google.maps.LatLng(-34.397, 150.644);
+var mapOptions = {
+  zoom: 8,
+  center: latlng
+}
+map = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
+
+function codeAddress() {
+var address = document.getElementById('address').value;
+geocoder.geocode( { 'address': address}, function(results, status) {
+  if (status == 'OK') {
+    map.setCenter(results[0].geometry.location);
+    var marker = new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location
+    });
+  } else {
+    alert('Geocode was not successful for the following reason: ' + status);
+  }
+});
+}
+
+var jsonObj = (function() {
+  var json = null;
+  $.ajax({
+    'async': false,
+    'global': false,
+    'url': "/locationsdata.json",
+    'dataType': "json",
+    'success': function (res) {
+      json = res;
+    }
+  });
+  return json;
+})();
+var data = jsonObj;
+for (var key in data) {
+  if (key === "imaging") {
+  var list = data[key];
+  for (var i = 0; i < list.length; i++) {
+    var address = list[i].address.replace(/<br>/g," ");
+    console.log(address);
+  }
+  }
+}
+
+    </script>
+  </body>
+</html>
